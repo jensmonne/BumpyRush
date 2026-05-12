@@ -104,7 +104,7 @@ public class PhysicsCarController : MonoBehaviour
         }
     }
 
-    // 🛞 CALLED BY WHEELS
+    // CALLED BY WHEELS
     public void WheelTouchGround()
     {
         groundedWheels++;
