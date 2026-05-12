@@ -21,22 +21,19 @@ public class Movement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Move();
+        if (rb3D == null) return;
+
+        Vector3 inputWorld = new Vector3(moveInput.x, 0f, moveInput.y);
+
+        if (inputWorld.sqrMagnitude > 1f)
+        {
+            inputWorld.Normalize();
+        }
+
+        Vector3 force = inputWorld * speed;
+        rb3D.AddForce(force, ForceMode.Acceleration);
     }
 
-    public void Move()
-    {
-        Vector3 movement = new Vector3(moveInput.x, 0f, moveInput.y) * speed * Time.deltaTime;
-
-        if (rb3D != null)
-        {
-            rb3D.AddForce(transform.position + movement, ForceMode.VelocityChange);
-        }
-        else
-        {
-            transform.Translate(movement, Space.World);
-        }
-    }
 
     public void OnJump(InputAction.CallbackContext context)
     {
@@ -46,9 +43,6 @@ public class Movement : MonoBehaviour
         {
             rb3D.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         }
-        else
-        {
-            transform.position += Vector3.up * (jumpForce * 0.1f);
-        }
+
     }
 }
