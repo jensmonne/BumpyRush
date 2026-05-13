@@ -1,40 +1,56 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class StartMenuManager : MonoBehaviour
 {
     [Header("UI Elements")]
-    [SerializeField] private Button startButton;
-    [SerializeField] private Button settingsButton;
-    [SerializeField] private Button creditsButton;
-    [SerializeField] private Button exitButton;
+    [SerializeField] private Button localButton;
+    [SerializeField] private Button hostButton;
+    [SerializeField] private TMP_InputField joinCodeInput;
+    [SerializeField] private Button joinButton;
+    [SerializeField] private Button backButton;
 
+    [SerializeField] private TMP_Text statusText;
 
     private void Start()
     {
-        if (startButton == null || settingsButton == null || creditsButton == null || exitButton == null)
+        if (UnityAuthInitializer.IsAuthenticated)
         {
-            Debug.LogError("One or more UI buttons are not assigned in the inspector.");
-            return;
+            hostButton.interactable = true;
         }
+
+        UnityAuthInitializer.OnAuthenticated += EnableOnlineButton;
     }
 
-    public void OnStartPressed()
+    private void OnDestroy()
+    {
+        UnityAuthInitializer.OnAuthenticated -= EnableOnlineButton;
+    }
+
+    private void EnableOnlineButton()
+    {
+        hostButton.interactable = true;
+        joinCodeInput.interactable = true;
+        statusText.text = "Play locally or online by hosting or joining a game.";
+    }
+
+    public void LocalButtonPressed()
     {
         
     }
-    
-    public void OnSettingsPressed()
+
+    public void HostButtonPressed()
     {
         
     }
-    
-    public void OnCreditsPressed()
+
+    public void CodeInputChanged()
     {
-        
+        joinButton.interactable = !string.IsNullOrEmpty(joinCodeInput.text);
     }
-    
-    public void OnExitPressed()
+
+    public void JoinButtonPressed()
     {
         
     }
