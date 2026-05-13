@@ -3,75 +3,105 @@ using UnityEngine.InputSystem;
 
 public class Movement : MonoBehaviour
 {
+    [Header("Movement")]
     [SerializeField] private float speed = 20f;
+    [SerializeField] private float maxSpeed = 20f;
     [SerializeField] private float jumpForce = 5f;
+    [SerializeField] private float throttleResponse = 5f;
 
     [Header("Steering")]
     [SerializeField] private float turnSpeed = 120f;
-    [SerializeField] private float maxSpeed = 20f;
 
     [Header("Drift")]
-    [SerializeField] private float driftFactor = 0.95f;
+    [SerializeField] private float driftFactor = 0.98f;
     [SerializeField] private float velocityRotateSpeed = 2f;
 
-    private Vector2 moveInput = Vector2.zero;
     private Rigidbody rb3D;
+
+    // Input values
+    private float throttle;
+    private float brake;
+    private float steer;
+    private float smoothedThrottle;
+    private bool isGrounded;
 
     private void Awake()
     {
         rb3D = GetComponent<Rigidbody>();
     }
 
-    public void OnMove(InputAction.CallbackContext context)
+    // INPUT SYSTEM
+    public void OnAccelerate(InputAction.CallbackContext context)
     {
-        moveInput = context.ReadValue<Vector2>();
+        throttle = context.ReadValue<float>();
     }
 
+    public void OnBrake(InputAction.CallbackContext context)
+    {
+        brake = context.ReadValue<float>();
+    }
+
+    public void OnSteer(InputAction.CallbackContext context)
+    {
+        steer = context.ReadValue<float>();
+    }
+
+    // FIXED UPDATE
     private void FixedUpdate()
     {
+        smoothedThrottle = Mathf.Lerp(
+        smoothedThrottle,
+        throttle - brake,
+        throttleResponse * Time.fixedDeltaTime);
+
         HandleMovement();
         HandleSteering();
         ApplyDrift();
     }
 
+    // MOVEMENT
     void HandleMovement()
     {
-        float input = 0f;
+        if (!isGrounded) return;
 
-        if (moveInput.y < 0) input += 1f;
-        if (moveInput.y > 0) input -= 1f;
+        float driveInput = smoothedThrottle;
 
-        // Gas geven
-        rb3D.AddForce(transform.forward * input * speed, ForceMode.Acceleration);
+        float targetMaxSpeed = maxSpeed * Mathf.Abs(driveInput);
 
-        // Max snelheid limiter
-        if (rb3D.linearVelocity.magnitude > maxSpeed)
+        float forwardSpeed =
+            Vector3.Dot(rb3D.linearVelocity, transform.forward);
+
+        if (Mathf.Abs(forwardSpeed) < targetMaxSpeed)
         {
-            rb3D.linearVelocity = rb3D.linearVelocity.normalized * maxSpeed;
+            rb3D.AddForce(
+                transform.forward * driveInput * speed,
+                ForceMode.Acceleration
+            );
         }
     }
 
+    // STEERING
     void HandleSteering()
     {
-        float steer = 0f;
-
-        if (moveInput.x < 0) steer -= 1f;
-        if (moveInput.x > 0) steer += 1f;
-
-        // Alleen sturen als de auto beweegt
-        float speedFactor = rb3D.linearVelocity.magnitude / maxSpeed;
+        float speedFactor =
+            rb3D.linearVelocity.magnitude / maxSpeed;
 
         if (speedFactor > 0.05f)
         {
             float rotationAmount =
-                steer * turnSpeed * speedFactor * Time.fixedDeltaTime;
+                steer *
+                turnSpeed *
+                speedFactor *
+                Time.fixedDeltaTime;
 
             rb3D.MoveRotation(
-                rb3D.rotation * Quaternion.Euler(0f, rotationAmount, 0f)
+                rb3D.rotation *
+                Quaternion.Euler(0f, rotationAmount, 0f)
             );
 
-            // Draai velocity langzaam mee met de auto
-            Vector3 rotatedVelocity = Quaternion.Euler(0f, rotationAmount, 0f) * rb3D.linearVelocity;
+            Vector3 rotatedVelocity =
+                Quaternion.Euler(0f, rotationAmount, 0f) *
+                rb3D.linearVelocity;
 
             rb3D.linearVelocity = Vector3.Lerp(
                 rb3D.linearVelocity,
@@ -81,22 +111,45 @@ public class Movement : MonoBehaviour
         }
     }
 
+    // DRIFT
     void ApplyDrift()
     {
-        // Lokale velocity
-        Vector3 localVelocity = transform.InverseTransformDirection(rb3D.linearVelocity);
+        Vector3 localVelocity =
+            transform.InverseTransformDirection(rb3D.linearVelocity);
 
-        // Minder grip zijwaarts = meer drift
+        // Zijwaartse grip
         localVelocity.x *= driftFactor;
 
-        // Terug naar world velocity
-        rb3D.linearVelocity = transform.TransformDirection(localVelocity);
+        rb3D.linearVelocity =
+            transform.TransformDirection(localVelocity);
     }
 
+    // JUMP
     public void OnJump(InputAction.CallbackContext context)
     {
         if (!context.performed) return;
+        if (!isGrounded) return;
+        
+        rb3D.AddForce(
+            Vector3.up * jumpForce,
+            ForceMode.Impulse
+        );
+    }
 
-        rb3D.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+    //COLLISIONS
+    void OnCollisionStay(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = true;
+        }
+    }
+
+    void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = false;
+        }
     }
 }
