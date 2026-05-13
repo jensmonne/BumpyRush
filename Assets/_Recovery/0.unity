@@ -431,9 +431,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 653882094a944be0a8b3837a13b9c6c5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 389093040}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 653882094a944be0a8b3837a13b9c6c5, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 389093044}
   m_SourcePrefab: {fileID: 100100000, guid: 653882094a944be0a8b3837a13b9c6c5, type: 3}
 --- !u!1 &389093038 stripped
 GameObject:
@@ -607,19 +604,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &389093044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 389093038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cb9b94c1e6087660a892412ea2e25cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CenterOfMassAdjuster
-  centerOfMassOffset: {x: 0, y: -0.5, z: 0}
 --- !u!1 &411636947
 GameObject:
   m_ObjectHideFlags: 0
@@ -746,7 +730,7 @@ GameObject:
   - component: {fileID: 427693416}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1140,7 +1124,7 @@ GameObject:
   - component: {fileID: 1233235723}
   m_Layer: 0
   m_Name: Cube (1)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1252,7 +1236,7 @@ GameObject:
   - component: {fileID: 1446639514}
   m_Layer: 0
   m_Name: Cube (2)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1476,7 +1460,7 @@ GameObject:
   - component: {fileID: 1565211768}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -7,10 +7,28 @@
             "id": "2e8f3276-a0af-4ead-8043-1b7515297377",
             "actions": [
                 {
-                    "name": "Movement",
+                    "name": "Accelerate",
                     "type": "Value",
                     "id": "202e9f46-0400-4837-bc03-99f12a09f6e7",
-                    "expectedControlType": "Vector2",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Brake/Reverse",
+                    "type": "Value",
+                    "id": "4ebe2d0a-63ad-417f-95f1-ebca6c4b6e81",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Steering",
+                    "type": "Value",
+                    "id": "6fb76803-4826-43b6-910c-b3ec805ba14e",
+                    "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -27,101 +45,68 @@
             ],
             "bindings": [
                 {
-                    "name": "2D Vector",
+                    "name": "1D Axis",
                     "id": "5ef5f769-6558-4e37-94e4-7e5d5e2ae746",
-                    "path": "2DVector",
+                    "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Movement",
+                    "action": "Accelerate",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "up",
-                    "id": "d5333921-8d74-4cff-a34d-8a55e1259360",
-                    "path": "<Keyboard>/w",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "up",
-                    "id": "41d6b5cd-1802-4cd5-87af-1a13541ace76",
+                    "name": "Negative",
+                    "id": "ec4b6add-34f9-4db2-8e2f-fbded5aa6dd2",
                     "path": "<Gamepad>/rightTrigger",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Movement",
+                    "action": "Accelerate",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "down",
-                    "id": "43b1c811-6980-44bd-9815-2c1296a5b1ef",
-                    "path": "<Keyboard>/s",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "down",
-                    "id": "444ec2e6-adc2-4ac3-bd9b-939ca007361c",
+                    "name": "Positive",
+                    "id": "2d69c112-cba6-4621-9e72-0072281227f9",
                     "path": "<Gamepad>/leftTrigger",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Movement",
+                    "action": "Accelerate",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "left",
-                    "id": "dd8f12d0-6e99-4a7f-86b6-be900c6df0e4",
-                    "path": "<Keyboard>/a",
+                    "name": "1D Axis",
+                    "id": "6b7022a6-e6e5-4cb3-993e-89d6eb3508e4",
+                    "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": true
+                    "action": "Steering",
+                    "isComposite": true,
+                    "isPartOfComposite": false
                 },
                 {
-                    "name": "left",
-                    "id": "429423db-d746-4c4b-9af1-7d319309f4dd",
+                    "name": "Negative",
+                    "id": "863c2887-1f55-46bf-806f-327fd168779e",
                     "path": "<Gamepad>/leftStick/left",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Movement",
+                    "action": "Steering",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "right",
-                    "id": "2d69fff2-f94f-4361-bd13-513ce845264b",
-                    "path": "<Keyboard>/d",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "right",
-                    "id": "b7a642b7-1368-45b4-b2bc-be26facc608d",
+                    "name": "Positive",
+                    "id": "d49629f6-8d9a-4a8b-99b8-790c059fc31a",
                     "path": "<Gamepad>/leftStick/right",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Movement",
+                    "action": "Steering",
                     "isComposite": false,
                     "isPartOfComposite": true
                 },
@@ -146,6 +131,28 @@
                     "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "28759fea-e103-4571-9cc1-ae4fa0f1fd65",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Brake/Reverse",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Negative",
+                    "id": "f3681263-2da6-4478-bff7-a728308a8742",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Brake/Reverse",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 }
             ]
         }
