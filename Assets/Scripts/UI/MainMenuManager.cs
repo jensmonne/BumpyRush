@@ -1,13 +1,12 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 public class MainMenuManager : MonoBehaviour
 {
-    [Header("UI Elements")]
-    [SerializeField] private Button startButton;
-    [SerializeField] private Button settingsButton;
-    [SerializeField] private Button creditsButton;
-    [SerializeField] private Button exitButton;
+    // [Header("UI Elements")]
+    // [SerializeField] private Button startButton;
+    // [SerializeField] private Button settingsButton;
+    // [SerializeField] private Button creditsButton;
+    // [SerializeField] private Button exitButton;
 
     public void OnStartPressed()
     {
@@ -16,12 +15,12 @@ public class MainMenuManager : MonoBehaviour
     
     public void OnSettingsPressed()
     {
-        
+        MenuManager.Instance.OpenMenu("SettingsMenu");
     }
     
     public void OnCreditsPressed()
     {
-        
+        MenuManager.Instance.OpenMenu("CreditsMenu");
     }
     
     public void OnExitPressed()

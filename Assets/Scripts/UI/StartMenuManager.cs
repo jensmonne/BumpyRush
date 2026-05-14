@@ -15,11 +15,11 @@ public class StartMenuManager : MonoBehaviour
 
     private void Start()
     {
-        if (UnityAuthInitializer.IsAuthenticated)
-        {
-            hostButton.interactable = true;
-        }
+        if (UnityAuthInitializer.IsAuthenticated) EnableOnlineButton();
+    }
 
+    private void OnEnable()
+    {
         UnityAuthInitializer.OnAuthenticated += EnableOnlineButton;
     }
 
@@ -35,23 +35,28 @@ public class StartMenuManager : MonoBehaviour
         statusText.text = "Play locally or online by hosting or joining a game.";
     }
 
-    public void LocalButtonPressed()
+    public void OnLocalPressed()
     {
         
     }
 
-    public void HostButtonPressed()
+    public void OnHostPressed()
     {
         
     }
 
-    public void CodeInputChanged()
+    public void OnCodeInputChanged()
     {
         joinButton.interactable = !string.IsNullOrEmpty(joinCodeInput.text);
     }
 
-    public void JoinButtonPressed()
+    public void OnJoinPressed()
     {
         
+    }
+
+    public void OnBackPressed()
+    {
+        MenuManager.Instance.OpenMenu("MainMenu");
     }
 }

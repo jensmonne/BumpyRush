@@ -38,7 +38,7 @@ public class UnityAuthInitializer : MonoBehaviour
             
             IsAuthenticated = true;
 
-            Debug.Log("Unity Services Authentication Successful");
+            Debug.Log("Unity Services Authentication Successful, PlayerID: " + AuthenticationService.Instance.PlayerId);
 
             OnAuthenticated?.Invoke();
         }
