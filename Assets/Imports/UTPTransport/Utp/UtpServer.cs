@@ -295,7 +295,8 @@ namespace Utp
 
 			//Create IPV4 endpoint
 			NetworkEndpoint endpoint = NetworkEndpoint.AnyIpv4;
-			endpoint.Port = port;
+			// endpoint.Port = port;
+			endpoint.Port = useRelay ? (ushort)0 : port;
 
 			if (useRelay)
 			{
