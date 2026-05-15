@@ -14,11 +14,11 @@ public class StartMenuManager : MonoBehaviour
 
     [SerializeField] private TMP_Text statusText;
 
+#if !UNITY_WEBGL
     private void Start()
     {
         if (UnityAuthInitializer.IsAuthenticated) EnableOnlineButton();
     }
-
     private void OnEnable()
     {
         UnityAuthInitializer.OnAuthenticated += EnableOnlineButton;
@@ -35,6 +35,7 @@ public class StartMenuManager : MonoBehaviour
         joinCodeInput.interactable = true;
         statusText.text = "Play locally or online by hosting or joining a game.";
     }
+#endif
 
     public void OnLocalPressed()
     {

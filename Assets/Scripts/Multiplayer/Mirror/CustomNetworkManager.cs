@@ -24,6 +24,15 @@ public class CustomNetworkManager : NetworkManager
     public void StartRelayHost(int maxPlayers, string regionId = null)
     {
         utpTransport.useRelay = true;
+
+#if UNITY_WEBGL
+    if (string.IsNullOrEmpty(regionId))
+    {
+        regionId = "europe-west4"; 
+        Debug.Log($"WebGL detected: Defaulting to region {regionId} to bypass QoS.");
+    }
+#endif
+
         utpTransport.AllocateRelayServer(maxPlayers, regionId,
         (joinCode) =>
         {
