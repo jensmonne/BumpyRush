@@ -26,15 +26,22 @@ public class LobbyUIManager : MonoBehaviour
 
     private void Start()
     {
-        string code = CustomNetworkManager.singleton.relayJoinCode;
-
-        if (!string.IsNullOrEmpty(code))
+        if (CustomNetworkManager.singleton != null)
         {
-            joinCodeText.text = $"Code: {code}";
+            string code = CustomNetworkManager.singleton.relayJoinCode;
+
+            if (!string.IsNullOrEmpty(code))
+            {
+                joinCodeText.text = $"Code: {code}";
+            }
+            else
+            {
+                joinCodeText.text = "LOCAL LOBBY";
+            }
         }
         else
         {
-            joinCodeText.text = "LOCAL LOBBY";
+            Debug.LogWarning("Lobby is probably not initialized yet. NetworkManager could not be found or relayJoinCode is null.");
         }
     }
 
@@ -59,7 +66,7 @@ public class LobbyUIManager : MonoBehaviour
         }
     }
 
-    private void OnReadyClicked()
+    public void OnReadyClicked()
     {
         if (localPlayer == null) return;
 
@@ -102,6 +109,6 @@ public class LobbyUIManager : MonoBehaviour
 
     public void OnStartGameButton()
     {
-        CustomNetworkManager.singleton.ServerChangeScene("MainMenu");
+        CustomNetworkManager.singleton.ServerChangeScene("TestScene");
     }
 }

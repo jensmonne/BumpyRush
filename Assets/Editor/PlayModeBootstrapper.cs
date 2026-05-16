@@ -11,7 +11,8 @@ public static class PlayModeBootstrapper
 
     static PlayModeBootstrapper()
     {
-        EditorApplication.delayCall += ApplyBootstrapperSettings;
+        EditorApplication.playModeStateChanged -= OnPlayModeStateChanged;
+        EditorApplication.playModeStateChanged += OnPlayModeStateChanged;
     }
 
     [MenuItem(MenuPath)]
@@ -20,7 +21,10 @@ public static class PlayModeBootstrapper
         bool currentState = EditorPrefs.GetBool(PrefKey, false);
         EditorPrefs.SetBool(PrefKey, !currentState);
         
-        ApplyBootstrapperSettings();
+        if (currentState)
+        {
+            EditorSceneManager.playModeStartScene = null;
+        }
     }
 
     [MenuItem(MenuPath, true)]
@@ -30,8 +34,10 @@ public static class PlayModeBootstrapper
         return true;
     }
 
-    private static void ApplyBootstrapperSettings()
+    private static void OnPlayModeStateChanged(PlayModeStateChange state)
     {
+        if (state != PlayModeStateChange.ExitingEditMode) return;
+
         bool isEnabled = EditorPrefs.GetBool(PrefKey, false);
 
         if (isEnabled)
@@ -50,10 +56,7 @@ public static class PlayModeBootstrapper
                 Debug.LogWarning("[Bootstrapper] Could not find a scene named 'MainMenu'.");
             }
         }
-        else
-        {
-            EditorSceneManager.playModeStartScene = null;
-        }
+        else EditorSceneManager.playModeStartScene = null;
     }
 }
 
