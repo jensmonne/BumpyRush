@@ -12,7 +12,10 @@ public class LobbyUIManager : MonoBehaviour
     [SerializeField] private TMP_Text joinCodeText;
     [SerializeField] private GameObject playerCardPrefab;
     [SerializeField] private Transform playerCardContainer;
+    [SerializeField] private Button readyButton;
     [SerializeField] private Button startGameButton;
+
+    private LobbyPlayer localPlayer;
 
     private Dictionary<LobbyPlayer, LobbyPlayerCard> playerCards = new();
 
@@ -44,6 +47,25 @@ public class LobbyUIManager : MonoBehaviour
 
         player.SetCard(cardScript);
         playerCards.Add(player, cardScript);
+
+        if (player.isLocalPlayer)
+        {
+            localPlayer = player;
+            
+            readyButton.onClick.RemoveAllListeners();
+            readyButton.onClick.AddListener(OnReadyClicked);
+
+            UpdateStartButton();
+        }
+    }
+
+    private void OnReadyClicked()
+    {
+        if (localPlayer == null) return;
+
+        bool newReadyState = !localPlayer.isReady;
+        
+        localPlayer.CmdSetReady(newReadyState);
     }
 
     public void RemovePlayerFromDisplay(LobbyPlayer player)
@@ -54,20 +76,16 @@ public class LobbyUIManager : MonoBehaviour
             playerCards.Remove(player);
         }
 
+        if (player == localPlayer)
+        {
+            localPlayer = null;
+        }
+
         UpdateStartButton();
     }
 
     public void UpdateStartButton()
     {
-        if (!NetworkServer.active)
-        {
-            // Maybe show a "Waiting for host..." message here instead?
-            startGameButton.gameObject.SetActive(false);
-            return;
-        }
-
-        startGameButton.gameObject.SetActive(true);
-
         bool allReady = true;
 
         foreach (var player in playerCards.Keys)
@@ -84,6 +102,6 @@ public class LobbyUIManager : MonoBehaviour
 
     public void OnStartGameButton()
     {
-        CustomNetworkManager.singleton.ServerChangeScene("");
+        CustomNetworkManager.singleton.ServerChangeScene("MainMenu");
     }
 }

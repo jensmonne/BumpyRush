@@ -33,12 +33,12 @@ public class LobbyPlayer : NetworkBehaviour
         LobbyUIManager.Instance.RemovePlayerFromDisplay(this);
     }
 
-    private void HandleDisplayNameChanged(string oldName, string newName)
+    private void HandleDisplayNameChanged(string newName, string oldName = "")
     {
         if (myCard != null) myCard.UpdateName(newName);
     }
 
-    private void HandleReadyStatusChanged(bool oldStatus, bool newStatus)
+    private void HandleReadyStatusChanged(bool newStatus, bool oldStatus = false)
     {
         if (myCard != null) myCard.UpdateReadyStatus(newStatus);
 
