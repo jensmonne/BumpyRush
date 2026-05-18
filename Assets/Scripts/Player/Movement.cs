@@ -16,6 +16,9 @@ public class Movement : MonoBehaviour
     [SerializeField] private float driftFactor = 0.98f;
     [SerializeField] private float velocityRotateSpeed = 2f;
 
+    [Header("Ground Check")]
+    [SerializeField] private Grounded grounded;
+
     private Rigidbody rb3D;
 
     // Input values
@@ -23,7 +26,6 @@ public class Movement : MonoBehaviour
     private float brake;
     private float steer;
     private float smoothedThrottle;
-    private bool isGrounded;
 
     private void Awake()
     {
@@ -46,6 +48,18 @@ public class Movement : MonoBehaviour
         steer = context.ReadValue<float>();
     }
 
+    //UPDATE
+    private void Update()
+    {
+        if(grounded.HELP)
+        {
+            //Rotate the car upright
+            Quaternion targetRotation = Quaternion.Euler(0f, transform.rotation.eulerAngles.y, 0f);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 2f);
+            Debug.Log("HELP");
+        }
+    }
+
     // FIXED UPDATE
     private void FixedUpdate()
     {
@@ -62,7 +76,7 @@ public class Movement : MonoBehaviour
     // MOVEMENT
     void HandleMovement()
     {
-        if (!isGrounded) return;
+        if (!grounded.isGrounded) return;
 
         float driveInput = smoothedThrottle;
 
@@ -117,7 +131,7 @@ public class Movement : MonoBehaviour
         Vector3 localVelocity =
             transform.InverseTransformDirection(rb3D.linearVelocity);
 
-        // Zijwaartse grip
+        // Zijwaartse grip, minder = meer drift
         localVelocity.x *= driftFactor;
 
         rb3D.linearVelocity =
@@ -128,28 +142,11 @@ public class Movement : MonoBehaviour
     public void OnJump(InputAction.CallbackContext context)
     {
         if (!context.performed) return;
-        if (!isGrounded) return;
+        if (!grounded.isGrounded) return;
         
         rb3D.AddForce(
             Vector3.up * jumpForce,
             ForceMode.Impulse
         );
-    }
-
-    //COLLISIONS
-    void OnCollisionStay(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isGrounded = true;
-        }
-    }
-
-    void OnCollisionExit(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isGrounded = false;
-        }
     }
 }
