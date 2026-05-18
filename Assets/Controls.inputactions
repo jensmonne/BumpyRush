@@ -67,9 +67,31 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "Negative",
+                    "id": "5415ad8b-3588-4c2c-88ba-2a1ece398c00",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Accelerate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "Positive",
                     "id": "2d69c112-cba6-4621-9e72-0072281227f9",
                     "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Accelerate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Positive",
+                    "id": "b62b4dcc-f692-429d-a137-d7ea04f164f6",
+                    "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -100,9 +122,31 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "Negative",
+                    "id": "8dd2e299-5a94-4502-989a-60a5db90ccfc",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Steering",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "Positive",
                     "id": "d49629f6-8d9a-4a8b-99b8-790c059fc31a",
                     "path": "<Gamepad>/leftStick/right",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Steering",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Positive",
+                    "id": "26a8891a-444e-4548-979c-3a53d8a7d915",
+                    "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -147,6 +191,17 @@
                     "name": "Negative",
                     "id": "f3681263-2da6-4478-bff7-a728308a8742",
                     "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Brake/Reverse",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Negative",
+                    "id": "4121322a-1327-4e78-aa8e-018f0b68f34e",
+                    "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
