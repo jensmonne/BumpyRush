@@ -4,7 +4,7 @@ using UnityEngine;
 public class FlipBounceDisabler : MonoBehaviour
 {
     [SerializeField] private float checkRotation = 45f;
-    [SerializeField] private GameObject Bounce;
+    [SerializeField] private BoxCollider Bounce;
 
     private bool Flipped;
 
@@ -14,12 +14,12 @@ public class FlipBounceDisabler : MonoBehaviour
 
         if (Flipped)
         {
-            Bounce.SetActive(false);
+            Bounce.enabled = false;
             Debug.Log("Flipped");
         }
         else
         {
-            Bounce.SetActive(true);
+            Bounce.enabled = true;
             Debug.Log("Not Flipped");
         }
     }

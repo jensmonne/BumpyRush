@@ -352,7 +352,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 32346068}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2699777, y: -0.011110249, z: 0.0031154212, w: 0.96279746}
+  m_LocalRotation: {x: 0.26998222, y: -0.009620019, z: 0.0026975456, w: 0.9628135}
   m_LocalPosition: {x: 7.8289943, y: 3.4353626, z: -7.0798597}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -387,7 +387,7 @@ Transform:
   m_GameObject: {fileID: 127152707}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.081, z: 0}
+  m_LocalPosition: {x: 0, y: -0.205, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -426,8 +426,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.2900858, y: 0.030244946, z: 0.5139513}
-  m_Center: {x: 0.0012149811, y: -0.086523, z: 0.019239426}
+  m_Size: {x: 0.71004295, y: 0.046123922, z: 0.920347}
+  m_Center: {x: -0.0027270317, y: -0.11675218, z: -0.028704286}
 --- !u!114 &127152711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -526,6 +526,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 653882094a944be0a8b3837a13b9c6c5, type: 3}
       insertIndex: -1
       addedObject: {fileID: 389093045}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 653882094a944be0a8b3837a13b9c6c5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 389093046}
   m_SourcePrefab: {fileID: 100100000, guid: 653882094a944be0a8b3837a13b9c6c5, type: 3}
 --- !u!1 &389093038 stripped
 GameObject:
@@ -557,7 +560,7 @@ MonoBehaviour:
   driftFactor: 0.95
   velocityRotateSpeed: 2
   grounded: {fileID: 127152711}
-  stopMovement_Bounce: {fileID: 1598973480}
+  stopMovement_Bounce: {fileID: 389093046}
 --- !u!114 &389093041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -727,7 +730,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlipCar
   checkRotation: 30
-  Bounce: {fileID: 1598973476}
+  Bounce: {fileID: 1598973479}
+--- !u!114 &389093046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389093038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e5195ef36415f840a8483302c19bdc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StopMovement_Bounce
+  BounceCollider: {fileID: 1598973479}
+  CartRigidbody: {fileID: 389093043}
+  minimumDuration: 0.1
+  maximumDuration: 1
+  impactMultiplier: 0.2
+  bounceForceMultiplier: 15
+  maxBounceForce: 50
+  hasCollided: 0
 --- !u!1 &411636947
 GameObject:
   m_ObjectHideFlags: 0
@@ -1039,7 +1062,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 701930786}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.26997775, y: -0.011110251, z: 0.0031154214, w: 0.96279746}
+  m_LocalRotation: {x: 0.26998222, y: -0.009620019, z: 0.0026975467, w: 0.9628135}
   m_LocalPosition: {x: 7.8289943, y: 3.4353626, z: -7.0798597}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1699,7 +1722,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1598973477}
   - component: {fileID: 1598973479}
-  - component: {fileID: 1598973480}
   - component: {fileID: 1598973478}
   m_Layer: 0
   m_Name: Bounce
@@ -1717,7 +1739,7 @@ Transform:
   m_GameObject: {fileID: 1598973476}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.116, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1744,7 +1766,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1598973476}
-  m_Material: {fileID: 13400000, guid: 1a0e5e623bcfe3345a8d06f30162783d, type: 2}
+  m_Material: {fileID: 13400000, guid: 940509b5dded6214e83d089152f07d05, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1756,22 +1778,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.61765337, y: 0.014911532, z: 1}
-  m_Center: {x: 0.008485079, y: -0.07885629, z: 0}
---- !u!114 &1598973480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1598973476}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e5195ef36415f840a8483302c19bdc1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::StopMovement_Bounce
-  stoppingMovementDuration: 1
-  hasCollided: 0
+  m_Size: {x: 1.1558075, y: 0.056455612, z: 1.9729428}
+  m_Center: {x: 0.002509594, y: -0.05808425, z: 0.012954712}
 --- !u!1 &1817079075
 GameObject:
   m_ObjectHideFlags: 0
