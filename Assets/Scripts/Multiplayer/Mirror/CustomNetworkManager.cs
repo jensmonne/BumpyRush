@@ -15,6 +15,8 @@ public class CustomNetworkManager : NetworkManager
 
     public string relayJoinCode { get; private set; }
 
+    [SerializeField] private GameObject gamePlayerPrefab;
+
     public override void Awake()
     {
         base.Awake();
@@ -61,5 +63,13 @@ public class CustomNetworkManager : NetworkManager
     {
         utpTransport.useRelay = false;
         StartHost();
+    }
+
+    public override void OnServerSceneChanged(string sceneName)
+    {
+        base.OnServerSceneChanged(sceneName);
+
+        // TODO: Change to handle changing back to lobbyplayer.
+        if (sceneName == "MainMenu" || sceneName == "LobbyScene") return;
     }
 }
