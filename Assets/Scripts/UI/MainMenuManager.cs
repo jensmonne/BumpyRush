@@ -8,7 +8,6 @@ public class MainMenuManager : MonoBehaviour
     [SerializeField] private Button hostButton;
     [SerializeField] private TMP_InputField joinCodeInput;
     [SerializeField] private Button joinButton;
-    [SerializeField] private TMP_Text statusText;
 
     private void Start()
     {
@@ -29,20 +28,20 @@ public class MainMenuManager : MonoBehaviour
     {
         hostButton.interactable = true;
         joinCodeInput.interactable = true;
-        statusText.text = "Play locally or online by hosting or joining a game.";
     }
 
     public void OnLocalPressed()
     {
-        statusText.text = "Starting local game...";
-
+        MenuManager.Instance.OpenMenu("LoadingMenu");
+        MenuManager.Instance.SetLoadingStatusText("Starting local game...");
         CustomNetworkManager.singleton.StartLocalGame();
     }
 
     public void OnHostPressed()
     {
-        statusText.text = "Starting online game...";
-        
+        MenuManager.Instance.OpenMenu("LoadingMenu");
+        MenuManager.Instance.SetLoadingStatusText("Starting online game...");
+
         int maxPlayers = 4; // Later maybe make this a user input
 
         CustomNetworkManager.singleton.StartRelayHost(maxPlayers);
@@ -59,11 +58,9 @@ public class MainMenuManager : MonoBehaviour
     {
         string code = joinCodeInput.text.Trim();
 
-        if (string.IsNullOrEmpty(code))
-        {
-            statusText.text = "Please enter a join code.";
-            return;
-        }
+        if (string.IsNullOrEmpty(code)) return;
+
+        MenuManager.Instance.OpenMenu("LoadingMenu");
 
         CustomNetworkManager.singleton.JoinRelayGame(code);
     }
