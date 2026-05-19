@@ -167,6 +167,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1492c20b470aa914ea650a2b6c94e482, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 98225ca3249b6b84484b3e4dab27eba0, type: 2}
     - target: {fileID: 919132149155446097, guid: 1492c20b470aa914ea650a2b6c94e482, type: 3}
       propertyPath: m_Name
       value: StallTent
@@ -316,6 +320,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5421334648386949919, guid: 653882094a944be0a8b3837a13b9c6c5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d60c2272e3196147da29d249fbf880d7, type: 2}
     - target: {fileID: 919132149155446097, guid: 653882094a944be0a8b3837a13b9c6c5, type: 3}
       propertyPath: m_Name
       value: BumpyTheCar
