@@ -1,68 +1,58 @@
-using System.Collections;
 using UnityEngine;
 
 public class StopMovement_Bounce : MonoBehaviour
 {
-    [SerializeField] private Collider BounceCollider;
-    [SerializeField] private Rigidbody CartRigidbody;
-
-    [Header("Collision Duration")]
-    [SerializeField] private float minimumDuration = 0.2f;
-    [SerializeField] private float maximumDuration = 3f;
-    [SerializeField] private float impactMultiplier = 0.2f;
+    [SerializeField] private Collider bounceCollider;
+    [SerializeField] private Rigidbody cartRigidbody;
 
     [Header("Bounce Force")]
     [SerializeField] private float bounceForceMultiplier = 10f;
     [SerializeField] private float maxBounceForce = 30f;
+    [SerializeField] private float minimumImpactForce = 3f;
+
+    [Header("Release Settings")]
+    [SerializeField] private float releaseVelocityThreshold = 1f;
 
     public bool hasCollided = false;
 
-    private Coroutine stopCoroutine;
+    private void FixedUpdate()
+    {
+        if (hasCollided)
+        {
+            // Zodra de bounce bijna gestopt is
+            if (cartRigidbody.linearVelocity.magnitude < releaseVelocityThreshold)
+            {
+                hasCollided = false;
+            }
+        }
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
         foreach (ContactPoint contact in collision.contacts)
         {
-            if (contact.thisCollider == BounceCollider)
+            if (contact.thisCollider == bounceCollider)
             {
                 float impactForce = collision.relativeVelocity.magnitude;
 
-                // Duration
-                float duration = impactForce * impactMultiplier;
-                duration = Mathf.Clamp(duration, minimumDuration, maximumDuration);
+                // Ignore soft scrapes
+                if (impactForce < minimumImpactForce)
+                    return;
 
-                // Bounce
                 Vector3 bounceDirection = contact.normal;
 
                 float bounceForce = impactForce * bounceForceMultiplier;
                 bounceForce = Mathf.Clamp(bounceForce, 0f, maxBounceForce);
 
-                CartRigidbody.AddForce(
+                cartRigidbody.AddForce(
                     bounceDirection * bounceForce,
                     ForceMode.Impulse
                 );
 
-                if (stopCoroutine != null)
-                {
-                    StopCoroutine(stopCoroutine);
-                }
-
-                stopCoroutine = StartCoroutine(StopMovementTimer(duration));
-
-                Debug.Log("Impact: " + impactForce);
-                Debug.Log("Bounce Force: " + bounceForce);
+                hasCollided = true;
 
                 return;
             }
         }
-    }
-
-    private IEnumerator StopMovementTimer(float duration)
-    {
-        hasCollided = true;
-
-        yield return new WaitForSeconds(duration);
-
-        hasCollided = false;
     }
 }

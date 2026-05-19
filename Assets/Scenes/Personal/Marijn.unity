@@ -743,13 +743,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e5195ef36415f840a8483302c19bdc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StopMovement_Bounce
-  BounceCollider: {fileID: 1598973479}
-  CartRigidbody: {fileID: 389093043}
-  minimumDuration: 0.1
-  maximumDuration: 1
-  impactMultiplier: 0.2
-  bounceForceMultiplier: 15
-  maxBounceForce: 50
+  bounceCollider: {fileID: 1598973479}
+  cartRigidbody: {fileID: 389093043}
+  bounceForceMultiplier: 20
+  maxBounceForce: 70
+  minimumImpactForce: 3
+  releaseVelocityThreshold: 1
   hasCollided: 0
 --- !u!1 &411636947
 GameObject:
