@@ -352,7 +352,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 32346068}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.26998284, y: -0.009387208, z: 0.002632264, w: 0.9628158}
+  m_LocalRotation: {x: 0.2699777, y: -0.011110249, z: 0.0031154212, w: 0.96279746}
   m_LocalPosition: {x: 7.8289943, y: 3.4353626, z: -7.0798597}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -426,8 +426,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.47742558, y: 0.030244946, z: 0.7731662}
-  m_Center: {x: -0.008747101, y: -0.086523, z: -0.007907152}
+  m_Size: {x: 0.2900858, y: 0.030244946, z: 0.5139513}
+  m_Center: {x: 0.0012149811, y: -0.086523, z: 0.019239426}
 --- !u!114 &127152711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -557,6 +557,7 @@ MonoBehaviour:
   driftFactor: 0.95
   velocityRotateSpeed: 2
   grounded: {fileID: 127152711}
+  stopMovement_Bounce: {fileID: 1598973480}
 --- !u!114 &389093041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -725,7 +726,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49f83f854f9b4e741bdff6f47d539a23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlipCar
-  checkRotation: 45
+  checkRotation: 30
   Bounce: {fileID: 1598973476}
 --- !u!1 &411636947
 GameObject:
@@ -1038,7 +1039,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 701930786}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2699829, y: -0.009387209, z: 0.0026322643, w: 0.96281576}
+  m_LocalRotation: {x: 0.26997775, y: -0.011110251, z: 0.0031154214, w: 0.96279746}
   m_LocalPosition: {x: 7.8289943, y: 3.4353626, z: -7.0798597}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1698,6 +1699,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1598973477}
   - component: {fileID: 1598973479}
+  - component: {fileID: 1598973480}
   - component: {fileID: 1598973478}
   m_Layer: 0
   m_Name: Bounce
@@ -1756,6 +1758,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.61765337, y: 0.014911532, z: 1}
   m_Center: {x: 0.008485079, y: -0.07885629, z: 0}
+--- !u!114 &1598973480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598973476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e5195ef36415f840a8483302c19bdc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StopMovement_Bounce
+  stoppingMovementDuration: 1
+  hasCollided: 0
 --- !u!1 &1817079075
 GameObject:
   m_ObjectHideFlags: 0

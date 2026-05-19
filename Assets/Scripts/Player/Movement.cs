@@ -19,6 +19,9 @@ public class Movement : MonoBehaviour
     [Header("Ground Check")]
     [SerializeField] private Grounded grounded;
 
+    [Header("StopMovements")]
+    [SerializeField] private StopMovement_Bounce stopMovement_Bounce;
+
     private Rigidbody rb3D;
 
     // Input values
@@ -77,6 +80,7 @@ public class Movement : MonoBehaviour
     void HandleMovement()
     {
         if (!grounded.isGrounded) return;
+        if (stopMovement_Bounce.hasCollided) return;
 
         float driveInput = smoothedThrottle;
 
