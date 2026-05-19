@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class StopMovement_Bounce : MonoBehaviour
 {
+    [SerializeField] private Collider targetCollider;
     [SerializeField] private float stoppingMovementDuration = 1f;
 
     public bool hasCollided = false;
@@ -11,6 +12,9 @@ public class StopMovement_Bounce : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        if (collision.GetContact(0).thisCollider != targetCollider)
+            return;
+
         if (stopCoroutine != null)
         {
             StopCoroutine(stopCoroutine);
@@ -18,7 +22,7 @@ public class StopMovement_Bounce : MonoBehaviour
 
         stopCoroutine = StartCoroutine(StopMovementTimer());
 
-        Debug.Log("Collision detected, stopping movement.");
+        Debug.Log("Correct collider hit!");
     }
 
     private IEnumerator StopMovementTimer()
