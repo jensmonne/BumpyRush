@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class MenuManager : MonoBehaviour
@@ -15,6 +16,8 @@ public class MenuManager : MonoBehaviour
 
     [SerializeField] private MenuPanel[] menus;
 
+    private Stack<MenuPanel> menuStack = new();
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -24,6 +27,17 @@ public class MenuManager : MonoBehaviour
         }
         
         Instance = this;
+        InitializeMenus();
+    }
+
+    private void InitializeMenus()
+    {
+        foreach (var menu in menus)
+        {
+            menu.canvasGroup.alpha = 0;
+            menu.canvasGroup.interactable = false;
+            menu.canvasGroup.blocksRaycasts = false;
+        }
     }
 
     public void OpenMenu(string name)
