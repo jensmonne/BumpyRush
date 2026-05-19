@@ -11,6 +11,10 @@ public class MenuManager : MonoBehaviour
 
     public static MenuManager Instance { get; private set; }
 
+    [SerializeField] private LoadingMenuManager loadingMenuManager;
+
+    [SerializeField] private MenuPanel[] menus;
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -22,8 +26,6 @@ public class MenuManager : MonoBehaviour
         Instance = this;
     }
 
-    [SerializeField] private MenuPanel[] menus;
-
     public void OpenMenu(string name)
     {
         foreach (var menu in menus)
@@ -34,5 +36,10 @@ public class MenuManager : MonoBehaviour
             menu.canvasGroup.interactable = shouldOpen;
             menu.canvasGroup.blocksRaycasts = shouldOpen;
         }
+    }
+
+    public void SetLoadingStatusText(string text)
+    {
+        loadingMenuManager.SetLoadingStatusText(text);
     }
 }
