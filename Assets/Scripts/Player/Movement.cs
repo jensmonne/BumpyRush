@@ -1,6 +1,11 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+/// <summary>
+/// Dit script regelt de beweging van de speler, inclusief acceleratie, remmen, sturen, driften en springen.
+/// volledig gebaseerd op physics, met een focus op een arcade-achtige rijervaring.
+/// </summary>
+
 public class Movement : MonoBehaviour
 {
     [Header("Movement")]
