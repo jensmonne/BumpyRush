@@ -1,14 +1,12 @@
 using Unity.VisualScripting;
 using UnityEngine;
-
+/// <summary>
+/// Dit script detecteert wanneer de bounce collider een impact heeft en geeft
+/// een bounce kracht terug op basis van de impact kracht, 
+/// en stopt de movement tijdelijk in he movement script via de hasCollided bool, die wordt gereset zodra de bounce bijna gestopt is.
+/// </summary>
 public class StopMovement_Bounce : MonoBehaviour
 {
-    // Uitleg script:
-    // Dit script detecteert wanneer de bounce collider een impact heeft en geeft
-    // een bounce kracht terug op basis van de impact kracht.
-
-    // en stopt de movement tijdelijk in he movement script via de hasCollided bool, die wordt gereset zodra de bounce bijna gestopt is.
-
     [SerializeField] private Collider bounceCollider;
     [SerializeField] private Rigidbody cartRigidbody;
     [SerializeField] private Grounded groundedScript;

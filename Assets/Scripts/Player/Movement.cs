@@ -1,12 +1,13 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+/// <summary>
+/// Dit script regelt de beweging van de speler, inclusief acceleratie, remmen, sturen, driften en springen.
+/// volledig gebaseerd op physics, met een focus op een arcade-achtige rijervaring.
+/// </summary>
+
 public class Movement : MonoBehaviour
 {
-    //uitleg script:
-    // Dit script regelt de beweging van de speler, inclusief acceleratie, remmen, sturen, driften en springen.
-    // volledig gebaseerd op physics, met een focus op een arcade-achtige rijervaring.
-
     [Header("Movement")]
     [SerializeField] private float speed = 20f;
     [SerializeField] private float maxSpeed = 20f;

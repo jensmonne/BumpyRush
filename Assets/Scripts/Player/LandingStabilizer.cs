@@ -1,12 +1,12 @@
 using System.Collections;
 using UnityEngine;
 
+/// <summary>
+/// Dit script detecteert wanneer de speler hard landt en stabiliseert de landing door spin en bounce te verminderen,
+/// en tijdelijk rotaties te locken.
+/// </summary>
 public class LandingStabilizer : MonoBehaviour
 {
-    //Uitleg script:
-    // Dit script detecteert wanneer de speler hard landt en stabiliseert de landing door spin en bounce te verminderen,
-    // en tijdelijk rotaties te locken.
-
     [Header("References")]
     public Rigidbody rb;
 

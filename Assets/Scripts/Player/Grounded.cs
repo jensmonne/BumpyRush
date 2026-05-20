@@ -1,11 +1,12 @@
 using System.Collections;
 using UnityEngine;
 
+/// <summary>
+/// Dit script detecteert of de speler grounded is door middel van een trigger collider.
+/// </summary>
+
 public class Grounded : MonoBehaviour
 {
-    //uitleg script:
-    // Dit script detecteert of de speler grounded is door middel van een trigger collider.
-
     public bool isGrounded = false;
 
     private Coroutine helpCoroutine;
