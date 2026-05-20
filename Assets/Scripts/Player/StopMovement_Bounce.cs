@@ -1,9 +1,17 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class StopMovement_Bounce : MonoBehaviour
 {
+    // Uitleg script:
+    // Dit script detecteert wanneer de bounce collider een impact heeft en geeft
+    // een bounce kracht terug op basis van de impact kracht.
+
+    // en stopt de movement tijdelijk in he movement script via de hasCollided bool, die wordt gereset zodra de bounce bijna gestopt is.
+
     [SerializeField] private Collider bounceCollider;
     [SerializeField] private Rigidbody cartRigidbody;
+    [SerializeField] private Grounded groundedScript;
 
     [Header("Bounce Force")]
     [SerializeField] private float bounceForceMultiplier = 10f;
@@ -27,6 +35,11 @@ public class StopMovement_Bounce : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        Debug.Log("Bounce enabled: " + groundedScript.isGrounded);
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         foreach (ContactPoint contact in collision.contacts)
@@ -37,6 +50,8 @@ public class StopMovement_Bounce : MonoBehaviour
 
                 // Ignore soft scrapes
                 if (impactForce < minimumImpactForce)
+                    return;
+                if(!groundedScript.isGrounded)
                     return;
 
                 Vector3 bounceDirection = contact.normal;

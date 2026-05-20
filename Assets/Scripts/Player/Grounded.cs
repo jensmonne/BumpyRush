@@ -3,6 +3,9 @@ using UnityEngine;
 
 public class Grounded : MonoBehaviour
 {
+    //uitleg script:
+    // Dit script detecteert of de speler grounded is door middel van een trigger collider.
+
     public bool isGrounded = false;
 
     private Coroutine helpCoroutine;
@@ -15,6 +18,7 @@ public class Grounded : MonoBehaviour
         if (other.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
+            // StartCoroutine(WaitBeforeGrounded());
             HELP = false;
             Debug.Log("Grounded");
 
@@ -54,4 +58,11 @@ public class Grounded : MonoBehaviour
 
         helpCoroutine = null;
     }
+
+    //testing
+    //IEnumerator WaitBeforeGrounded()
+    //{
+    //    yield return new WaitForSeconds(0.5f);
+    //    isGrounded = true;
+    //}
 }
