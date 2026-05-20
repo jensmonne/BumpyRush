@@ -2877,7 +2877,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49f83f854f9b4e741bdff6f47d539a23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlipCar
-  checkRotation: 30
+  checkRotation: 10
   Bounce: {fileID: 3660944601653793423}
   groundedScript: {fileID: 7767852611681298426}
 --- !u!1 &2736276121291870119
@@ -2911,7 +2911,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cb9b94c1e6087660a892412ea2e25cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CenterOfMassAdjuster
-  centerOfMassOffset: {x: 0, y: -0.5, z: 0}
+  centerOfMassOffset: {x: 0, y: -0.3, z: 0}
 --- !u!65 &3660944601653793423
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2931,8 +2931,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1558075, y: 0.056455612, z: 1.9729428}
-  m_Center: {x: 0.002509594, y: -0.05808425, z: 0.012954712}
+  m_Size: {x: 1.1558075, y: 0.08090013, z: 1.9291536}
+  m_Center: {x: 0.002509594, y: -0.06472394, z: 0.03484947}
 --- !u!54 &3688614737268654200
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2941,7 +2941,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 389093038}
   serializedVersion: 5
-  m_Mass: 200
+  m_Mass: 300
   m_LinearDamping: 0.3
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -3010,7 +3010,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::StopMovement_Bounce
   bounceCollider: {fileID: 3660944601653793423}
   cartRigidbody: {fileID: 3688614737268654200}
-  groundedScript: {fileID: 7767852611681298426}
   bounceForceMultiplier: 20
   maxBounceForce: 70
   minimumImpactForce: 3
@@ -3035,8 +3034,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.71004295, y: 0.086039305, z: 1.5180094}
-  m_Center: {x: -0.002727032, y: -0.13670987, z: -0.016489865}
+  m_Size: {x: 0.71004295, y: 0.04496491, z: 1.2070196}
+  m_Center: {x: -0.0027270308, y: -0.11617267, z: -0.11611693}
 --- !u!1001 &5515405148569770082
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3167,7 +3166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Movement
   speed: 50
   maxSpeed: 10
-  jumpForce: 800
+  jumpForce: 1000
   throttleResponse: 5
   turnSpeed: 100
   driftFactor: 0.95
@@ -3296,7 +3295,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LandingStabilizer
   rb: {fileID: 3688614737268654200}
   GroundedCollider: {fileID: 5488550054240580731}
-  hardLandingThreshold: 0.2
+  hardLandingThreshold: 2
   lockDuration: 0.08
   angularDamping: 0.15
   velocityDamping: 0.8
