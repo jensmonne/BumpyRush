@@ -1,4 +1,5 @@
 using Mirror;
+using Mirror.Examples.Basic;
 using UnityEngine;
 
 public class LobbyPlayer : NetworkBehaviour
@@ -15,6 +16,7 @@ public class LobbyPlayer : NetworkBehaviour
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);
+        PlayerName = PlayerPrefs.GetString("PlayerName", $"Player {Random.Range(1000, 9999)}");
     }
 
     public override void OnStartServer()

@@ -11,20 +11,20 @@ public class MainMenuManager : MonoBehaviour
 
     private void Start()
     {
-        if (UnityAuthInitializer.IsAuthenticated) EnableOnlineButton();
+        if (UnityAuthInitializer.IsAuthenticated) EnableOnlineButtons();
     }
 
     private void OnEnable()
     {
-        UnityAuthInitializer.OnAuthenticated += EnableOnlineButton;
+        UnityAuthInitializer.OnAuthenticated += EnableOnlineButtons;
     }
 
     private void OnDestroy()
     {
-        UnityAuthInitializer.OnAuthenticated -= EnableOnlineButton;
+        UnityAuthInitializer.OnAuthenticated -= EnableOnlineButtons;
     }
 
-    private void EnableOnlineButton()
+    private void EnableOnlineButtons()
     {
         hostButton.interactable = true;
         joinCodeInput.interactable = true;
