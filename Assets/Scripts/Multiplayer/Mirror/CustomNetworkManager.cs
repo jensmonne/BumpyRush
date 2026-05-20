@@ -17,8 +17,8 @@ public class CustomNetworkManager : NetworkManager
     public string relayJoinCode { get; private set; }
 
     [Header("Player Prefabs")]
-    [SerializeField] private GameObject gamePlayerPrefab;
     [SerializeField] private GameObject lobbyPlayerPrefab;
+    [SerializeField] private GameObject gamePlayerPrefab;
 
     public override void Awake()
     {
@@ -73,40 +73,64 @@ public class CustomNetworkManager : NetworkManager
         StartHost();
     }
 
+    public override void OnServerAddPlayer(NetworkConnectionToClient conn)
+    {
+        string currentScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+        if (currentScene == "Lobby")
+        {
+            GameObject lobbyPlayerInstance = Instantiate(lobbyPlayerPrefab);
+
+            lobbyPlayerInstance.name = $"{lobbyPlayerPrefab.name} [connId={conn.connectionId}]";
+
+            NetworkServer.AddPlayerForConnection(conn, lobbyPlayerInstance);
+        }
+    }
+
     public override void OnServerSceneChanged(string sceneName)
     {
-        Debug.Log("Called");
-
         base.OnServerSceneChanged(sceneName);
 
         // TODO: Change to handle changing back to lobbyplayer.
-        if (sceneName == "MainMenu" || sceneName == "LobbyScene") return;
+        // if (sceneName == "Assets/Scenes/MainMenu.unity" || sceneName == "Assets/Scenes/Lobby.unity") return;
+        // Debug.Log($"Scene changed to {sceneName}, replacing lobby players with game players...");
 
-        Debug.Log("Scene changed, replacing lobby players with game players...");
+        // foreach (NetworkConnectionToClient conn in NetworkServer.connections.Values)
+        // {
+        //     if (conn == null || conn.identity == null) {
+        //         Debug.LogWarning("Connection or identity is null for a client. Skipping player replacement for this connection.");
+        //         continue;
+        //     }
 
-        foreach (NetworkConnectionToClient conn in NetworkServer.connections.Values)
-        {
-            if (conn == null || conn.identity == null) continue;
+        //     if (conn.identity.TryGetComponent(out LobbyPlayer lobbyPlayer))
+        //     {
+        //         Debug.Log($"Replacing player {lobbyPlayer.PlayerName} for connection {conn.connectionId}");
+        //         string retainedName = lobbyPlayer.PlayerName;
 
-            if (conn.identity.TryGetComponent<LobbyPlayer>(out LobbyPlayer lobbyPlayer))
-            {
-                string retainedName = lobbyPlayer.PlayerName;
+        //         Transform spawnPoint = GetStartPosition();
+        //         GameObject gamePlayerInstance = spawnPoint != null 
+        //             ? Instantiate(gamePlayerPrefab, spawnPoint.position, spawnPoint.rotation)
+        //             : Instantiate(gamePlayerPrefab);
 
-                Transform spawnPoint = GetStartPosition();
-                GameObject gamePlayerInstance = spawnPoint != null 
-                    ? Instantiate(gamePlayerPrefab, spawnPoint.position, spawnPoint.rotation)
-                    : Instantiate(gamePlayerPrefab);
+        //         if (gamePlayerInstance.TryGetComponent(out GamePlayer gameScript))
+        //         {
+        //             gameScript.PlayerName = retainedName;
+        //         }
 
-                if (gamePlayerInstance.TryGetComponent<GamePlayer>(out GamePlayer gameScript))
-                {
-                    gameScript.PlayerName = retainedName;
-                }
+        //         ReplacePlayerOptions options = new();
 
-                ReplacePlayerOptions options = new();
+        //         // Swap authority and wipe old LobbyPlayer
+        //         NetworkServer.ReplacePlayerForConnection(conn, gamePlayerInstance, options);
+        //     }
+        //     else
+        //     {
+        //         Debug.LogWarning($"Connection {conn.connectionId} does not have a LobbyPlayer. Skipping player replacement for this connection.");
+        //     }
+        // }
+    }
 
-                // Swap authority and wipe old LobbyPlayer
-                NetworkServer.ReplacePlayerForConnection(conn, gamePlayerInstance, options);
-            }
-        }
+    public override void OnClientConnect()
+    {
+        base.OnClientConnect();
+        NetworkClient.AddPlayer();
     }
 }
