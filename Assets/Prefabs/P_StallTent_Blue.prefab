@@ -26,7 +26,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7c653b44af069494c9503ee87cc0740a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.29350403
+      value: 0.29350406
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7c653b44af069494c9503ee87cc0740a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -67,7 +67,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 7c653b44af069494c9503ee87cc0740a, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 98225ca3249b6b84484b3e4dab27eba0, type: 2}
+      objectReference: {fileID: 2100000, guid: ac64c546dcaa9094287d0c01c73190ec, type: 2}
     - target: {fileID: 919132149155446097, guid: 7c653b44af069494c9503ee87cc0740a, type: 3}
       propertyPath: m_Name
       value: KitchenStandard
@@ -104,11 +104,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e22de8ec437b6c44da932ca1e38f4d14, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.0011159182
+      value: -0.0011159629
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e22de8ec437b6c44da932ca1e38f4d14, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.29350403
+      value: 0.29350406
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e22de8ec437b6c44da932ca1e38f4d14, type: 3}
       propertyPath: m_LocalPosition.z
@@ -149,7 +149,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: e22de8ec437b6c44da932ca1e38f4d14, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 98225ca3249b6b84484b3e4dab27eba0, type: 2}
+      objectReference: {fileID: 2100000, guid: ac64c546dcaa9094287d0c01c73190ec, type: 2}
     - target: {fileID: 919132149155446097, guid: e22de8ec437b6c44da932ca1e38f4d14, type: 3}
       propertyPath: m_Name
       value: KitchenSink
@@ -172,6 +172,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 1492c20b470aa914ea650a2b6c94e482, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1492c20b470aa914ea650a2b6c94e482, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1492c20b470aa914ea650a2b6c94e482, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1492c20b470aa914ea650a2b6c94e482, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -212,13 +224,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 1492c20b470aa914ea650a2b6c94e482, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 1492c20b470aa914ea650a2b6c94e482, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 98225ca3249b6b84484b3e4dab27eba0, type: 2}
+      objectReference: {fileID: 2100000, guid: ac64c546dcaa9094287d0c01c73190ec, type: 2}
     - target: {fileID: 919132149155446097, guid: 1492c20b470aa914ea650a2b6c94e482, type: 3}
       propertyPath: m_Name
-      value: P_StallTent_Drink
+      value: P_StallTent_Blue
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -265,7 +281,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7c653b44af069494c9503ee87cc0740a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.29350403
+      value: 0.29350406
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7c653b44af069494c9503ee87cc0740a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -306,11 +322,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 7c653b44af069494c9503ee87cc0740a, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 98225ca3249b6b84484b3e4dab27eba0, type: 2}
-    - target: {fileID: -5754084199372789682, guid: 7c653b44af069494c9503ee87cc0740a, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: -5569919458046660281, guid: 43fbc8d9e17e874449af099dd3d32ec2, type: 3}
+      objectReference: {fileID: 2100000, guid: ac64c546dcaa9094287d0c01c73190ec, type: 2}
     - target: {fileID: 919132149155446097, guid: 7c653b44af069494c9503ee87cc0740a, type: 3}
       propertyPath: m_Name
       value: KitchenStandard (1)
