@@ -18,9 +18,9 @@ public class FlipBounceDisabler : MonoBehaviour
     private void Update()
     {
         CheckIfFlipped();
-        CheckIfGrounded();
+        //CheckIfGrounded();
 
-        if (Flipped || !Grounded)
+        if (Flipped)
         {
             Bounce.enabled = false;
             Debug.Log("Flipped or Not Grounded");
