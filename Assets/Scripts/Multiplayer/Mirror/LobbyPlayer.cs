@@ -12,6 +12,11 @@ public class LobbyPlayer : NetworkBehaviour
 
     private LobbyPlayerCard myCard;
 
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
     public override void OnStartServer()
     {
         PlayerName = $"Player {netId}";
