@@ -4,8 +4,8 @@ using UnityEngine;
 public class LobbyPlayer : NetworkBehaviour
 {
     [Header("Player Data")]
-    [SyncVar(hook = nameof(HandleDisplayNameChanged))]
-    public string displayName = "Loading...";
+    [SyncVar(hook = nameof(HandlePlayerNameChanged))]
+    public string PlayerName = "Player";
 
     [SyncVar(hook = nameof(HandleReadyStatusChanged))]
     public bool isReady = false;
@@ -14,7 +14,7 @@ public class LobbyPlayer : NetworkBehaviour
 
     public override void OnStartServer()
     {
-        displayName = $"Player {netId}";
+        PlayerName = $"Player {netId}";
     }
 
     [Command]
@@ -33,12 +33,12 @@ public class LobbyPlayer : NetworkBehaviour
         LobbyUIManager.Instance.RemovePlayerFromDisplay(this);
     }
 
-    private void HandleDisplayNameChanged(string newName, string oldName = "")
+    private void HandlePlayerNameChanged(string oldName, string newName)
     {
         if (myCard != null) myCard.UpdateName(newName);
     }
 
-    private void HandleReadyStatusChanged(bool newStatus, bool oldStatus = false)
+    private void HandleReadyStatusChanged(bool oldStatus, bool newStatus)
     {
         if (myCard != null) myCard.UpdateReadyStatus(newStatus);
 
@@ -48,7 +48,7 @@ public class LobbyPlayer : NetworkBehaviour
     public void SetCard(LobbyPlayerCard card)
     {
         myCard = card;
-        myCard.UpdateName(displayName);
+        myCard.UpdateName(PlayerName);
         myCard.UpdateReadyStatus(isReady);
     }
 }

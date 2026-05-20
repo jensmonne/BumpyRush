@@ -13,7 +13,7 @@ public class LobbyPlayerCard : MonoBehaviour
     }
 
     public void UpdateReadyStatus(bool isReady)
-    {
+    {        
         readyStatusText.text = isReady ? "Ready" : "Not Ready";
         readyStatusText.color = isReady ? Color.green : Color.red;
     }

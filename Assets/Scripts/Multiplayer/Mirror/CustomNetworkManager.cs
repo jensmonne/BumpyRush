@@ -1,6 +1,7 @@
 using UnityEngine;
 using Mirror;
 using Utp;
+using UnityEditor;
 
 /*
 	Documentation: https://mirror-networking.gitbook.io/docs/components/network-manager
@@ -15,7 +16,9 @@ public class CustomNetworkManager : NetworkManager
 
     public string relayJoinCode { get; private set; }
 
+    [Header("Player Prefabs")]
     [SerializeField] private GameObject gamePlayerPrefab;
+    [SerializeField] private GameObject lobbyPlayerPrefab;
 
     public override void Awake()
     {
@@ -43,7 +46,12 @@ public class CustomNetworkManager : NetworkManager
 
             StartHost();
         },
-        () => Debug.LogError("Failed to start Relay server."));
+        () => 
+        {
+            Debug.LogError("Failed to start Relay server.");
+            MenuManager.Instance.SetLoadingStatusText("Failed to start Relay server. Please try again.");
+            MenuManager.Instance.OpenMenu("MainMenu");
+        });
     }
 
     public void JoinRelayGame(string joinCode)
@@ -67,9 +75,38 @@ public class CustomNetworkManager : NetworkManager
 
     public override void OnServerSceneChanged(string sceneName)
     {
+        Debug.Log("Called");
+
         base.OnServerSceneChanged(sceneName);
 
         // TODO: Change to handle changing back to lobbyplayer.
         if (sceneName == "MainMenu" || sceneName == "LobbyScene") return;
+
+        Debug.Log("Scene changed, replacing lobby players with game players...");
+
+        foreach (NetworkConnectionToClient conn in NetworkServer.connections.Values)
+        {
+            if (conn == null || conn.identity == null) continue;
+
+            if (conn.identity.TryGetComponent<LobbyPlayer>(out LobbyPlayer lobbyPlayer))
+            {
+                string retainedName = lobbyPlayer.PlayerName;
+
+                Transform spawnPoint = GetStartPosition();
+                GameObject gamePlayerInstance = spawnPoint != null 
+                    ? Instantiate(gamePlayerPrefab, spawnPoint.position, spawnPoint.rotation)
+                    : Instantiate(gamePlayerPrefab);
+
+                if (gamePlayerInstance.TryGetComponent<GamePlayer>(out GamePlayer gameScript))
+                {
+                    gameScript.PlayerName = retainedName;
+                }
+
+                ReplacePlayerOptions options = new();
+
+                // Swap authority and wipe old LobbyPlayer
+                NetworkServer.ReplacePlayerForConnection(conn, gamePlayerInstance, options);
+            }
+        }
     }
 }
