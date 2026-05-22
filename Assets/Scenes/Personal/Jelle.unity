@@ -383,9 +383,67 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!1001 &2280195812017636791
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.3426623
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.364754
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 11.51318
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 701930789}
   - {fileID: 2114182205}
+  - {fileID: 2280195812017636791}
