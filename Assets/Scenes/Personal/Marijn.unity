@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &32346069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -352,7 +352,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 32346068}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2699692, y: -0.0134953745, z: 0.0037842335, w: 0.96276695}
+  m_LocalRotation: {x: 0.26998913, y: -0.0067085205, z: 0.0018811339, w: 0.96283823}
   m_LocalPosition: {x: 7.73415, y: 3.4353626, z: -6.972537}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -906,7 +906,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &701930787
 AudioListener:
   m_ObjectHideFlags: 0
@@ -974,7 +974,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 701930786}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2699692, y: -0.013495375, z: 0.0037842342, w: 0.96276695}
+  m_LocalRotation: {x: 0.26998916, y: -0.0067085214, z: 0.0018811342, w: 0.9628382}
   m_LocalPosition: {x: 7.73415, y: 3.4353626, z: -6.972537}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2659,6 +2659,63 @@ Transform:
   - {fileID: 827279774}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 10, y: 176.889, z: -0.007}
+--- !u!1001 &1974010887
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2662696261193073564, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
+      propertyPath: m_Name
+      value: BumpyTheCar (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438529689220340006, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.08926
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438529689220340006, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438529689220340006, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.56268
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438529689220340006, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9998007
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438529689220340006, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438529689220340006, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.019964479
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438529689220340006, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438529689220340006, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438529689220340006, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -2.288
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438529689220340006, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
 --- !u!1 &2066135213 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -9208641485247232922, guid: 653882094a944be0a8b3837a13b9c6c5, type: 3}
@@ -3092,6 +3149,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BumpyTheCar
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 653882094a944be0a8b3837a13b9c6c5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4106015037874256925, guid: 653882094a944be0a8b3837a13b9c6c5, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -3379,3 +3440,4 @@ SceneRoots:
   - {fileID: 1718787030}
   - {fileID: 1052203110}
   - {fileID: 2070615740}
+  - {fileID: 1974010887}
