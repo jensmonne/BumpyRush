@@ -109,6 +109,6 @@ public class LobbyUIManager : MonoBehaviour
 
     public void OnStartGameButton()
     {
-        CustomNetworkManager.singleton.ServerChangeScene("TestScene");
+        CustomNetworkManager.singleton.ServerChangeScene("MainGame");
     }
 }

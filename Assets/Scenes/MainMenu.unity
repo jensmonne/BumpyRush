@@ -4824,10 +4824,14 @@ MonoBehaviour:
   disconnectInactiveConnections: 0
   disconnectInactiveTimeout: 60
   authenticator: {fileID: 0}
-  playerPrefab: {fileID: 0}
+  playerPrefab: {fileID: 2917733281409037195, guid: 6b25f76971503a9c0b5a4b93923c6de8, type: 3}
   autoCreatePlayer: 0
   playerSpawnMethod: 0
-  spawnPrefabs: []
+  spawnPrefabs:
+  - {fileID: 2662696261193073564, guid: 8771d1997319697218ea06162f465c62, type: 3}
+  - {fileID: 2917733281409037195, guid: 6b25f76971503a9c0b5a4b93923c6de8, type: 3}
+  - {fileID: 347042905559666915, guid: e11950ba7089c978898628b391a2752d, type: 3}
+  - {fileID: 6623513512871419685, guid: 47deaffa578a9a818b9a82782d37b01b, type: 3}
   exceptionsDisconnect: 1
   snapshotSettings:
     bufferTimeMultiplier: 2
@@ -4843,8 +4847,7 @@ MonoBehaviour:
   evaluationMethod: 0
   evaluationInterval: 3
   timeInterpolationGui: 0
-  lobbyPlayerPrefab: {fileID: 2917733281409037195, guid: 6b25f76971503a9c0b5a4b93923c6de8, type: 3}
-  gamePlayerPrefab: {fileID: 5620120662406301759, guid: 54cda2f3b8a3b30439a74542b4a03aaf, type: 3}
+  gamePlayerPrefab: {fileID: 2662696261193073564, guid: 8771d1997319697218ea06162f465c62, type: 3}
 --- !u!4 &1700020171
 Transform:
   m_ObjectHideFlags: 0

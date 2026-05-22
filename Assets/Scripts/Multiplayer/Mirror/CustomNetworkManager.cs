@@ -16,7 +16,6 @@ public class CustomNetworkManager : NetworkManager
     public string relayJoinCode { get; private set; }
 
     [Header("Player Prefabs")]
-    [SerializeField] private GameObject lobbyPlayerPrefab;
     [SerializeField] private GameObject gamePlayerPrefab;
 
     public override void Awake()
@@ -78,8 +77,8 @@ public class CustomNetworkManager : NetworkManager
 
         if (currentScene == "Lobby")
         {
-            GameObject lobbyPlayerInstance = Instantiate(lobbyPlayerPrefab);
-            lobbyPlayerInstance.name = $"{lobbyPlayerPrefab.name} [connId={conn.connectionId}]";
+            GameObject lobbyPlayerInstance = Instantiate(playerPrefab);
+            lobbyPlayerInstance.name = $"{playerPrefab.name} [connId={conn.connectionId}]";
             NetworkServer.AddPlayerForConnection(conn, lobbyPlayerInstance);
         }
     }
@@ -113,7 +112,21 @@ public class CustomNetworkManager : NetworkManager
 
     public override void OnClientConnect()
     {
-        base.OnClientConnect();
-        NetworkClient.AddPlayer();
+        if (!clientLoadedScene)
+        {
+            if (!NetworkClient.ready) NetworkClient.Ready();
+
+            NetworkClient.AddPlayer();
+        }
+    }
+
+    public override void OnClientSceneChanged()
+    {
+        if (NetworkClient.connection.isAuthenticated && !NetworkClient.ready) NetworkClient.Ready();
+
+        if (NetworkClient.connection.isAuthenticated && NetworkClient.localPlayer == null)
+        {
+            NetworkClient.AddPlayer();
+        }
     }
 }
