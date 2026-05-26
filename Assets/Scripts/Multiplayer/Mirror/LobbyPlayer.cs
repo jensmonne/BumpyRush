@@ -4,6 +4,7 @@ using UnityEngine;
 public class LobbyPlayer : NetworkBehaviour
 {
     [Header("Player Data")]
+    [SyncVar(hook = nameof(HandleNameChanged))]
     public string PlayerName = "Player";
 
     [SyncVar(hook = nameof(HandleReadyStatusChanged))]
@@ -14,7 +15,20 @@ public class LobbyPlayer : NetworkBehaviour
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);
-        PlayerName = PlayerPrefs.GetString("PlayerName");
+    }
+
+    public override void OnStartLocalPlayer()
+    {
+        base.OnStartLocalPlayer();
+
+        string localName = PlayerPrefs.GetString("PlayerName");
+        CmdSetPlayerName(localName);
+    }
+
+    [Command]
+    public void CmdSetPlayerName(string nameToSet)
+    {
+        PlayerName = nameToSet;
     }
 
     [Command]
@@ -31,6 +45,11 @@ public class LobbyPlayer : NetworkBehaviour
     public override void OnStopClient()
     {
         LobbyUIManager.Instance.RemovePlayerFromDisplay(this);
+    }
+
+    private void HandleNameChanged(string oldName, string newName)
+    {
+        if (myCard != null) myCard.UpdateName(newName);
     }
 
     private void HandleReadyStatusChanged(bool oldStatus, bool newStatus)

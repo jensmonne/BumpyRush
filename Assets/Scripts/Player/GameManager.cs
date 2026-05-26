@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using Mirror;
 using UnityEngine;
 
-
 [RequireComponent(typeof(NetworkIdentity))]
 public class GameManager : NetworkBehaviour
 {
@@ -18,7 +17,7 @@ public class GameManager : NetworkBehaviour
     [SerializeField] private Transform[] spawnPoints;
     [SerializeField] private int itemsToSpawn = 10;
     [SerializeField] private bool spawnRandomly = false;
-    [SerializeField] private float spawnDelay = 0.1f;
+    //[SerializeField] private float spawnDelay = 0.1f;
 
     private List<NetworkIdentity> spawnedPickups = new();
 

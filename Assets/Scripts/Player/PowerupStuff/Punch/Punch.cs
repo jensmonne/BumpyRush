@@ -6,7 +6,7 @@ public class Punch : MonoBehaviour
     private GameObject spawnedFist;
 
     [Header("Fist Movement")]
-    [SerializeField] private float fistSpeed = 20f;
+    //[SerializeField] private float fistSpeed = 20f;
     [SerializeField] private float spawnOffset = 2f;
 
     [Header("Cooldown")]

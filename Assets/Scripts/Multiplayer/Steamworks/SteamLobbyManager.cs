@@ -32,6 +32,7 @@ public class SteamLobbyManager : MonoBehaviour
     private void OnDestroy()
     {
         SteamFriends.OnGameLobbyJoinRequested -= OnSteamInviteReceived;
+        LeaveLobby();
     }
 
     public async void CreateLobby(int maxPlayers, Action onFailure)
@@ -110,7 +111,7 @@ public class SteamLobbyManager : MonoBehaviour
     {
         MenuManager.Instance.OpenMenu("LoadingMenu");
         MenuManager.Instance.SetLoadingStatusText("Joining friend via Steam...");
-        //JoinLobbyDirectly(lobby, () => MenuManager.Instance.OpenMenu("MainMenu"));
+        JoinLobbyDirectly(lobby, () => MenuManager.Instance.OpenMenu("MainMenu"));
     }
 
     public void LeaveLobby()
