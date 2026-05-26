@@ -29,14 +29,6 @@ public class CustomNetworkManager : NetworkManager
     {
         utpTransport.useRelay = true;
 
-#if UNITY_WEBGL
-    if (string.IsNullOrEmpty(regionId))
-    {
-        regionId = "europe-west4"; 
-        Debug.Log($"WebGL detected: Defaulting to region {regionId} to bypass QoS.");
-    }
-#endif
-
         utpTransport.AllocateRelayServer(maxPlayers, regionId,
         (joinCode) =>
         {
@@ -132,6 +124,20 @@ public class CustomNetworkManager : NetworkManager
         if (NetworkClient.connection.isAuthenticated && NetworkClient.localPlayer == null)
         {
             NetworkClient.AddPlayer();
+        }
+    }
+
+    public void LeaveGame()
+    {
+        if (NetworkServer.active && NetworkClient.isConnected)
+        {
+            Debug.Log("Stopping Host and disconnecting all clients...");
+            StopHost();
+        }
+        else if (NetworkClient.isConnected)
+        {
+            Debug.Log("Stopping Client and disconnecting from server...");
+            StopClient();
         }
     }
 }
