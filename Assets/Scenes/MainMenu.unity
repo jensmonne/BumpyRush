@@ -4825,13 +4825,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1700020169}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d4f9593ba7f845458730213887b5758, type: 3}
+  m_Script: {fileID: 11500000, guid: 2b007cc34dc2c984594d0d2d5a8b47e5, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: UtpTransport::Utp.UtpTransport
-  Port: 7777
-  LoggerLevel: 3
-  TimeoutMS: 1000
-  useRelay: 1
+  m_EditorClassIdentifier: Assembly-CSharp::Mirror.FizzySteam.FizzyFacepunch
+  Channels: 0200000001000000
+  Timeout: 25
+  SteamAppID: 480
+  AllowSteamRelay: 1
+  UseNextGenSteamNetworking: 1
+  InitFacepunch: 1
+  SteamUserID: 0
 --- !u!1 &1905089454
 GameObject:
   m_ObjectHideFlags: 0

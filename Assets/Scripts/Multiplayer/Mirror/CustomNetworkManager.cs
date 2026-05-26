@@ -2,6 +2,9 @@ using UnityEngine;
 using Mirror;
 using Utp;
 using System;
+using Mirror.FizzySteam;
+using Steamworks;
+using Steamworks.Data;
 
 /*
 	Documentation: https://mirror-networking.gitbook.io/docs/components/network-manager
@@ -13,6 +16,7 @@ public class CustomNetworkManager : NetworkManager
     public static new CustomNetworkManager singleton => (CustomNetworkManager)NetworkManager.singleton;
 
     private UtpTransport utpTransport;
+    private FizzyFacepunch steamTransport;
 
     public string relayJoinCode { get; private set; }
 
@@ -22,27 +26,40 @@ public class CustomNetworkManager : NetworkManager
     public override void Awake()
     {
         base.Awake();
+        steamTransport = GetComponent<FizzyFacepunch>();
         utpTransport = GetComponent<UtpTransport>();
     }
 
-    public void StartRelayHost(int maxPlayers, string regionId = null)
+    public async void StartSteamHost(int maxPlayers, Action onFailure = null)
     {
-        utpTransport.useRelay = true;
-
-        utpTransport.AllocateRelayServer(maxPlayers, regionId,
-        (joinCode) =>
+        try
         {
-            relayJoinCode = joinCode;
-            Debug.LogError($"Relay JoinCode: {joinCode}");
+            Lobby? lobbyOutput = await SteamMatchmaking.CreateLobbyAsync(maxPlayers);
+
+            if (!lobbyOutput.HasValue)
+            {
+                Debug.LogError("Steam failed to create a lobby.");
+                onFailure?.Invoke();
+                return;
+            }
+
+            Lobby lobby = lobbyOutput.Value;
+
+            lobby.SetPublic();
+            lobby.SetJoinable(true);
+
+            lobby.SetData("HostSteamID", SteamClient.SteamId.ToString());
+            lobby.SetData("GameFilterKey", "BumpyRushV1");
+
+            Debug.Log($"Steam Lobby Created successfully! ID: {lobby.Id}");
 
             StartHost();
-        },
-        () => 
+        }
+        catch (Exception e)
         {
-            Debug.LogError("Failed to start Relay server.");
-            MenuManager.Instance.SetLoadingStatusText("Failed to start Relay server. Please try again.");
-            MenuManager.Instance.OpenMenu("MainMenu");
-        });
+            Debug.LogError($"Failed to allocate Steam Relay backend: {e.Message}");
+            onFailure?.Invoke();
+        }
     }
 
     public void JoinRelayGame(string joinCode, Action onFailure = null)

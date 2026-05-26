@@ -11,17 +11,17 @@ public class MainMenuManager : MonoBehaviour
 
     private void Start()
     {
-        if (UnityAuthInitializer.IsAuthenticated) EnableOnlineButtons();
+        if (SteamAuthInitializer.IsAuthenticated) EnableOnlineButtons();
     }
 
     private void OnEnable()
     {
-        UnityAuthInitializer.OnAuthenticated += EnableOnlineButtons;
+        SteamAuthInitializer.OnAuthenticated += EnableOnlineButtons;
     }
 
     private void OnDestroy()
     {
-        UnityAuthInitializer.OnAuthenticated -= EnableOnlineButtons;
+        SteamAuthInitializer.OnAuthenticated -= EnableOnlineButtons;
     }
 
     private void EnableOnlineButtons()
@@ -44,7 +44,11 @@ public class MainMenuManager : MonoBehaviour
 
         int maxPlayers = 4; // Later maybe make this a user input
 
-        CustomNetworkManager.singleton.StartRelayHost(maxPlayers);
+        CustomNetworkManager.singleton.StartSteamHost(maxPlayers, () =>
+        {
+            MenuManager.Instance.SetLoadingStatusText("Failed to start online game.");
+            MenuManager.Instance.OpenMenu("MainMenu");
+        });
     }
 
     public void OnCodeInputChanged()
