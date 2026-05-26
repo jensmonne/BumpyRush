@@ -44,7 +44,10 @@ public class LobbyPlayer : NetworkBehaviour
 
     public override void OnStopClient()
     {
-        LobbyUIManager.Instance.RemovePlayerFromDisplay(this);
+        if (LobbyUIManager.Instance != null && myCard != null)
+        {
+            LobbyUIManager.Instance.RemovePlayerFromDisplay(this);
+        }
     }
 
     private void HandleNameChanged(string oldName, string newName)

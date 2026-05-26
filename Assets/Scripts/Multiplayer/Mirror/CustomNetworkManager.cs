@@ -62,6 +62,17 @@ public class CustomNetworkManager : NetworkManager
     {
         if (NetworkClient.connection.isAuthenticated && !NetworkClient.ready) NetworkClient.Ready();
         if (NetworkClient.connection.isAuthenticated && NetworkClient.localPlayer == null) NetworkClient.AddPlayer();
+
+        string currentScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+
+        if (currentScene != "MainMenu" && currentScene != "Lobby")
+        {
+            CursorController.Instance.LockCursor();
+        }
+        else
+        {
+            CursorController.Instance.UnlockCursor();
+        }
     }
 
     public void LeaveGame()

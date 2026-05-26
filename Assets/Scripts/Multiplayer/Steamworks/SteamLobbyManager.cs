@@ -32,7 +32,6 @@ public class SteamLobbyManager : MonoBehaviour
     private void OnDestroy()
     {
         SteamFriends.OnGameLobbyJoinRequested -= OnSteamInviteReceived;
-        LeaveLobby();
     }
 
     public async void CreateLobby(int maxPlayers, Action onFailure)
@@ -57,6 +56,12 @@ public class SteamLobbyManager : MonoBehaviour
 
             GUIUtility.systemCopyBuffer = LobbyJoinCode;
             Debug.Log($"[Steam Lobbies] Lobby Created: {LobbyJoinCode} (Copied to Clipboard)");
+
+            if (Mirror.NetworkServer.active || Mirror.NetworkClient.active)
+            {
+                Debug.LogWarning("[Steam Lobbies] Clean up active ghost networks before starting a new one...");
+                CustomNetworkManager.singleton.LeaveGame();
+            }
 
             CustomNetworkManager.singleton.StartHost();
         }

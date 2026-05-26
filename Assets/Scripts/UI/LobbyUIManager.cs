@@ -77,10 +77,16 @@ public class LobbyUIManager : MonoBehaviour
 
     public void RemovePlayerFromDisplay(LobbyPlayer player)
     {
+        if (player == null) return;
+
         if (playerCards.TryGetValue(player, out LobbyPlayerCard card))
         {
-            Destroy(card.gameObject);
             playerCards.Remove(player);
+
+            if (card != null && card.gameObject != null)
+            {
+                Destroy(card.gameObject);
+            }
         }
 
         if (player == localPlayer)
@@ -104,7 +110,12 @@ public class LobbyUIManager : MonoBehaviour
             }
         }
 
-        startGameButton.interactable = allReady && playerCardContainer.childCount > 0;
+        if (NetworkServer.active)
+        {
+            startGameButton.gameObject.SetActive(true);
+            startGameButton.interactable = allReady && playerCardContainer.childCount > 0;
+        }
+        else startGameButton.gameObject.SetActive(false);
     }
 
     public void OnStartGameButton()

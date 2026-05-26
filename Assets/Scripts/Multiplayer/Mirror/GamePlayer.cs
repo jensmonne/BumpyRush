@@ -1,16 +1,19 @@
 using System.Collections.Generic;
 using Mirror;
 using UnityEngine;
+using TMPro;
 
 public class GamePlayer : NetworkBehaviour
 {
     [Header("Player Data")]
+    [SyncVar(hook = nameof(HandleNameChanged))]
     public string PlayerName = "Player";
 
     [Header("Local Only Components")]
     [SerializeField] private Rigidbody playerRigidbody;
     [SerializeField] private List<MonoBehaviour> localOnlyScripts;
     [SerializeField] private List<GameObject> localOnlyObjects;
+    [SerializeField] private TMP_Text nameText;
 
     private void Start()
     {
@@ -21,6 +24,14 @@ public class GamePlayer : NetworkBehaviour
         else
         {
             SetupLocalPlayer();
+        }
+    }
+
+    private void HandleNameChanged(string oldName, string newName)
+    {
+        if (nameText != null) 
+        {
+            nameText.text = newName;
         }
     }
 
@@ -35,6 +46,8 @@ public class GamePlayer : NetworkBehaviour
         {
             if (script != null) script.enabled = false;
         }
+
+        if (nameText != null) nameText.gameObject.SetActive(true);
     }
 
     private void SetupLocalPlayer()
@@ -50,5 +63,7 @@ public class GamePlayer : NetworkBehaviour
         {
             if (script != null) script.enabled = true;
         }
+
+        if (nameText != null) nameText.gameObject.SetActive(false);
     }
 }
