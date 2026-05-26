@@ -28,7 +28,7 @@ public class LobbyUIManager : MonoBehaviour
     {
         if (CustomNetworkManager.singleton != null)
         {
-            string code = CustomNetworkManager.singleton.relayJoinCode;
+            string code = SteamLobbyManager.Instance.LobbyJoinCode;
 
             if (!string.IsNullOrEmpty(code))
             {
@@ -41,7 +41,7 @@ public class LobbyUIManager : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("Lobby is probably not initialized yet. NetworkManager could not be found or relayJoinCode is null.");
+            Debug.LogWarning("Lobby is probably not initialized yet. NetworkManager could not be found or LobbyJoinCode is null.");
         }
     }
 

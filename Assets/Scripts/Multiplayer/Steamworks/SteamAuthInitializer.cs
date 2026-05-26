@@ -7,6 +7,8 @@ public class SteamAuthInitializer : MonoBehaviour
     public static bool IsAuthenticated { get; private set; } = false;
     public static event Action OnAuthenticated;
 
+    [SerializeField] private static uint appId = 480;
+
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);
@@ -19,7 +21,7 @@ public class SteamAuthInitializer : MonoBehaviour
 
         try
         {
-            SteamClient.Init( 480, true );
+            SteamClient.Init(appId, true);
 
             if (!SteamClient.IsValid)
             {
