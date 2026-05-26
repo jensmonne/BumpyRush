@@ -1,11 +1,9 @@
 using Mirror;
-using Mirror.Examples.Basic;
 using UnityEngine;
 
 public class LobbyPlayer : NetworkBehaviour
 {
     [Header("Player Data")]
-    [SyncVar(hook = nameof(HandlePlayerNameChanged))]
     public string PlayerName = "Player";
 
     [SyncVar(hook = nameof(HandleReadyStatusChanged))]
@@ -16,12 +14,7 @@ public class LobbyPlayer : NetworkBehaviour
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);
-        PlayerName = PlayerPrefs.GetString("PlayerName", $"Player {Random.Range(1000, 9999)}");
-    }
-
-    public override void OnStartServer()
-    {
-        PlayerName = $"Player {netId}";
+        PlayerName = PlayerPrefs.GetString("PlayerName");
     }
 
     [Command]
@@ -38,11 +31,6 @@ public class LobbyPlayer : NetworkBehaviour
     public override void OnStopClient()
     {
         LobbyUIManager.Instance.RemovePlayerFromDisplay(this);
-    }
-
-    private void HandlePlayerNameChanged(string oldName, string newName)
-    {
-        if (myCard != null) myCard.UpdateName(newName);
     }
 
     private void HandleReadyStatusChanged(bool oldStatus, bool newStatus)

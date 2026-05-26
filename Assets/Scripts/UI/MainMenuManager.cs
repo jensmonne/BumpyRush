@@ -44,7 +44,7 @@ public class MainMenuManager : MonoBehaviour
 
         int maxPlayers = 4; // Later maybe make this a user input
 
-        CustomNetworkManager.singleton.StartSteamHost(maxPlayers, () =>
+        SteamLobbyManager.Instance.CreateLobby(maxPlayers, () =>
         {
             MenuManager.Instance.SetLoadingStatusText("Failed to start online game.");
             MenuManager.Instance.OpenMenu("MainMenu");
@@ -66,7 +66,7 @@ public class MainMenuManager : MonoBehaviour
 
         MenuManager.Instance.OpenMenu("LoadingMenu");
 
-        CustomNetworkManager.singleton.JoinRelayGame(code, () =>
+        SteamLobbyManager.Instance.JoinLobbyByIdString(code, () =>
         {
             MenuManager.Instance.OpenMenu("MainMenu");
         });
