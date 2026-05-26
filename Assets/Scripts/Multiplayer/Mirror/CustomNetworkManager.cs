@@ -1,6 +1,7 @@
 using UnityEngine;
 using Mirror;
 using Utp;
+using System;
 
 /*
 	Documentation: https://mirror-networking.gitbook.io/docs/components/network-manager
@@ -52,7 +53,7 @@ public class CustomNetworkManager : NetworkManager
         });
     }
 
-    public void JoinRelayGame(string joinCode)
+    public void JoinRelayGame(string joinCode, Action onFailure = null)
     {
         utpTransport.useRelay = true;
 
@@ -62,7 +63,11 @@ public class CustomNetworkManager : NetworkManager
             Debug.Log("Relay Join Success. Connecting Mirror...");
             StartClient();
         },
-        () => Debug.LogError("Failed to join Relay server."));
+        () => 
+        {
+            Debug.LogError("Failed to join Relay server.");
+            onFailure?.Invoke();
+        });
     }
 
     public void StartLocalGame()

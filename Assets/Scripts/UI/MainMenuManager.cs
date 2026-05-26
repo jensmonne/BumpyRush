@@ -62,7 +62,10 @@ public class MainMenuManager : MonoBehaviour
 
         MenuManager.Instance.OpenMenu("LoadingMenu");
 
-        CustomNetworkManager.singleton.JoinRelayGame(code);
+        CustomNetworkManager.singleton.JoinRelayGame(code, () =>
+        {
+            MenuManager.Instance.OpenMenu("MainMenu");
+        });
     }
 
     public void OnBackPressed()
