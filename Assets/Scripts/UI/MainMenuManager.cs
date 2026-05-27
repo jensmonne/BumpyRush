@@ -40,16 +40,7 @@ public class MainMenuManager : MonoBehaviour
 
     public void OnHostPressed()
     {
-        MenuManager.Instance.OpenMenu("LoadingMenu");
-        MenuManager.Instance.SetLoadingStatusText("Starting online game...");
-
-        int maxPlayers = 4; // Later maybe make this a user input
-
-        SteamLobbyManager.Instance.CreateLobby(maxPlayers, () =>
-        {
-            MenuManager.Instance.SetLoadingStatusText("Failed to start online game.");
-            MenuManager.Instance.OpenMenu("MainMenu");
-        });
+        MenuManager.Instance.OpenMenu("HostMenu");
     }
 
     public void OnCodeInputChanged()

@@ -34,7 +34,7 @@ public class SteamLobbyManager : MonoBehaviour
         SteamFriends.OnGameLobbyJoinRequested -= OnSteamInviteReceived;
     }
 
-    public async void CreateLobby(int maxPlayers, Action onFailure)
+    public async void CreateLobby(int maxPlayers, HostMenuManager.LobbyVisibility visibility, Action onFailure)
     {
         try
         {
@@ -46,7 +46,14 @@ public class SteamLobbyManager : MonoBehaviour
             }
 
             Lobby lobby = lobbyOutput.Value;
-            lobby.SetPublic();
+
+            switch (visibility)
+            {
+                case HostMenuManager.LobbyVisibility.Public: lobby.SetPublic(); break;
+                case HostMenuManager.LobbyVisibility.FriendsOnly: lobby.SetFriendsOnly(); break;
+                case HostMenuManager.LobbyVisibility.Private: lobby.SetPrivate(); break;
+            }
+
             lobby.SetJoinable(true);
             lobby.SetData("HostSteamID", SteamClient.SteamId.ToString());
             lobby.SetData("GameFilterKey", GameFilterKey);
