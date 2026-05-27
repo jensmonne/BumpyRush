@@ -22,7 +22,6 @@ public class Grounded : MonoBehaviour
             isGrounded = true;
             //StartCoroutine(WaitBeforeGrounded());
             HELP = false;
-            Debug.Log("Grounded");
 
             // Reset timer
             if (helpCoroutine != null)
@@ -38,7 +37,6 @@ public class Grounded : MonoBehaviour
         if (other.gameObject.CompareTag("Ground"))
         {
             isGrounded = false;
-            Debug.Log("Not Grounded");
 
             // Start timer
             if (helpCoroutine == null)

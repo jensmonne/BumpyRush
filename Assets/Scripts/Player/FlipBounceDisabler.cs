@@ -23,12 +23,10 @@ public class FlipBounceDisabler : MonoBehaviour
         if (Flipped)
         {
             Bounce.enabled = false;
-            Debug.Log("Flipped or Not Grounded");
         }
         else
         {
             Bounce.enabled = true;
-            Debug.Log("Not Flipped and Grounded");
         }
     }
 

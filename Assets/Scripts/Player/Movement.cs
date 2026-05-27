@@ -64,7 +64,6 @@ public class Movement : MonoBehaviour
             //Rotate the car upright
             Quaternion targetRotation = Quaternion.Euler(0f, transform.rotation.eulerAngles.y, 0f);
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 2f);
-            Debug.Log("HELP");
         }
     }
 
