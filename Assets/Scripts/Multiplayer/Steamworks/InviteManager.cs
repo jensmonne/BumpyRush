@@ -26,10 +26,10 @@ public class InviteManager : MonoBehaviour
         
         pendingLobby = lobby;
         inviteText.text = $"{friend.Name} has invited you to join their game!";
-        MenuManager.Instance.OpenMenu("InviteMenu");
+        MenuManager.Instance.OpenMenu("InviteScreen");
     }
 
-    public async void AcceptInvite()
+    public void AcceptInvite()
     {
         SteamLobbyManager.Instance.OnSteamInviteReceived(pendingLobby, default);
     }
