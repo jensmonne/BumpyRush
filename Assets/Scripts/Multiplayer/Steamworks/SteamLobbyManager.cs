@@ -114,12 +114,7 @@ public class SteamLobbyManager : MonoBehaviour
         CustomNetworkManager.singleton.StartClient();
     }
 
-    public void OpenInviteOverlay()
-    {
-        if (CurrentLobby.HasValue) SteamFriends.OpenGameInviteOverlay(CurrentLobby.Value.Id);
-    }
-
-    private void OnSteamInviteReceived(Lobby lobby, SteamId friendId)
+    public void OnSteamInviteReceived(Lobby lobby, SteamId friendId)
     {
         MenuManager.Instance.OpenMenu("LoadingMenu");
         MenuManager.Instance.SetLoadingStatusText("Joining friend via Steam...");
