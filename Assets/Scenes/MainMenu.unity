@@ -1015,7 +1015,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f14e830d206c7c39aa49af36442008bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InviteManager
-  inviteText: {fileID: 0}
+  inviteText: {fileID: 709240509}
 --- !u!1 &171882811
 GameObject:
   m_ObjectHideFlags: 0
