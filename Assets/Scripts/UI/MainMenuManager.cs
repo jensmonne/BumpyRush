@@ -12,6 +12,7 @@ public class MainMenuManager : MonoBehaviour
     private void Start()
     {
         if (SteamAuthInitializer.IsAuthenticated) EnableOnlineButtons();
+        CursorController.Instance.UnlockCursor();
     }
 
     private void OnEnable()
