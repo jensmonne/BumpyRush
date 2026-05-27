@@ -44,6 +44,7 @@ public class PauseMenuManager : MonoBehaviour
         if (carTransform != null)
         {
             carTransform.position = new Vector3(13f, 10f, -100f);
+            carTransform.rotation = Quaternion.Euler(0f, 0f, 0f);
         }
         
         isPaused = false;
