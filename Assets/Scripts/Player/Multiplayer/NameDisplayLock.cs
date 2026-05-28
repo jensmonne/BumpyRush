@@ -2,24 +2,30 @@ using UnityEngine;
 
 public class NameDisplayLock : MonoBehaviour
 {
-    private Camera localCamera;
+    private Transform localCameraTransform;
 
     void Start()
     {
-        localCamera = FindAnyObjectByType<Camera>();
+        if (Camera.main != null)
+        {
+            localCameraTransform = Camera.main.transform;
+        }
     }
 
     void LateUpdate()
     {
-        if (localCamera == null)
+        if (localCameraTransform == null)
         {
-            Debug.LogWarning("No main camera found for NameDisplayLock script.");
+            if (Camera.main != null)
+            {
+                localCameraTransform = Camera.main.transform;
+            }
             return;
         }
 
         transform.LookAt(
-            transform.position + localCamera.transform.rotation * Vector3.forward,
-            localCamera.transform.rotation * Vector3.up
+            transform.position + localCameraTransform.rotation * Vector3.forward,
+            localCameraTransform.rotation * Vector3.up
         );
     }
 }
