@@ -34,6 +34,11 @@ public class StopMovement_Bounce : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        if(collision.gameObject.CompareTag("PhyObject"))
+        {
+            return;
+        }
+
         foreach (ContactPoint contact in collision.contacts)
         {
             if (contact.thisCollider == bounceCollider)
