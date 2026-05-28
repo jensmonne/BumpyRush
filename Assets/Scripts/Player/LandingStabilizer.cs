@@ -8,10 +8,14 @@ using UnityEngine;
 public class LandingStabilizer : MonoBehaviour
 {
     [Header("References")]
+    [Tooltip("Rigidbody van Bumpy")]
     public Rigidbody rb;
 
-    [Tooltip("Sleep hier de landing trigger collider in")]
+    [Tooltip("Grounded component Bumpy")]
     public Collider GroundedCollider;
+
+    [Tooltip("Bounce collider van Bumpy")]
+    public Collider BounceCollider;
 
     [Header("Impact Settings")]
     public float hardLandingThreshold = 6f;
@@ -31,9 +35,6 @@ public class LandingStabilizer : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other != GroundedCollider)
-            return;
-
         float impactSpeed = Mathf.Abs(rb.linearVelocity.y);
 
         //landing
@@ -59,6 +60,9 @@ public class LandingStabilizer : MonoBehaviour
             rb.linearVelocity.z
         );
 
+        //Bounce collider tijdelijk uitschakelen
+        BounceCollider.enabled = false;
+
         //rotaties locken
         rb.constraints =
             RigidbodyConstraints.FreezeRotationX |
@@ -68,6 +72,8 @@ public class LandingStabilizer : MonoBehaviour
 
         //terugetten
         rb.constraints = RigidbodyConstraints.None;
+
+        BounceCollider.enabled = true;
 
         stabilizing = false;
     }
