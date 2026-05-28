@@ -48,7 +48,7 @@ public class LandingStabilizer : MonoBehaviour
     {
         stabilizing = true;
 
-        Debug.Log("Hard Landing Speed: " + impactSpeed);
+        //Debug.Log("Hard Landing Speed: " + impactSpeed);
 
         //spin verminderen
         rb.angularVelocity *= angularDamping;
