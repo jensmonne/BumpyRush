@@ -7,7 +7,11 @@ public class SteamAuthInitializer : MonoBehaviour
     public static bool IsAuthenticated { get; private set; } = false;
     public static event Action OnAuthenticated;
 
-    [SerializeField] private static uint appId = 480;
+#if UNITY_EDITOR
+    private const uint AppId = 480;
+#else
+    private const uint AppId = 4787370;
+#endif
 
     private void Awake()
     {
@@ -21,7 +25,7 @@ public class SteamAuthInitializer : MonoBehaviour
 
         try
         {
-            SteamClient.Init(appId, true);
+            SteamClient.Init(AppId, true);
 
             if (!SteamClient.IsValid)
             {

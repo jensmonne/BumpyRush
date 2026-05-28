@@ -3,6 +3,7 @@ using UnityEngine;
 public class PauseMenuManager : MonoBehaviour
 {
     [SerializeField] private CanvasGroup pauseMenuCanvasGroup;
+    [SerializeField] private Transform carTransform;
 
     private bool isPaused = false;
 
@@ -36,6 +37,19 @@ public class PauseMenuManager : MonoBehaviour
         CursorController.Instance.UnlockCursor();
         SteamLobbyManager.Instance.LeaveLobby();
         CustomNetworkManager.singleton.LeaveGame();
+    }
+
+    public void OnUnstuckButton()
+    {
+        if (carTransform != null)
+        {
+            carTransform.position = new Vector3(13f, 10f, -100f);
+            carTransform.rotation = Quaternion.Euler(0f, 0f, 0f);
+        }
+        
+        isPaused = false;
+        SetPauseMenuVisibility(false);
+        CursorController.Instance.LockCursor();
     }
 
     private void SetPauseMenuVisibility(bool visible)

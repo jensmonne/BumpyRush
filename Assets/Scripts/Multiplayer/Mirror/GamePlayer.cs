@@ -51,9 +51,7 @@ public class GamePlayer : NetworkBehaviour
     }
 
     private void SetupLocalPlayer()
-    {
-        Debug.Log($"Configuring local controls for {PlayerName}");
-        
+    {        
         if (playerRigidbody != null) playerRigidbody.isKinematic = false;
         foreach (var obj in localOnlyObjects)
         {
