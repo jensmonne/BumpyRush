@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 /// <summary>
 /// Dit script detecteert wanneer de bounce collider een impact heeft en geeft

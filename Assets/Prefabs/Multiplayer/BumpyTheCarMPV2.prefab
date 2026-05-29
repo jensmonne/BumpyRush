@@ -1282,6 +1282,7 @@ GameObject:
   - component: {fileID: 2595668279047013397}
   - component: {fileID: 2203779776815334678}
   - component: {fileID: 6997471598470826754}
+  - component: {fileID: 5607461066471248116}
   - component: {fileID: 949687005481906122}
   - component: {fileID: 4650655322136876136}
   - component: {fileID: 8235560503445132504}
@@ -1375,7 +1376,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2532233641620928404}
         m_TargetAssemblyTypeName: Movement, Assembly-CSharp
-        m_MethodName: OnAccelerate
+        m_MethodName: OnDrive
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1404,19 +1405,7 @@ MonoBehaviour:
     m_ActionId: 3d674b9a-8337-4c88-8434-5664fb1414b1
     m_ActionName: 'Player/Jump[/Keyboard/space]'
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2532233641620928404}
-        m_TargetAssemblyTypeName: Movement, Assembly-CSharp
-        m_MethodName: OnBrake
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_ActionId: 4ebe2d0a-63ad-417f-95f1-ebca6c4b6e81
     m_ActionName: 'Player/Brake/Reverse[/Keyboard/s,/Gamepad/leftTrigger]'
   - m_PersistentCalls:
@@ -1456,13 +1445,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 652be7485058ba1a88fc166655c39c7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Movement
-  speed: 50
-  maxSpeed: 10
-  jumpForce: 800
+  speed: 100
+  maxSpeed: 20
+  jumpForce: 1000
   throttleResponse: 5
-  turnSpeed: 100
+  turnSpeed: 150
   driftFactor: 0.95
-  velocityRotateSpeed: 2
+  velocityRotateSpeed: 3
   grounded: {fileID: 3224136865344549061}
   stopMovement_Bounce: {fileID: 6997471598470826754}
 --- !u!114 &2595668279047013397
@@ -1512,6 +1501,20 @@ MonoBehaviour:
   minimumImpactForce: 3
   releaseVelocityThreshold: 1
   hasCollided: 0
+--- !u!114 &5607461066471248116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5253260172628986182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c9c8f66ab4f20a4ea666ed9f35d7822, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BounceParticles
+  effect: {fileID: 3307933997718635271, guid: 137d6dc529f0b0f4e81ecfdd924606df, type: 3}
+  bounceCollider: {fileID: 922390749793286601}
 --- !u!114 &949687005481906122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2021,6 +2024,7 @@ GameObject:
   - component: {fileID: 8598468535560849361}
   - component: {fileID: 1196557964879844067}
   - component: {fileID: 5279577998176044545}
+  - component: {fileID: 2487112815425455412}
   m_Layer: 0
   m_Name: Bumpy_Car
   m_TagString: Player
@@ -2122,6 +2126,20 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4345254262334407911, guid: 653882094a944be0a8b3837a13b9c6c5, type: 3}
+--- !u!114 &2487112815425455412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6113648209564410056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98ebd784fcfe7a14d9a9400aff8cca30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::IgnoreCollider
+  myCollider: {fileID: 5279577998176044545}
+  objectToIgnore: {fileID: 922390749793286601}
 --- !u!1 &7129941232091441839
 GameObject:
   m_ObjectHideFlags: 0
