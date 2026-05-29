@@ -71,9 +71,9 @@ public class LandingStabilizer : MonoBehaviour
         yield return new WaitForSeconds(lockDuration);
 
         //terugetten
-        rb.constraints = RigidbodyConstraints.None;
-
         BounceCollider.enabled = true;
+
+        rb.constraints = RigidbodyConstraints.None;
 
         stabilizing = false;
     }
