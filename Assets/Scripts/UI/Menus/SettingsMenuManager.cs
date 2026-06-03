@@ -4,6 +4,6 @@ public class SettingsMenuManager : MonoBehaviour
 {
     public void OnBackPressed()
     {
-        MenuManager.Instance.OpenMenu("MainMenu");
+        MenuManager.Instance.CloseTopMenu();
     }
 }

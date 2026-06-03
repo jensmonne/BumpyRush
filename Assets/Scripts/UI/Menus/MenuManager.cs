@@ -12,9 +12,11 @@ public class MenuManager : MonoBehaviour
 
     public static MenuManager Instance { get; private set; }
 
+    [Header("References")]
     [SerializeField] private LoadingMenuManager loadingMenuManager;
-
     [SerializeField] private MenuPanel[] menus;
+
+    private Dictionary<string, MenuPanel> menuCache = new();
 
     private Stack<MenuPanel> menuStack = new();
 
@@ -34,26 +36,63 @@ public class MenuManager : MonoBehaviour
     {
         foreach (var menu in menus)
         {
-            menu.canvasGroup.alpha = 0;
-            menu.canvasGroup.interactable = false;
-            menu.canvasGroup.blocksRaycasts = false;
+            if (menu.canvasGroup == null) continue;
+
+            if (!menuCache.ContainsKey(menu.menuName))
+            {
+                menuCache.Add(menu.menuName, menu);
+            }
+
+            ConfigureCanvasGroup(menu.canvasGroup, isOpen: false, isInteractable: false);
         }
     }
 
     public void OpenMenu(string name)
     {
-        foreach (var menu in menus)
+        if (!menuCache.TryGetValue(name, out MenuPanel targetMenu))
         {
-            bool shouldOpen = menu.menuName == name;
-            
-            menu.canvasGroup.alpha = shouldOpen ? 1 : 0;
-            menu.canvasGroup.interactable = shouldOpen;
-            menu.canvasGroup.blocksRaycasts = shouldOpen;
+            Debug.LogError($"[MenuManager] Cannot find menu named: {name}");
+            return;
+        }
+
+        if (menuStack.Count > 0)
+        {
+            MenuPanel currentTop = menuStack.Peek();
+            ConfigureCanvasGroup(currentTop.canvasGroup, isOpen: true, isInteractable: false);
+        }
+
+        ConfigureCanvasGroup(targetMenu.canvasGroup, isOpen: true, isInteractable: true);
+        menuStack.Push(targetMenu);
+    }
+
+    public void CloseTopMenu()
+    {
+        if (menuStack.Count == 0) return;
+
+        MenuPanel closedMenu = menuStack.Pop();
+        ConfigureCanvasGroup(closedMenu.canvasGroup, isOpen: false, isInteractable: false);
+
+        if (menuStack.Count > 0)
+        {
+            MenuPanel underlyingMenu = menuStack.Peek();
+            ConfigureCanvasGroup(underlyingMenu.canvasGroup, isOpen: true, isInteractable: true);
         }
     }
 
     public void SetLoadingStatusText(string text)
     {
-        loadingMenuManager.SetLoadingStatusText(text);
+        if (loadingMenuManager != null)
+        {
+            loadingMenuManager.SetLoadingStatusText(text);
+        }
+    }
+
+    private void ConfigureCanvasGroup(CanvasGroup group, bool isOpen, bool isInteractable)
+    {
+        if (group == null) return;
+        
+        group.alpha = isOpen ? 1f : 0f;
+        group.blocksRaycasts = isOpen; 
+        group.interactable = isInteractable;
     }
 }

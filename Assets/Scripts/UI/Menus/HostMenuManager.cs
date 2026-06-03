@@ -46,13 +46,13 @@ public class HostMenuManager : MonoBehaviour
         SteamLobbyManager.Instance.CreateLobby(currentMaxPlayers, currentVisibility, () =>
         {
             MenuManager.Instance.SetLoadingStatusText("Failed to start online game.");
-            MenuManager.Instance.OpenMenu("MainMenu");
+            MenuManager.Instance.CloseTopMenu();
         });
     }
 
     public void OnBackPressed()
     {
-        MenuManager.Instance.OpenMenu("MainMenu");
+        MenuManager.Instance.CloseTopMenu();
     }
 
     private void CycleVisibility(int direction)

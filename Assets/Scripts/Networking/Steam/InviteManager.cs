@@ -37,6 +37,6 @@ public class InviteManager : MonoBehaviour
     public void DeclineInvite()
     {
         pendingLobby = default; 
-        MenuManager.Instance.OpenMenu("MainMenu");
+        MenuManager.Instance.CloseTopMenu();
     }
 }
