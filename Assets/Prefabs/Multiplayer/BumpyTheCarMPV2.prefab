@@ -1607,8 +1607,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92cc8ac339c041741b353746346bd0ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemManager
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
+  availableItems: []
   currentItems: []
-  itemUseCooldown: 1
 --- !u!1 &5603599067671866264
 GameObject:
   m_ObjectHideFlags: 0

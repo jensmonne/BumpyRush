@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class BounceParticles : MonoBehaviour
 {
@@ -36,7 +37,14 @@ public class BounceParticles : MonoBehaviour
                 effectInstance.transform.position = contact.point;
                 effectInstance.transform.rotation = Quaternion.LookRotation(contact.normal);
                 effectInstance.Play();
+                StartCoroutine(DestroyEffect(effectInstance));
             }
         }
+    }
+
+    private IEnumerator DestroyEffect(ParticleSystem effectInstance)
+    {
+        yield return new WaitForSeconds(effectInstance.main.duration);
+        Destroy(effectInstance.gameObject);
     }
 }
