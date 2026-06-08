@@ -6,7 +6,7 @@ using UnityEngine;
 [RequireComponent(typeof(NetworkIdentity))]
 public class Big : NetworkBehaviour
 {
-    [SerializeField] private float bigDuration = 10f;
+    [SerializeField] private float bigDuration = 5f;
     [SerializeField] private float bigScaleMultiplier = 2f;
     private Rigidbody rb;
     private GameObject player;

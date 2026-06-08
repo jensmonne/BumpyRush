@@ -11,9 +11,7 @@ public class Gambling : NetworkBehaviour
     [SerializeField] private int loseAmount = -2;
 
     [SyncVar(hook = nameof(HandleResultChanged))]
-    private bool didWin = false;
 
-    [SyncVar]
     private bool hasActivated = false;
 
     private void Start()
@@ -35,13 +33,14 @@ public class Gambling : NetworkBehaviour
 
         if (randomNumber < 50)
         {
-            didWin = true;
             Debug.Log("You won! You get " + winAmount + " bear(s) !");
+
+            GameManager.Instance.ChangeScore(GetComponentInParent<Movement>().GetComponent<NetworkIdentity>().netId, winAmount);
             RpcPlayAnimation("Win");
         }
         else
         {
-            didWin = false;
+            GameManager.Instance.ChangeScore(GetComponentInParent<Movement>().GetComponent<NetworkIdentity>().netId, loseAmount);
             Debug.Log("You lost! You lose " + loseAmount + " bear(s) !");
             RpcPlayAnimation("Lose");
         }

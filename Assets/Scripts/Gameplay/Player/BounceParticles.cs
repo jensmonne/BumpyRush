@@ -42,7 +42,7 @@ public class BounceParticles : MonoBehaviour
                 if (impactForce < minimumImpactForce)
                     return;
 
-                Debug.Log("Bounce collision detected at point: " + contact.point);
+                //Debug.Log("Bounce collision detected at point: " + contact.point);
                 ParticleSystem effectInstance = Instantiate(effect, contact.point, Quaternion.LookRotation(contact.normal));
                 effectInstance.transform.position = contact.point;
                 effectInstance.transform.rotation = Quaternion.LookRotation(contact.normal);

@@ -8,9 +8,17 @@ public class ItemManager : NetworkBehaviour
 {
     [SerializeField] private List<GameObject> availableItems = new List<GameObject>();
     [SerializeField] private List<GameObject> currentItems = new List<GameObject>();
-    private float itemUseCooldown = 1f;
+    private float itemUseCooldown = 6f;
     private float lastItemUseTime = -999f;
 
+    private void Start()
+    {
+        PlayerInput playerInput = GetComponentInParent<PlayerInput>();
+        if (playerInput != null && playerInput.actions != null)
+        {
+            playerInput.actions["UseItem"].performed += UseItem;
+        }
+    }
     public void AddRandomItem()
     {
         if (availableItems.Count == 0)
@@ -30,6 +38,7 @@ public class ItemManager : NetworkBehaviour
 
     public void UseItem(InputAction.CallbackContext context)
     {
+        Debug.Log("UseItem called with context: " + context);
         if (!isLocalPlayer) return;
 
         int index = 0;

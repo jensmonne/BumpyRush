@@ -1135,8 +1135,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.1558075, y: 0.056455612, z: 1.9729428}
-  m_Center: {x: 0.002509594, y: -0.05808425, z: 0.012954712}
+  m_Size: {x: 1.1558075, y: 0.056455612, z: 1.9920887}
+  m_Center: {x: 0.002509594, y: -0.05808425, z: 0.0033817887}
 --- !u!114 &4019977001233442025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1449,7 +1449,7 @@ MonoBehaviour:
   maxSpeed: 20
   jumpForce: 1000
   throttleResponse: 5
-  turnSpeed: 150
+  turnSpeed: 250
   driftFactor: 0.95
   velocityRotateSpeed: 3
   grounded: {fileID: 3224136865344549061}
@@ -1499,6 +1499,7 @@ MonoBehaviour:
   bounceForceMultiplier: 20
   maxBounceForce: 70
   minimumImpactForce: 3
+  bounceForceOnPlayer: 25
   releaseVelocityThreshold: 1
   hasCollided: 0
 --- !u!114 &5607461066471248116
