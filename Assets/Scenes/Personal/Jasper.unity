@@ -3008,7 +3008,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: 49bf85ef-4e2c-42d5-b248-6d932607251b
+    m_ActionId: e29e4f86-4f8c-4e04-8079-a1e95716826a
     m_ActionName: 'Player/UseItem[/Keyboard/e]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
@@ -3030,6 +3030,7 @@ MonoBehaviour:
   syncDirection: 0
   syncMode: 0
   syncInterval: 0
+  availableItems: []
   currentItems:
   - {fileID: 5166177179225334353, guid: 2878f7a5c45bb5a47835c4f523347a53, type: 3}
   - {fileID: 5166177179225334353, guid: 2878f7a5c45bb5a47835c4f523347a53, type: 3}
