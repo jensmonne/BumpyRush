@@ -14,6 +14,9 @@ public class StopMovement_Bounce : MonoBehaviour
     [SerializeField] private float maxBounceForce = 30f;
     [SerializeField] private float minimumImpactForce = 3f;
 
+    [Tooltip("Hoeveel kracht er op de speler wordt toegepast bij een bounce, als deze een andere speler raakt.")]
+    [SerializeField] private float bounceForceOnPlayer = 10f;
+
     [Header("Release Settings")]
     [SerializeField] private float releaseVelocityThreshold = 1f;
 
@@ -58,6 +61,21 @@ public class StopMovement_Bounce : MonoBehaviour
                     bounceDirection * bounceForce,
                     ForceMode.Impulse
                 );
+
+                //Other bumpy? BOUNCE HIM INTO OBLIVION!
+                if (collision.gameObject.CompareTag("Player"))
+                {
+                    Debug.Log("BOUNCE OTHER PLAYER!");
+                    Rigidbody bumpyRigidbody = collision.gameObject.GetComponent<Rigidbody>();
+                    
+                    if (bumpyRigidbody != null)
+                    {
+                        Vector3 pushDirection = -bounceDirection;
+                        float bumpyPushForce = bounceForce * bounceForceOnPlayer;
+
+                        bumpyRigidbody.AddForce(pushDirection * bumpyPushForce, ForceMode.Impulse);
+                    }
+                }
 
                 hasCollided = true;
 

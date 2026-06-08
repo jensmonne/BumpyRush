@@ -1912,6 +1912,124 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 978753644}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &996933053
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 265659358278718279, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 265659358278718279, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
+      propertyPath: bounceForceOnPlayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2269063954645254681, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2662696261193073564, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
+      propertyPath: m_Name
+      value: BumpyTheCar (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2662696261193073564, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2736755573362187432, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
+      propertyPath: stopMovement_Bounce
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2884257243418098347, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2923803089946781853, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438529689220340006, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.84939
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438529689220340006, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438529689220340006, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.7353263
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438529689220340006, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9998007
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438529689220340006, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438529689220340006, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.019964479
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438529689220340006, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438529689220340006, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438529689220340006, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -2.288
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438529689220340006, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5119705445717390133, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5278508186228484995, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
+      propertyPath: m_ActionEvents.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5278508186228484995, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
+      propertyPath: m_ActionEvents.Array.data[4].m_ActionId
+      value: d7876cf9-8b60-47da-8605-07d541b6cd02
+      objectReference: {fileID: 0}
+    - target: {fileID: 5278508186228484995, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
+      propertyPath: m_ActionEvents.Array.data[4].m_ActionName
+      value: 'Player/Menu[/Keyboard/escape]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6835614364232814542, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7704595244213194945, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804717577279615993, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804717577279615993, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.99
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 265659358278718279, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5dcc6310048d55f77a005091e1e19c71, type: 3}
 --- !u!1 &1052203106
 GameObject:
   m_ObjectHideFlags: 0
@@ -3326,13 +3444,93 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 442940955868502029, guid: 13ec5d5b29cd74c4080c2291f2685d23, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 442940955868502029, guid: 13ec5d5b29cd74c4080c2291f2685d23, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 442940955868502029, guid: 13ec5d5b29cd74c4080c2291f2685d23, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 442940955868502029, guid: 13ec5d5b29cd74c4080c2291f2685d23, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 922390749793286601, guid: 13ec5d5b29cd74c4080c2291f2685d23, type: 3}
+      propertyPath: m_Size.z
+      value: 1.9920887
+      objectReference: {fileID: 0}
+    - target: {fileID: 922390749793286601, guid: 13ec5d5b29cd74c4080c2291f2685d23, type: 3}
+      propertyPath: m_Center.x
+      value: 0.002509594
+      objectReference: {fileID: 0}
+    - target: {fileID: 922390749793286601, guid: 13ec5d5b29cd74c4080c2291f2685d23, type: 3}
+      propertyPath: m_Center.z
+      value: 0.0033817887
+      objectReference: {fileID: 0}
+    - target: {fileID: 949687005481906122, guid: 13ec5d5b29cd74c4080c2291f2685d23, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034444633101423628, guid: 13ec5d5b29cd74c4080c2291f2685d23, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034444633101423628, guid: 13ec5d5b29cd74c4080c2291f2685d23, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034444633101423628, guid: 13ec5d5b29cd74c4080c2291f2685d23, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2034444633101423628, guid: 13ec5d5b29cd74c4080c2291f2685d23, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2532233641620928404, guid: 13ec5d5b29cd74c4080c2291f2685d23, type: 3}
+      propertyPath: turnSpeed
+      value: 250
+      objectReference: {fileID: 0}
     - target: {fileID: 4650655322136876136, guid: 13ec5d5b29cd74c4080c2291f2685d23, type: 3}
       propertyPath: sceneId
       value: 4002755106
       objectReference: {fileID: 0}
+    - target: {fileID: 4650655322136876136, guid: 13ec5d5b29cd74c4080c2291f2685d23, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5150581134016764085, guid: 13ec5d5b29cd74c4080c2291f2685d23, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.5160669
+      objectReference: {fileID: 0}
+    - target: {fileID: 5150581134016764085, guid: 13ec5d5b29cd74c4080c2291f2685d23, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5150581134016764085, guid: 13ec5d5b29cd74c4080c2291f2685d23, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.9665704
+      objectReference: {fileID: 0}
     - target: {fileID: 5253260172628986182, guid: 13ec5d5b29cd74c4080c2291f2685d23, type: 3}
       propertyPath: m_Name
       value: BumpyTheCarMPV2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5593439987936732423, guid: 13ec5d5b29cd74c4080c2291f2685d23, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6997471598470826754, guid: 13ec5d5b29cd74c4080c2291f2685d23, type: 3}
+      propertyPath: bounceForceOnPlayer
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7641122520332492771, guid: 13ec5d5b29cd74c4080c2291f2685d23, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8038837364762019089, guid: 13ec5d5b29cd74c4080c2291f2685d23, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3373,6 +3571,10 @@ PrefabInstance:
     - target: {fileID: 8038837364762019089, guid: 13ec5d5b29cd74c4080c2291f2685d23, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8235560503445132504, guid: 13ec5d5b29cd74c4080c2291f2685d23, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3512,6 +3714,7 @@ MonoBehaviour:
   bounceForceMultiplier: 20
   maxBounceForce: 70
   minimumImpactForce: 3
+  bounceForceOnPlayer: 10
   releaseVelocityThreshold: 1
   hasCollided: 0
 --- !u!65 &5488550054240580731
@@ -3949,3 +4152,4 @@ SceneRoots:
   - {fileID: 2070615740}
   - {fileID: 2409710271629381072}
   - {fileID: 61271383}
+  - {fileID: 996933053}
