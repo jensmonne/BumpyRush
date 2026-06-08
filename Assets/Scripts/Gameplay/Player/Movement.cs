@@ -82,12 +82,24 @@ public class Movement : MonoBehaviour
 
         float currentThrottle = smoothedThrottle;
 
+        // voorwaardse snelegeid
         float forwardSpeed = Vector3.Dot(rb3D.linearVelocity, transform.forward);
 
-        if (currentThrottle > 0.01f && forwardSpeed >= maxSpeed) return;
-        if (currentThrottle < -0.01f && forwardSpeed <= -maxSpeed * 0.5f) return;
+        // trottle check
+        if (Mathf.Abs(currentThrottle) > 0.01f)
+        {
+            float reverseMultiplier = (currentThrottle < 0) ? 0.5f : 1.0f; 
 
-        rb3D.AddForce(transform.forward * currentThrottle * speed, ForceMode.Acceleration);
+            rb3D.AddForce(transform.forward * currentThrottle * speed * reverseMultiplier, ForceMode.Acceleration);
+        }
+
+        // Snelheid limiteren
+        float clampedForwardSpeed = Mathf.Clamp(forwardSpeed, -maxSpeed * 0.5f, maxSpeed);
+        
+        // verschil tussen huidige snelheid en gewenste snelheid
+        Vector3 localVelocity = transform.InverseTransformDirection(rb3D.linearVelocity);
+        localVelocity.z = clampedForwardSpeed;
+        rb3D.linearVelocity = transform.TransformDirection(localVelocity);
     }
 
     // STEERING

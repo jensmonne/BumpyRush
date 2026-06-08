@@ -65,7 +65,7 @@ public class StopMovement_Bounce : MonoBehaviour
                 //Other bumpy? BOUNCE HIM INTO OBLIVION!
                 if (collision.gameObject.CompareTag("Player"))
                 {
-                    Debug.Log("BOUNCE OTHER PLAYER!");
+                    //Debug.Log("BOUNCE OTHER PLAYER!");
                     Rigidbody bumpyRigidbody = collision.gameObject.GetComponent<Rigidbody>();
                     
                     if (bumpyRigidbody != null)
