@@ -29,18 +29,17 @@ public class SteamAuthInitializer : MonoBehaviour
 
             if (!SteamClient.IsValid)
             {
-                throw new Exception("Steam client initialized but returned an invalid status flag.");
+                throw new Exception("[Steam Auth] Steam client initialized but returned an invalid status flag.");
             }
             
             IsAuthenticated = true;
-            Debug.Log($"Steam Authentication Successful! Player Name: {SteamClient.Name}, SteamID: {SteamClient.SteamId}");
+            Debug.Log($"[Steam Auth] Steam Authentication Successful! Player Name: {SteamClient.Name}, SteamID: {SteamClient.SteamId}");
 
             OnAuthenticated?.Invoke();
         }
         catch (Exception e)
         {
-            Debug.LogError($"[UNKNOWN ERROR] Something else went wrong: {e.GetType().Name} - {e.Message}");
-            Debug.LogError("[STEAM ERROR] Critical failure initialization! " +
+            Debug.LogError("[Steam Auth] Critical failure initialization! " +
                 $"Please ensure the Steam Desktop app is open, you are logged into an active account, Details: {e.Message}");
         }
     }
