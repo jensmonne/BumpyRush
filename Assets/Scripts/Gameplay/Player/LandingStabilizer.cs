@@ -66,7 +66,8 @@ public class LandingStabilizer : MonoBehaviour
         //rotaties locken
         rb.constraints =
             RigidbodyConstraints.FreezeRotationX |
-            RigidbodyConstraints.FreezeRotationZ;
+            RigidbodyConstraints.FreezeRotationZ |
+            RigidbodyConstraints.FreezePositionY;
 
         yield return new WaitForSeconds(lockDuration);
 

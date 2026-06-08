@@ -33,7 +33,8 @@ public class StopMovement_Bounce : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.CompareTag("PhyObject"))
+        // Ignore collisions with certain tags
+        if(collision.gameObject.CompareTag("PhyObject") || collision.gameObject.CompareTag("Bridge"))
         {
             return;
         }

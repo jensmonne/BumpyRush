@@ -16,7 +16,7 @@ public class Grounded : MonoBehaviour
     // COLLISIONS
     void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.CompareTag("Ground"))
+        if (other.gameObject.CompareTag("Ground") || other.gameObject.CompareTag("Bridge"))
         {
             isGrounded = true;
             //StartCoroutine(WaitBeforeGrounded());
@@ -33,7 +33,7 @@ public class Grounded : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("Ground"))
+        if (other.gameObject.CompareTag("Ground") || other.gameObject.CompareTag("Bridge"))
         {
             isGrounded = false;
 

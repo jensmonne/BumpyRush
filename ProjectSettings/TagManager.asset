@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - PhyObject
+  - Bridge
   layers:
   - Default
   - TransparentFX
