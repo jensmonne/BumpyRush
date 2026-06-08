@@ -10,14 +10,12 @@ public class GameManager : NetworkBehaviour
 
     [Header("Win Condition")]
     [Tooltip("If 0 or less, all pickups in scene are required to finish.")]
-    [SerializeField] private int pickupsToWin;
+    [SerializeField] private int pickupsToWin = 10;
 
     [Header("Item Spawning")]
     [SerializeField] private PickUpBase pickupPrefab;
     [SerializeField] private Transform[] spawnPoints;
     [SerializeField] private int itemsToSpawn = 10;
-    [SerializeField] private bool spawnRandomly = false;
-    //[SerializeField] private float spawnDelay = 0.1f;
 
     private List<NetworkIdentity> spawnedPickups = new();
 
@@ -98,10 +96,7 @@ public class GameManager : NetworkBehaviour
         }
     }
 
-    /// <summary>
-    /// Spawns all items across the designated spawn points.
-    /// Call this on the server to create and network all pickups.
-    /// </summary>
+
     [Server]
     public void SpawnAllItems()
     {
@@ -111,22 +106,9 @@ public class GameManager : NetworkBehaviour
             return;
         }
 
-        if (spawnPoints == null || spawnPoints.Length == 0)
-        {
-            Debug.LogError("GameManager: No spawn points assigned!");
-            return;
-        }
-
         ClearSpawnedItems();
+        SpawnItemsAtPoints();
 
-        if (spawnRandomly)
-        {
-            SpawnRandomItems();
-        }
-        else
-        {
-            SpawnItemsAtPoints();
-        }
 
         totalPickups = spawnedPickups.Count;
         if (pickupsToWin <= 0 || pickupsToWin > totalPickups)
@@ -137,9 +119,6 @@ public class GameManager : NetworkBehaviour
         OnItemsSpawned?.Invoke(spawnedPickups.Count);
     }
 
-    /// <summary>
-    /// Spawns items at specific spawn points in order.
-    /// </summary>
     [Server]
     private void SpawnItemsAtPoints()
     {
@@ -156,18 +135,6 @@ public class GameManager : NetworkBehaviour
         }
     }
 
-
-    [Server]
-    private void SpawnRandomItems()
-    {
-        for (int i = 0; i < itemsToSpawn; i++)
-        {
-            Transform randomSpawnPoint = spawnPoints[UnityEngine.Random.Range(0, spawnPoints.Length)];
-            SpawnItemAt(randomSpawnPoint.position, randomSpawnPoint.rotation);
-        }
-    }
-
-
     [Server]
     private void SpawnItemAt(Vector3 position, Quaternion rotation)
     {
@@ -180,7 +147,6 @@ public class GameManager : NetworkBehaviour
         }
         else
         {
-            Debug.LogError("GameManager: Pickup prefab does not have a NetworkIdentity component!");
             Destroy(spawnedObject);
         }
     }
@@ -200,10 +166,6 @@ public class GameManager : NetworkBehaviour
         spawnedPickups.Clear();
     }
 
-    /// <summary>
-    /// Removes a specific pickup from the spawned items list.
-    /// Called when a pickup is collected.
-    /// </summary>
     [Server]
     public void UnregisterPickup(NetworkIdentity pickupIdentity)
     {

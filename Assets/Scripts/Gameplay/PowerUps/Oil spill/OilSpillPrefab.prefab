@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2281017750492483041}
   - component: {fileID: 6267275329866670687}
+  - component: {fileID: 2899694894571369503}
   m_Layer: 0
   m_Name: OilSpillPrefab
   m_TagString: Untagged
@@ -44,4 +45,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0cf2e75eec67b54a9064731b3b7489c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OilSpillItem
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
   oilSpillPrefab: {fileID: 3878516378742774769, guid: 1ebdc66559a88c14ea031730ab8745d7, type: 3}
+--- !u!114 &2899694894571369503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3377156372138394928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Mirror::Mirror.NetworkIdentity
+  sceneId: 0
+  _assetId: 1941179926
+  serverOnly: 0
+  visibility: 0
+  hasSpawned: 0
