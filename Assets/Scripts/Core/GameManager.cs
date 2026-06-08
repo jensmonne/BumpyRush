@@ -16,8 +16,10 @@ public class GameManager : NetworkBehaviour
     [SerializeField] private PickUpBase pickupPrefab;
     [SerializeField] private Transform[] spawnPoints;
     [SerializeField] private int itemsToSpawn = 10;
+    [SerializeField] private float respawnInterval = 10f;
 
     private List<NetworkIdentity> spawnedPickups = new();
+    private float respawnTimer = 0f;
 
     [SyncVar(hook = nameof(HandleTotalPickupsChanged))]
     private int totalPickups;
@@ -64,6 +66,7 @@ public class GameManager : NetworkBehaviour
         isMatchOver = false;
         winnerNetId = 0;
         spawnedPickups.Clear();
+        respawnTimer = respawnInterval;
 
         RecalculatePickupTargets();
         SpawnAllItems();
@@ -84,6 +87,42 @@ public class GameManager : NetworkBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (!isServer || isMatchOver)
+            return;
+
+        respawnTimer -= Time.deltaTime;
+
+        if (respawnTimer <= 0f)
+        {
+            respawnTimer = respawnInterval;
+            CheckAndRespawnItems();
+        }
+    }
+
+    [Server]
+    private void CheckAndRespawnItems()
+    {
+        // Count living items (filter out null references)
+        int livingItemCount = 0;
+        spawnedPickups.RemoveAll(identity => identity == null || identity.gameObject == null);
+        livingItemCount = spawnedPickups.Count;
+
+        // Spawn new items if below target
+        int itemsNeeded = itemsToSpawn - livingItemCount;
+        if (itemsNeeded > 0)
+        {
+            for (int i = 0; i < itemsNeeded; i++)
+            {
+                Transform spawnPoint = spawnPoints[UnityEngine.Random.Range(0, spawnPoints.Length)];
+                SpawnItemAt(spawnPoint.position, spawnPoint.rotation);
+            }
+
+            Debug.Log($"Respawned {itemsNeeded} items. Total on map: {spawnedPickups.Count}");
+        }
+    }
+
     [Server]
     private void RecalculatePickupTargets()
     {
@@ -94,6 +133,17 @@ public class GameManager : NetworkBehaviour
         {
             pickupsToWin = totalPickups;
         }
+    }
+
+    [Server]
+
+    public void ChangeScore(uint playerNetId, int scoreDelta)
+    {
+        if (!playerScores.TryGetValue(playerNetId, out int currentScore))
+        {
+            currentScore = 0;
+        }
+        playerScores[playerNetId] = currentScore + scoreDelta;
     }
 
 
