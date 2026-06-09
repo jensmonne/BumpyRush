@@ -26,6 +26,13 @@ public class Movement : MonoBehaviour
     [Header("StopMovements")]
     [SerializeField] private StopMovement_Bounce stopMovement_Bounce;
 
+    [Header("Effects")]
+    [SerializeField] private ParticleSystem JumpParticles;
+    [SerializeField] private Transform JumpEffectPoint;
+
+    [Header("SFX")]
+    [SerializeField] private AudioClip jumpSound;
+
     private Rigidbody rb3D;
 
     // Input values
@@ -156,5 +163,17 @@ public class Movement : MonoBehaviour
             Vector3.up * jumpForce,
             ForceMode.Impulse
         );
+
+        // Speel jump effect
+        ParticleSystem JumpEffect = Instantiate(
+            JumpParticles,
+            JumpEffectPoint.position,
+            Quaternion.identity
+        );
+        JumpEffect.Play();
+        Destroy(JumpEffect.gameObject, JumpEffect.main.duration);
+
+        //sfx
+        SoundManager.Instance.Play3DSFX(jumpSound, transform.position);
     }
 }
