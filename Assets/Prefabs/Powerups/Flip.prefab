@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6992627244586381040}
   - component: {fileID: -1939080214559522420}
   m_Layer: 0
-  m_Name: Koele Item
+  m_Name: Flip
   m_TagString: Bear
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

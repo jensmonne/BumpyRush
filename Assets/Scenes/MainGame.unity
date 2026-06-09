@@ -339,20 +339,14 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0
   pickupsToWin: 10
-  pickupPrefab: {fileID: 6213000468008614555, guid: d96d016a3e864024bb7e43801a7209c8, type: 3}
-  spawnPoints:
-  - {fileID: 673157186}
-  - {fileID: 1849072307}
-  - {fileID: 1898144404}
-  - {fileID: 787494983}
-  - {fileID: 711819358}
-  - {fileID: 1991062778}
-  - {fileID: 1326584793}
-  - {fileID: 1362801779}
-  - {fileID: 678338136}
-  - {fileID: 906092796}
-  itemsToSpawn: 10
+  bearPrefab: {fileID: 6213000468008614555, guid: d96d016a3e864024bb7e43801a7209c8, type: 3}
+  bearSpawnpoints: []
+  bearsToSpawn: 10
   respawnInterval: 10
+  powerupPrefab: {fileID: 1920169501663488530, guid: b07197389bc8a6d4e888e51408af2787, type: 3}
+  powerupSpawnpoints: []
+  powerupsToSpawn: 5
+  powerupRespawnInterval: 15
 --- !u!114 &869692442
 MonoBehaviour:
   m_ObjectHideFlags: 0
