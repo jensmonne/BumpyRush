@@ -13,20 +13,32 @@ public class Fist : NetworkBehaviour
         {
             Destroy(gameObject, lifetime);
         }
+        gameObject.transform.rotation = Quaternion.Euler(gameObject.transform.rotation.eulerAngles.x, gameObject.transform.rotation.eulerAngles.y + 180f, gameObject.transform.rotation.eulerAngles.z);
     }
 
     private void Update()
     {
-        transform.Translate(transform.forward * speed * Time.deltaTime, Space.World);
+        if (isServer)
+        {
+            transform.Translate(transform.forward * speed * Time.deltaTime, Space.World);
+        }
     }
+
     private void OnTriggerEnter(Collider other)
     {
+        if (!isServer) return;
+
         if (other.gameObject.CompareTag("Player"))
         {
             Debug.Log("Hit player: " + other.gameObject.name);
-            other.gameObject.GetComponentInParent<Rigidbody>().AddForce(transform.forward * knockbackAmount, ForceMode.Impulse);
+            Rigidbody rb = other.gameObject.GetComponentInParent<Rigidbody>();
+            if (rb != null)
+            {
+                rb.AddForce(transform.forward * knockbackAmount, ForceMode.Impulse);
+            }
         }
+
         if (other.gameObject.CompareTag("Ground")) { return; }
-        Destroy(gameObject);
+        NetworkServer.Destroy(gameObject);
     }
 }
