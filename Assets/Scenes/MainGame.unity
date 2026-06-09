@@ -181,6 +181,68 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1810807559}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &705562494
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6747537011155255056}
+    m_Modifications:
+    - target: {fileID: 7130616730983525742, guid: e145e4e7544233042ad7bcab2a233d5b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 63.411808
+      objectReference: {fileID: 0}
+    - target: {fileID: 7130616730983525742, guid: e145e4e7544233042ad7bcab2a233d5b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.016942978
+      objectReference: {fileID: 0}
+    - target: {fileID: 7130616730983525742, guid: e145e4e7544233042ad7bcab2a233d5b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 22.715172
+      objectReference: {fileID: 0}
+    - target: {fileID: 7130616730983525742, guid: e145e4e7544233042ad7bcab2a233d5b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.71115756
+      objectReference: {fileID: 0}
+    - target: {fileID: 7130616730983525742, guid: e145e4e7544233042ad7bcab2a233d5b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7130616730983525742, guid: e145e4e7544233042ad7bcab2a233d5b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7030327
+      objectReference: {fileID: 0}
+    - target: {fileID: 7130616730983525742, guid: e145e4e7544233042ad7bcab2a233d5b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7130616730983525742, guid: e145e4e7544233042ad7bcab2a233d5b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7130616730983525742, guid: e145e4e7544233042ad7bcab2a233d5b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.342
+      objectReference: {fileID: 0}
+    - target: {fileID: 7130616730983525742, guid: e145e4e7544233042ad7bcab2a233d5b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7619767929504708564, guid: e145e4e7544233042ad7bcab2a233d5b, type: 3}
+      propertyPath: m_Name
+      value: P_AutoScooterAttrectie
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e145e4e7544233042ad7bcab2a233d5b, type: 3}
+--- !u!4 &705562495 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7130616730983525742, guid: e145e4e7544233042ad7bcab2a233d5b, type: 3}
+  m_PrefabInstance: {fileID: 705562494}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &711819357
 GameObject:
   m_ObjectHideFlags: 0
@@ -931,7 +993,7 @@ Transform:
   m_GameObject: {fileID: 1810807558}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 31.91316, y: 7.49197, z: -92.42821}
+  m_LocalPosition: {x: -0.4, y: 8.59, z: -116.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -33864,7 +33926,7 @@ GameObject:
   - component: {fileID: 8126703207925421745}
   m_Layer: 0
   m_Name: P_Chair_Red
-  m_TagString: Untagged
+  m_TagString: PhyObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34945,7 +35007,7 @@ GameObject:
   - component: {fileID: 6707980957452444194}
   m_Layer: 0
   m_Name: P_Chair_Blue
-  m_TagString: Untagged
+  m_TagString: PhyObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44865,7 +44927,7 @@ GameObject:
   - component: {fileID: 6311204745960011682}
   m_Layer: 0
   m_Name: P_Trashbin
-  m_TagString: Untagged
+  m_TagString: PhyObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -57085,7 +57147,7 @@ GameObject:
   - component: {fileID: 6585786669556476393}
   m_Layer: 0
   m_Name: Terrain (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
@@ -59046,7 +59108,7 @@ GameObject:
   - component: {fileID: 6767758831302284836}
   m_Layer: 0
   m_Name: P_Trashbin (2)
-  m_TagString: Untagged
+  m_TagString: PhyObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82694,7 +82756,7 @@ GameObject:
   - component: {fileID: 7436490777226095633}
   m_Layer: 0
   m_Name: P_Trashbin (3)
-  m_TagString: Untagged
+  m_TagString: PhyObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105710,7 +105772,7 @@ GameObject:
   - component: {fileID: 7562098550410102911}
   m_Layer: 0
   m_Name: P_Trashbin (1)
-  m_TagString: Untagged
+  m_TagString: PhyObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109911,7 +109973,7 @@ GameObject:
   - component: {fileID: 7708134629779952436}
   m_Layer: 0
   m_Name: P_Trashbin (4)
-  m_TagString: Untagged
+  m_TagString: PhyObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116123,7 +116185,7 @@ GameObject:
   - component: {fileID: 7125855446391884413}
   m_Layer: 0
   m_Name: P_Chair_Blue (1)
-  m_TagString: Untagged
+  m_TagString: PhyObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -130033,7 +130095,7 @@ GameObject:
   - component: {fileID: 7523868111834704305}
   m_Layer: 0
   m_Name: P_Chair_Blue
-  m_TagString: Untagged
+  m_TagString: PhyObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -131038,7 +131100,7 @@ GameObject:
   - component: {fileID: 5024458688164683042}
   m_Layer: 0
   m_Name: P_Chair_Red
-  m_TagString: Untagged
+  m_TagString: PhyObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -152430,7 +152492,7 @@ GameObject:
   - component: {fileID: 7128808853716253642}
   m_Layer: 0
   m_Name: P_Table (1)
-  m_TagString: Untagged
+  m_TagString: PhyObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -160233,7 +160295,7 @@ GameObject:
   - component: {fileID: 1235348282557014326}
   m_Layer: 0
   m_Name: P_Chair_Purple (1)
-  m_TagString: Untagged
+  m_TagString: PhyObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -162907,7 +162969,7 @@ GameObject:
   - component: {fileID: 975187272891002702}
   m_Layer: 0
   m_Name: P_Trashbin (6)
-  m_TagString: Untagged
+  m_TagString: PhyObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -163785,7 +163847,7 @@ GameObject:
   - component: {fileID: 2272426909773328529}
   m_Layer: 0
   m_Name: P_Chair_Purple
-  m_TagString: Untagged
+  m_TagString: PhyObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -171912,7 +171974,7 @@ GameObject:
   - component: {fileID: 7889596277255863614}
   m_Layer: 0
   m_Name: P_TableAndChairs_Versie2 (3)
-  m_TagString: Untagged
+  m_TagString: PhyObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -181500,7 +181562,7 @@ GameObject:
   - component: {fileID: 8152922969533479822}
   m_Layer: 0
   m_Name: P_TableAndChairs_Versie2 (4)
-  m_TagString: Untagged
+  m_TagString: PhyObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -183405,7 +183467,7 @@ GameObject:
   - component: {fileID: 8090588858146177065}
   m_Layer: 0
   m_Name: P_TableAndChairs_Versie2 (1)
-  m_TagString: Untagged
+  m_TagString: PhyObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -193259,7 +193321,7 @@ GameObject:
   - component: {fileID: 8607397923349915414}
   m_Layer: 0
   m_Name: P_TableAndChairs_Versie2 (2)
-  m_TagString: Untagged
+  m_TagString: PhyObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -208243,7 +208305,7 @@ Transform:
   m_GameObject: {fileID: 8546437095383496069}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.2281919, y: 8.273057, z: -122.85517}
+  m_LocalPosition: {x: 31.2, y: 8.273057, z: -122.85517}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -208255,6 +208317,7 @@ Transform:
   - {fileID: 474757599630985189}
   - {fileID: 5712379634248427602}
   - {fileID: 4077381644999724960}
+  - {fileID: 705562495}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &6748149862841486233
@@ -214539,7 +214602,7 @@ GameObject:
   - component: {fileID: 4720839345577104285}
   m_Layer: 0
   m_Name: P_Table (2)
-  m_TagString: Untagged
+  m_TagString: PhyObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -220756,7 +220819,7 @@ GameObject:
   - component: {fileID: 2809333257712422156}
   m_Layer: 0
   m_Name: P_Trashbin (7)
-  m_TagString: Untagged
+  m_TagString: PhyObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -226435,7 +226498,7 @@ GameObject:
   - component: {fileID: 4924878823556132893}
   m_Layer: 0
   m_Name: P_Table
-  m_TagString: Untagged
+  m_TagString: PhyObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -251384,7 +251447,7 @@ GameObject:
   - component: {fileID: 968724983903344269}
   m_Layer: 0
   m_Name: P_Chair_Red (1)
-  m_TagString: Untagged
+  m_TagString: PhyObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -258509,7 +258572,7 @@ GameObject:
   - component: {fileID: 3942846746181983661}
   m_Layer: 0
   m_Name: P_Trashbin (8)
-  m_TagString: Untagged
+  m_TagString: PhyObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -261759,7 +261822,7 @@ GameObject:
   - component: {fileID: 3544958895144575199}
   m_Layer: 0
   m_Name: P_Trashbin (5)
-  m_TagString: Untagged
+  m_TagString: PhyObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -282444,7 +282507,7 @@ GameObject:
   - component: {fileID: 3095353040489790210}
   m_Layer: 0
   m_Name: P_Chair_Purple
-  m_TagString: Untagged
+  m_TagString: PhyObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
