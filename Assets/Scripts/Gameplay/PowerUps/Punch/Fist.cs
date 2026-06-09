@@ -1,6 +1,7 @@
+using Mirror;
 using UnityEngine;
 
-public class Fist : MonoBehaviour
+public class Fist : NetworkBehaviour
 {
     [SerializeField] private float speed = 20f;
     [SerializeField] private float lifetime = 5f;
@@ -8,7 +9,10 @@ public class Fist : MonoBehaviour
 
     private void Start()
     {
-        Destroy(gameObject, lifetime);
+        if (isServer)
+        {
+            Destroy(gameObject, lifetime);
+        }
     }
 
     private void Update()

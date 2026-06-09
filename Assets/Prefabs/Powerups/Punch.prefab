@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 598247503834997394}
   - component: {fileID: 5220261937582264888}
+  - component: {fileID: 3119821213113289238}
   m_Layer: 0
   m_Name: Punch
   m_TagString: Untagged
@@ -44,9 +45,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f9b9fc0bf1a2d0468f156a1cc4f915d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Punch
-  punchForce: 1800
-  punchRange: 100
   fist: {fileID: 4963747753855302940, guid: 486e492f68fd77a4284992a95ff77c2d, type: 3}
-  fistSpeed: 100
   spawnOffset: 4
   punchCooldown: 0.5
+--- !u!114 &3119821213113289238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2981396489453044896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Mirror::Mirror.NetworkIdentity
+  sceneId: 0
+  _assetId: 243188942
+  serverOnly: 0
+  visibility: 0
+  hasSpawned: 0

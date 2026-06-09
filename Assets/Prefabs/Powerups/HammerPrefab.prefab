@@ -281,6 +281,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5781856042803069451}
   - component: {fileID: 7976952179226035618}
+  - component: {fileID: 8532867058704273761}
   m_Layer: 0
   m_Name: HammerPrefab
   m_TagString: Untagged
@@ -319,3 +320,20 @@ MonoBehaviour:
   preSwingDuration: 0.15
   swingDuration: 0.08
   destroyDelay: 0.3
+--- !u!114 &8532867058704273761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8447199496572862295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Mirror::Mirror.NetworkIdentity
+  sceneId: 0
+  _assetId: 3056285096
+  serverOnly: 0
+  visibility: 0
+  hasSpawned: 0

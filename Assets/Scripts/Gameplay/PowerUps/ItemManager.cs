@@ -65,10 +65,12 @@ public class ItemManager : NetworkBehaviour
             Debug.Log("Invalid item index: " + index);
             return;
         }
-
         GameObject item = currentItems[index];
-        GameObject spawnedItem = Instantiate(item, transform.position, Quaternion.identity, gameObject.transform);
 
+        Vector3 spawnPos = transform.position + -transform.forward * 1.5f;
+        Quaternion spawnRot = Quaternion.LookRotation(transform.forward);
+
+        GameObject spawnedItem = Instantiate(item, spawnPos, spawnRot, gameObject.transform);
         Debug.Log("Using item: " + item.name);
 
         NetworkIdentity netIdentity = spawnedItem.GetComponent<NetworkIdentity>();
@@ -76,7 +78,6 @@ public class ItemManager : NetworkBehaviour
         {
             NetworkServer.Spawn(spawnedItem);
         }
-
         currentItems.RemoveAt(index);
         RpcItemUsed(item.name);
     }
