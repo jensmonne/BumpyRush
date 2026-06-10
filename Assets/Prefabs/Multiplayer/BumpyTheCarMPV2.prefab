@@ -298,8 +298,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 555763790058590018}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.01638077, y: -0.96533793, z: 0.2528714, w: -0.062533684}
-  m_LocalPosition: {x: -0.5160669, y: 2.25, z: 3.9665704}
+  m_LocalRotation: {x: 0.2534013, y: -0, z: -0, w: 0.9673613}
+  m_LocalPosition: {x: 0, y: 2.25, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -466,6 +466,37 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.43, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8038837364762019089}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1626319498996606735
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2233055856396831865}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2233055856396831865
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626319498996606735}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1318,6 +1349,7 @@ GameObject:
   - component: {fileID: 4650655322136876136}
   - component: {fileID: 8235560503445132504}
   - component: {fileID: 5593439987936732423}
+  - component: {fileID: 7095203929338817549}
   m_Layer: 0
   m_Name: BumpyTheCarMPV2
   m_TagString: Player
@@ -1350,6 +1382,7 @@ Transform:
   - {fileID: 853790303982096711}
   - {fileID: 5385463652281029234}
   - {fileID: 4439486215587831642}
+  - {fileID: 2233055856396831865}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &3418328798921122687
@@ -1653,6 +1686,31 @@ MonoBehaviour:
   syncInterval: 0
   availableItems: []
   currentItems: []
+--- !u!114 &7095203929338817549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5253260172628986182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee53513f88b5b574fb1f8e037664ff81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RopeWithBears
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
+  cubePrefab: {fileID: 2507459626876894017, guid: 58389718bc2db424d856a52559470337, type: 3}
+  cubeCount: 5
+  segmentLength: 0.5
+  cubeMass: 1
+  jointStiffness: 1
+  jointDamper: 10
+  ropeHeight: 1
+  ropeOriginOffset: {x: -1, y: 0, z: 0}
+  maxForwardDistance: 5
+  minGroundHeight: 20
 --- !u!1 &5603599067671866264
 GameObject:
   m_ObjectHideFlags: 0
@@ -1845,8 +1903,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5775993099546245929}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.016380768, y: -0.965338, z: 0.25287136, w: -0.062533684}
-  m_LocalPosition: {x: -0.5160669, y: 2.25, z: 3.9665704}
+  m_LocalRotation: {x: 0.2534013, y: -0, z: -0, w: 0.9673613}
+  m_LocalPosition: {x: 0, y: 2.25, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2039,7 +2097,7 @@ MonoBehaviour:
         InputAction: {fileID: -5630151704836100654, guid: 1d6e640e716dc4ff6989b73d02023f2b, type: 3}
         Gain: -1
         CancelDeltaTime: 0
-      InputValue: 0
+      InputValue: -0
       Driver:
         AccelTime: 0.2
         DecelTime: 0.2
@@ -2050,7 +2108,7 @@ MonoBehaviour:
         InputAction: {fileID: 5082991133974614888, guid: 1d6e640e716dc4ff6989b73d02023f2b, type: 3}
         Gain: -1
         CancelDeltaTime: 0
-      InputValue: 0
+      InputValue: -0
       Driver:
         AccelTime: 0
         DecelTime: 0
