@@ -68,7 +68,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: fd309c62b15c6fb48a1e67e484bf4d89, type: 2}
+  - {fileID: 2100000, guid: c8d62c77cd956c74eac2d36996fef8c9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -317,6 +317,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af640582606926a46bc00860dd3ed0a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hammer
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
   preSwingDuration: 0.15
   swingDuration: 0.08
   destroyDelay: 0.3
