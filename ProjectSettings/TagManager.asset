@@ -8,6 +8,8 @@ TagManager:
   - PhyObject
   - Bridge
   - Bumpy
+  - Bear
+  - Obstacle_Bump
   layers:
   - Default
   - TransparentFX
