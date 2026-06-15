@@ -48,7 +48,9 @@ public class Movement : MonoBehaviour
     // INPUT SYSTEM (via PlayerInput component)
     public void OnDrive(InputAction.CallbackContext context)
     {
-        driveInput = context.ReadValue<float>();
+        // VEILIGHEIDSMAATREGEL: We klemmen de input HARD tussen -1 en 1.
+        // Mocht je controller een rare waarde doorgeven, dan filteren we dat hier eruit.
+        driveInput = Mathf.Clamp(context.ReadValue<float>(), -1f, 1f);
     }
 
     public void OnSteer(InputAction.CallbackContext context)
@@ -89,23 +91,28 @@ public class Movement : MonoBehaviour
 
         float currentThrottle = smoothedThrottle;
 
-        // voorwaardse snelegeid
         float forwardSpeed = Vector3.Dot(rb3D.linearVelocity, transform.forward);
 
-        // trottle check
+        // Pas de kracht toe
         if (Mathf.Abs(currentThrottle) > 0.01f)
         {
-            float reverseMultiplier = (currentThrottle < 0) ? 0.5f : 1.0f; 
-
-            rb3D.AddForce(transform.forward * currentThrottle * speed * reverseMultiplier, ForceMode.Acceleration);
+            if (currentThrottle < 0f && forwardSpeed <= -maxSpeed * 0.5f)
+            {
+                // Als we achteruit rijden en de snelheid is al op de limiet, doe niets
+                return;
+            }
+            else
+            {
+                float reverseMultiplier = (currentThrottle < 0f) ? 0.3f : 1.0f;
+                rb3D.AddForce(transform.forward * currentThrottle * speed * reverseMultiplier, ForceMode.Acceleration);
+            }
         }
 
-        // Snelheid limiteren
-        float clampedForwardSpeed = Mathf.Clamp(forwardSpeed, -maxSpeed * 0.5f, maxSpeed);
-        
-        // verschil tussen huidige snelheid en gewenste snelheid
         Vector3 localVelocity = transform.InverseTransformDirection(rb3D.linearVelocity);
-        localVelocity.z = clampedForwardSpeed;
+        
+        // BUG HIER GEVONDEN!!!! -maxspeed = vooruit en maxspeed = achteruit.
+        localVelocity.z = Mathf.Clamp(localVelocity.z, -maxSpeed * 0.5f, maxSpeed * 0.5f);
+        
         rb3D.linearVelocity = transform.TransformDirection(localVelocity);
     }
 
