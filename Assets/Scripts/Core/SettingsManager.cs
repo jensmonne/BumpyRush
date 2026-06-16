@@ -14,7 +14,6 @@ public class SettingsManager : MonoBehaviour
             return;
         }
         Instance = this;
-        DontDestroyOnLoad(gameObject);
 
         CurrentSettings = SaveSystem.LoadSettings();
     }
@@ -34,7 +33,8 @@ public class SettingsManager : MonoBehaviour
     {
         CurrentSettings.FPS = fps;
         Application.targetFrameRate = fps;
-        SaveSystem.SaveSettings(CurrentSettings);}
+        SaveSystem.SaveSettings(CurrentSettings);
+    }
 
     public void UpdateVSync(bool isEnabled)
     {

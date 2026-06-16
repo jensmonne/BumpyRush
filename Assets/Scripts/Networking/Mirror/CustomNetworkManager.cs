@@ -13,8 +13,6 @@ public class CustomNetworkManager : NetworkManager
     [Header("Player Prefabs")]
     [SerializeField] private GameObject gamePlayerPrefab;
 
-    public void StartLocalGame() => StartHost();
-
     public override void OnServerAddPlayer(NetworkConnectionToClient conn)
     {
         if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Lobby")

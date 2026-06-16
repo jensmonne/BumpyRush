@@ -31,13 +31,6 @@ public class MainMenuManager : MonoBehaviour
         joinCodeInput.interactable = true;
     }
 
-    public void OnLocalPressed()
-    {
-        MenuManager.Instance.OpenMenu("LoadingMenu");
-        MenuManager.Instance.SetLoadingStatusText("Starting local game...");
-        CustomNetworkManager.singleton.StartLocalGame();
-    }
-
     public void OnHostPressed()
     {
         MenuManager.Instance.OpenMenu("HostMenu");
