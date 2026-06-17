@@ -57,11 +57,4 @@ public class Grounded : MonoBehaviour
 
         helpCoroutine = null;
     }
-
-    //testing
-    //IEnumerator WaitBeforeGrounded()
-    //{
-    //    yield return new WaitForSeconds(0.5f);
-    //    isGrounded = true;
-    //}
 }

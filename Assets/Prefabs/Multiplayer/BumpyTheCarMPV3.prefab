@@ -430,8 +430,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1286879999556638462}
-  - component: {fileID: 922390749793286601}
   - component: {fileID: 4019977001233442025}
+  - component: {fileID: 264265708228970933}
   m_Layer: 0
   m_Name: Bounce
   m_TagString: Player
@@ -448,14 +448,28 @@ Transform:
   m_GameObject: {fileID: 4695840473734020107}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.116, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0, y: 0.073, z: 0}
+  m_LocalScale: {x: 1.03, y: 1.03, z: 1.03}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 8038837364762019089}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &922390749793286601
-BoxCollider:
+--- !u!114 &4019977001233442025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4695840473734020107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98ebd784fcfe7a14d9a9400aff8cca30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BounceIgnoreObject
+  myCollider: {fileID: 264265708228970933}
+  objectToIgnore: {fileID: 1178700937028986570}
+--- !u!64 &264265708228970933
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -472,23 +486,10 @@ BoxCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.1558075, y: 0.056455612, z: 1.9920887}
-  m_Center: {x: 0.002509594, y: -0.05808425, z: 0.0033817887}
---- !u!114 &4019977001233442025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4695840473734020107}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98ebd784fcfe7a14d9a9400aff8cca30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BounceIgnoreObject
-  myCollider: {fileID: 922390749793286601}
-  objectToIgnore: {fileID: 1178700937028986570}
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4296095113479025719, guid: 653882094a944be0a8b3837a13b9c6c5, type: 3}
 --- !u!1 &4886673685550316325
 GameObject:
   m_ObjectHideFlags: 0
@@ -622,9 +623,7 @@ GameObject:
   - component: {fileID: 6997471598470826754}
   - component: {fileID: 5607461066471248116}
   - component: {fileID: 949687005481906122}
-  - component: {fileID: 4650655322136876136}
   - component: {fileID: 8235560503445132504}
-  - component: {fileID: 5593439987936732423}
   - component: {fileID: 7095203929338817549}
   m_Layer: 0
   m_Name: BumpyTheCarMPV3
@@ -825,7 +824,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FlipCar
   checkRotation: 30
-  Bounce: {fileID: 922390749793286601}
+  Bounce: {fileID: 264265708228970933}
 --- !u!114 &6997471598470826754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -838,7 +837,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e5195ef36415f840a8483302c19bdc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StopMovement_Bounce
-  bounceCollider: {fileID: 922390749793286601}
+  bounceCollider: {fileID: 264265708228970933}
   cartRigidbody: {fileID: 3418328798921122687}
   bounceForceMultiplier: 20
   maxBounceForce: 70
@@ -859,7 +858,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BounceParticles
   effect: {fileID: 3307933997718635271, guid: 137d6dc529f0b0f4e81ecfdd924606df, type: 3}
-  bounceCollider: {fileID: 922390749793286601}
+  bounceCollider: {fileID: 264265708228970933}
   minimumImpactForce: 8
 --- !u!114 &949687005481906122
 MonoBehaviour:
@@ -868,7 +867,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5253260172628986182}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e0ce5c755fc2650c91abdd43293d8bd, type: 3}
   m_Name: 
@@ -890,23 +889,6 @@ MonoBehaviour:
   - {fileID: 4615718941161335954}
   - {fileID: 0}
   nameText: {fileID: 3451344196145341943}
---- !u!114 &4650655322136876136
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5253260172628986182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Mirror::Mirror.NetworkIdentity
-  sceneId: 0
-  _assetId: 1777223814
-  serverOnly: 0
-  visibility: 0
-  hasSpawned: 0
 --- !u!114 &8235560503445132504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -914,7 +896,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5253260172628986182}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a553cb17010b2403e8523b558bffbc14, type: 3}
   m_Name: 
@@ -941,23 +923,6 @@ MonoBehaviour:
   positionSensitivity: 0.01
   rotationSensitivity: 0.01
   scaleSensitivity: 0.01
---- !u!114 &5593439987936732423
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5253260172628986182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92cc8ac339c041741b353746346bd0ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ItemManager
-  syncDirection: 0
-  syncMode: 0
-  syncInterval: 0
-  availableItems: []
-  currentItems: []
 --- !u!114 &7095203929338817549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1067,7 +1032,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LandingStabilizer
   rb: {fileID: 3418328798921122687}
   GroundedCollider: {fileID: 947501092705377331}
-  BounceCollider: {fileID: 922390749793286601}
+  BounceCollider: {fileID: 0}
   hardLandingThreshold: 7
   lockDuration: 0.1
   angularDamping: 0.15
@@ -1439,7 +1404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::IgnoreCollider
   myCollider: {fileID: 5279577998176044545}
-  objectToIgnore: {fileID: 922390749793286601}
+  objectToIgnore: {fileID: 0}
 --- !u!1 &7129941232091441839
 GameObject:
   m_ObjectHideFlags: 0

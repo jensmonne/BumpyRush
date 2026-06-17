@@ -7,7 +7,7 @@ public class BounceParticles : MonoBehaviour
     [SerializeField] private ParticleSystem effect;
 
     [Tooltip("The bounce collider on this object")]
-    [SerializeField] private BoxCollider bounceCollider;
+    [SerializeField] private Collider bounceCollider;
 
     [Tooltip("Minimum impact force to trigger the bounce effect")]
     [SerializeField] private float minimumImpactForce = 3f;

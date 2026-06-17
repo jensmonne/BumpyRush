@@ -45,7 +45,6 @@ public class Movement : MonoBehaviour
         rb3D = GetComponent<Rigidbody>();
     }
 
-    // INPUT SYSTEM (via PlayerInput component)
     public void OnDrive(InputAction.CallbackContext context)
     {
         driveInput = Mathf.Clamp(context.ReadValue<float>(), -1f, 1f);

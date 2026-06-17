@@ -9,7 +9,7 @@ using UnityEngine;
 public class FlipBounceDisabler : MonoBehaviour
 {
     [SerializeField] private float checkRotation = 45f;
-    [SerializeField] private BoxCollider Bounce;
+    [SerializeField] private Collider Bounce;
 
     private bool Flipped;
 
