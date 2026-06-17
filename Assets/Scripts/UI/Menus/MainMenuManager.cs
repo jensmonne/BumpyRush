@@ -6,7 +6,7 @@ public class MainMenuManager : MonoBehaviour
 {
     [Header("UI Elements")]
     [SerializeField] private Button hostButton;
-    [SerializeField] private TMP_InputField joinCodeInput;
+    [SerializeField] private Button FriendsButton;
     [SerializeField] private Button joinButton;
 
     private void Start()
@@ -28,7 +28,7 @@ public class MainMenuManager : MonoBehaviour
     private void EnableOnlineButtons()
     {
         hostButton.interactable = true;
-        joinCodeInput.interactable = true;
+        FriendsButton.interactable = true;
     }
 
     public void OnHostPressed()
@@ -36,25 +36,8 @@ public class MainMenuManager : MonoBehaviour
         MenuManager.Instance.OpenMenu("HostMenu");
     }
 
-    public void OnCodeInputChanged()
+    public void OnFriendsPressed()
     {
-        string codeInputText = joinCodeInput.text.Trim();
-        joinCodeInput.text = codeInputText.ToUpper();
-        joinButton.interactable = !string.IsNullOrEmpty(codeInputText);
-    }
-
-    public void OnJoinPressed()
-    {
-        string code = joinCodeInput.text.Trim();
-
-        if (string.IsNullOrEmpty(code)) return;
-
-        MenuManager.Instance.OpenMenu("LoadingMenu");
-
-        SteamLobbyManager.Instance.JoinLobbyByIdString(code, () =>
-        {
-            MenuManager.Instance.OpenMenu("MainMenu");
-        });
     }
 
     public void OnBackPressed()

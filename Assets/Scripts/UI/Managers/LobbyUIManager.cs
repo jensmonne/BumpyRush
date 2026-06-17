@@ -118,6 +118,11 @@ public class LobbyUIManager : MonoBehaviour
         else startGameButton.gameObject.SetActive(false);
     }
 
+    public void OnInviteButton()
+    {
+        SteamLobbyManager.Instance.OpenSteamInviteOverlay();
+    }
+
     public void OnStartGameButton()
     {
         CustomNetworkManager.singleton.ServerChangeScene("MainGame");

@@ -121,6 +121,11 @@ public class SteamLobbyManager : MonoBehaviour
         JoinLobbyDirectly(lobby, () => MenuManager.Instance.OpenMenu("MainMenu"));
     }
 
+    public void OpenSteamInviteOverlay()
+    {
+        SteamFriends.OpenOverlay("LobbyInvite");
+    }
+
     public void LeaveLobby()
     {
         if (CurrentLobby.HasValue)
