@@ -10,15 +10,12 @@ public class FlipBounceDisabler : MonoBehaviour
 {
     [SerializeField] private float checkRotation = 45f;
     [SerializeField] private BoxCollider Bounce;
-    [SerializeField] private Grounded groundedScript;
 
     private bool Flipped;
-    private bool Grounded;
 
     private void Update()
     {
         CheckIfFlipped();
-        //CheckIfGrounded();
 
         if (Flipped)
         {
@@ -35,10 +32,5 @@ public class FlipBounceDisabler : MonoBehaviour
         float zRotation = transform.eulerAngles.z;
 
         Flipped = zRotation > checkRotation && zRotation < 360f - checkRotation;
-    }
-
-    private void CheckIfGrounded()
-    {
-        Grounded = groundedScript.isGrounded;
     }
 }

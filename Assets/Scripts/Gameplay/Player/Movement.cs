@@ -48,8 +48,6 @@ public class Movement : MonoBehaviour
     // INPUT SYSTEM (via PlayerInput component)
     public void OnDrive(InputAction.CallbackContext context)
     {
-        // VEILIGHEIDSMAATREGEL: We klemmen de input HARD tussen -1 en 1.
-        // Mocht je controller een rare waarde doorgeven, dan filteren we dat hier eruit.
         driveInput = Mathf.Clamp(context.ReadValue<float>(), -1f, 1f);
     }
 
