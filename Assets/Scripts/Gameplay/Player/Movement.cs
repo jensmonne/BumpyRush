@@ -24,7 +24,7 @@ public class Movement : MonoBehaviour
     [SerializeField] private Grounded grounded;
 
     [Header("StopMovements")]
-    [SerializeField] private StopMovement_Bounce stopMovement_Bounce;
+    [SerializeField] private BounceFeatures stopMovement_Bounce;
 
     [Header("Effects")]
     [SerializeField] private ParticleSystem JumpParticles;
