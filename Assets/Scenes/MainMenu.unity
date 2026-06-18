@@ -6861,7 +6861,7 @@ MonoBehaviour:
   autoCreatePlayer: 0
   playerSpawnMethod: 0
   spawnPrefabs:
-  - {fileID: 5253260172628986182, guid: 13ec5d5b29cd74c4080c2291f2685d23, type: 3}
+  - {fileID: 5253260172628986182, guid: 8b0f3d09fc0c7f1c388a15cbbb03e856, type: 3}
   exceptionsDisconnect: 1
   snapshotSettings:
     bufferTimeMultiplier: 2
@@ -6877,7 +6877,7 @@ MonoBehaviour:
   evaluationMethod: 0
   evaluationInterval: 3
   timeInterpolationGui: 0
-  gamePlayerPrefab: {fileID: 5253260172628986182, guid: 13ec5d5b29cd74c4080c2291f2685d23, type: 3}
+  gamePlayerPrefab: {fileID: 5253260172628986182, guid: 8b0f3d09fc0c7f1c388a15cbbb03e856, type: 3}
 --- !u!4 &1700020171
 Transform:
   m_ObjectHideFlags: 0
