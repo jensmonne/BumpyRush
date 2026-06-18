@@ -796,7 +796,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StartMenuManager
   hostButton: {fileID: 1580711042}
-  FriendsButton: {fileID: 0}
+  FriendsButton: {fileID: 171882813}
   joinButton: {fileID: 171882813}
 --- !u!225 &95582102
 CanvasGroup:
@@ -5763,7 +5763,6 @@ GameObject:
   - component: {fileID: 1338708701}
   - component: {fileID: 1338708700}
   - component: {fileID: 1338708699}
-  - component: {fileID: 1338708702}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -5832,18 +5831,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1338708702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1338708698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3083c973c524365f810e24cb022bfec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DontDestroyOnLoad
 --- !u!1 &1400531461
 GameObject:
   m_ObjectHideFlags: 0
@@ -8369,6 +8356,6 @@ SceneRoots:
   - {fileID: 1233684840}
   - {fileID: 1700020171}
   - {fileID: 1480830914}
-  - {fileID: 1127121250}
   - {fileID: 1338708701}
+  - {fileID: 1127121250}
   - {fileID: 417628237}

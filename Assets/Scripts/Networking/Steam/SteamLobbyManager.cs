@@ -7,7 +7,6 @@ public class SteamLobbyManager : MonoBehaviour
 {
     public static SteamLobbyManager Instance { get; private set; }
 
-    public string LobbyJoinCode { get; private set; }
     public Lobby? CurrentLobby { get; private set; }
 
     private const string GameFilterKey = "BumpyRushV1";
@@ -59,14 +58,12 @@ public class SteamLobbyManager : MonoBehaviour
             lobby.SetData("GameFilterKey", GameFilterKey);
 
             CurrentLobby = lobby;
-            LobbyJoinCode = lobby.Id.ToString();
 
-            GUIUtility.systemCopyBuffer = LobbyJoinCode;
-            Debug.Log($"[Steam Lobbies] Lobby Created: {LobbyJoinCode} (Copied to Clipboard)");
+            Debug.Log($"[Steam Lobby] Lobby Created Successfully with Steam ID: {lobby.Id}");
 
             if (Mirror.NetworkServer.active || Mirror.NetworkClient.active)
             {
-                Debug.LogWarning("[Steam Lobbies] Clean up active ghost networks before starting a new one...");
+                Debug.LogWarning("[Steam Lobby] Clean up active ghost networks before starting a new host...");
                 CustomNetworkManager.singleton.LeaveGame();
             }
 
@@ -74,20 +71,9 @@ public class SteamLobbyManager : MonoBehaviour
         }
         catch (Exception e)
         {
-            Debug.LogError($"[Steam Lobbies] Error creating lobby: {e.Message}");
+            Debug.LogError($"[Steam Lobby] Error creating lobby: {e.Message}");
             onFailure?.Invoke();
         }
-    }
-
-    public void JoinLobbyByIdString(string lobbyIdText, Action onFailure)
-    {
-        if (!ulong.TryParse(lobbyIdText, out ulong parsedLobbyId))
-        {
-            onFailure?.Invoke();
-            return;
-        }
-
-        JoinLobbyDirectly(new Lobby(parsedLobbyId), onFailure);
     }
 
     public async void JoinLobbyDirectly(Lobby targetLobby, Action onFailure)
@@ -95,7 +81,7 @@ public class SteamLobbyManager : MonoBehaviour
         RoomEnter result = await targetLobby.Join();
         if (result != RoomEnter.Success)
         {
-            Debug.LogError($"[Steam Lobbies] Failed to join lobby data structure: {result}");
+            Debug.LogError($"[Steam Lobby] Failed to join lobby data structure: {result}");
             onFailure?.Invoke();
             return;
         }
@@ -103,7 +89,7 @@ public class SteamLobbyManager : MonoBehaviour
         string hostSteamID = targetLobby.GetData("HostSteamID");
         if (string.IsNullOrEmpty(hostSteamID))
         {
-            Debug.LogError("[Steam Lobbies] Lobby found, but missing HostSteamID metadata!");
+            Debug.LogError("[Steam Lobby] Lobby found, but missing HostSteamID metadata!");
             onFailure?.Invoke();
             return;
         }
@@ -132,7 +118,7 @@ public class SteamLobbyManager : MonoBehaviour
         {
             CurrentLobby.Value.Leave();
             CurrentLobby = null;
-            LobbyJoinCode = string.Empty;
+            Debug.Log("[Steam Lobbies] Left Steam Lobby.");
         }
     }
 }

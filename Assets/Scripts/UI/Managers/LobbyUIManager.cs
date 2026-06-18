@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using Mirror;
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,7 +8,6 @@ public class LobbyUIManager : MonoBehaviour
     public static LobbyUIManager Instance;
 
     [Header("UI References")]
-    [SerializeField] private TMP_Text joinCodeText;
     [SerializeField] private GameObject playerCardPrefab;
     [SerializeField] private Transform playerCardContainer;
     [SerializeField] private Button readyButton;
@@ -22,27 +20,6 @@ public class LobbyUIManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-    }
-
-    private void Start()
-    {
-        if (CustomNetworkManager.singleton != null)
-        {
-            string code = SteamLobbyManager.Instance.LobbyJoinCode;
-
-            if (!string.IsNullOrEmpty(code))
-            {
-                joinCodeText.text = $"Code: {code}";
-            }
-            else
-            {
-                joinCodeText.text = "LOCAL LOBBY";
-            }
-        }
-        else
-        {
-            Debug.LogWarning("Lobby is probably not initialized yet. NetworkManager could not be found or LobbyJoinCode is null.");
-        }
     }
 
     public void AddPlayerToDisplay(LobbyPlayer player)
