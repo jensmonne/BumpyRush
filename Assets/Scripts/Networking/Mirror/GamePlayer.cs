@@ -64,4 +64,16 @@ public class GamePlayer : NetworkBehaviour
 
         if (nameText != null) nameText.gameObject.SetActive(false);
     }
+
+    public void UnstuckPlayer()
+    {
+        transform.position = new Vector3(13f, 10f, -100f);
+        transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+
+        if (playerRigidbody != null)
+        {
+            playerRigidbody.linearVelocity = Vector3.zero;
+            playerRigidbody.angularVelocity = Vector3.zero;
+        }
+    }
 }

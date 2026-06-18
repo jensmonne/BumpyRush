@@ -17,7 +17,7 @@ public class GameManager : NetworkBehaviour
 
     [Header("Post Match")]
     [SerializeField] private string lobbySceneName = "Lobby";
-    [SerializeField] private float returnToLobbyDelay = 10f;
+    [SerializeField] private float returnToLobbyDelay = 3f;
 
     [Header("Bear Spawning")]
     [SerializeField] private PickUpBase bearPrefab;
