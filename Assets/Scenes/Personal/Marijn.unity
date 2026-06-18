@@ -448,14 +448,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2487112815425455412, guid: 8b0f3d09fc0c7f1c388a15cbbb03e856, type: 3}
-      propertyPath: objectToIgnore
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4633297221395255847, guid: 8b0f3d09fc0c7f1c388a15cbbb03e856, type: 3}
-      propertyPath: BounceCollider
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 5253260172628986182, guid: 8b0f3d09fc0c7f1c388a15cbbb03e856, type: 3}
       propertyPath: m_Name
       value: 'BumpyTheCarMPV3 '
