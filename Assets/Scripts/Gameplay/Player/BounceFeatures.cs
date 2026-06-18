@@ -17,7 +17,7 @@ public class BounceFeatures : NetworkBehaviour
     [SerializeField] private float minimumImpactForce = 3f;
 
     [Tooltip("Hoeveel kracht er op de speler wordt toegepast bij een bounce, als deze een andere speler raakt.")]
-    [SerializeField] private float bounceForceOnPlayer = 10f;
+    [SerializeField] private float bounceForceOnPlayer = 100f;
 
     [Header("Release Settings")]
     [SerializeField] private float releaseVelocityThreshold = 1f;
@@ -62,6 +62,7 @@ public class BounceFeatures : NetworkBehaviour
                 // De andere speler wegbeuken via netwerk
                 if (collision.gameObject.CompareTag("Player"))
                 {
+                    //Debug.Log($"Player {collision.gameObject.name} has been hit with a force of {bounceForce} in direction {bounceDirection}");
                     // Mirror NetworkIdentity
                     NetworkIdentity targetIdentity = collision.gameObject.GetComponent<NetworkIdentity>();
                     
