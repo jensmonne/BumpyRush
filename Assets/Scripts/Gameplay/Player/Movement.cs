@@ -30,10 +30,9 @@ public class Movement : MonoBehaviour
     [SerializeField] private ParticleSystem JumpParticles;
     [SerializeField] private Transform JumpEffectPoint;
 
-    [Header("SFX")]
-    [SerializeField] private AudioClip jumpSound;
-
     private Rigidbody rb3D;
+
+    private PlayerSFX playerSFX;
 
     // Input values
     private float driveInput;
@@ -43,6 +42,8 @@ public class Movement : MonoBehaviour
     private void Awake()
     {
         rb3D = GetComponent<Rigidbody>();
+
+        playerSFX = GetComponent<PlayerSFX>();
     }
 
     public void OnDrive(InputAction.CallbackContext context)
@@ -53,17 +54,6 @@ public class Movement : MonoBehaviour
     public void OnSteer(InputAction.CallbackContext context)
     {
         steer = context.ReadValue<float>();
-    }
-
-    // UPDATE
-    private void Update()
-    {
-        //Help bumpy
-        if (grounded.HELP)
-        {
-            Quaternion targetRotation = Quaternion.Euler(0f, transform.rotation.eulerAngles.y, 0f);
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 2f);
-        }
     }
 
     // FIXED UPDATE
@@ -178,6 +168,6 @@ public class Movement : MonoBehaviour
         Destroy(JumpEffect.gameObject, JumpEffect.main.duration);
 
         //sfx
-        SoundManager.Instance.Play3DSFX(jumpSound, transform.position);
+        playerSFX.PlayJumpSound();
     }
 }
