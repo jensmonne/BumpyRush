@@ -58,19 +58,8 @@ public class CustomNetworkManager : NetworkManager
 
     public override void OnClientSceneChanged()
     {
-        if (NetworkClient.connection.isAuthenticated && !NetworkClient.ready) NetworkClient.Ready();
-        if (NetworkClient.connection.isAuthenticated && NetworkClient.localPlayer == null) NetworkClient.AddPlayer();
-
-        string currentScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
-
-        if (currentScene != "MainMenu" && currentScene != "Lobby")
-        {
-            CursorController.Instance.LockCursor();
-        }
-        else
-        {
-            CursorController.Instance.UnlockCursor();
-        }
+        if (NetworkClient.connection != null && NetworkClient.connection.isAuthenticated && !NetworkClient.ready) NetworkClient.Ready();
+        if (NetworkClient.connection != null && NetworkClient.connection.isAuthenticated && NetworkClient.localPlayer == null) NetworkClient.AddPlayer();
     }
 
     public void LeaveGame()
@@ -86,11 +75,6 @@ public class CustomNetworkManager : NetworkManager
         if (SteamLobbyManager.Instance != null)
         {
             SteamLobbyManager.Instance.LeaveLobby();
-        }
-
-        if (CursorController.Instance != null)
-        {
-            CursorController.Instance.UnlockCursor();
         }
     }
 }

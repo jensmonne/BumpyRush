@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CursorController : MonoBehaviour
 {
@@ -14,6 +15,28 @@ public class CursorController : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
+    }
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "MainMenu" || scene.name == "Lobby")
+        {
+            UnlockCursor();
+        }
+        else
+        {
+            LockCursor();
+        }
     }
 
     public void LockCursor()
