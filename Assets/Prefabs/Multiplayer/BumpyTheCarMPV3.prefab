@@ -820,7 +820,7 @@ MonoBehaviour:
   maxBounceForce: 70
   minimumImpactForce: 3
   bounceForceOnPlayer: 80
-  environmentBounceMultiplier: 2.5
+  environmentBounceMultiplier: 15
   maxBounceDuration: 0.35
   hasCollided: 0
 --- !u!114 &5607461066471248116
