@@ -1507,7 +1507,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LobbyUIManager
   playerCardPrefab: {fileID: 347042905559666915, guid: e11950ba7089c978898628b391a2752d, type: 3}
   playerCardContainer: {fileID: 551426459}
-  readyButton: {fileID: 1245248593}
   startGameButton: {fileID: 1711914984}
 --- !u!1 &1711914982
 GameObject:
@@ -1854,7 +1853,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1621383263}
         m_TargetAssemblyTypeName: LobbyUIManager, Assembly-CSharp
-        m_MethodName: OnReadyClicked
+        m_MethodName: OnLeaveLobbyButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
