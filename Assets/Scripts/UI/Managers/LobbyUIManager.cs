@@ -100,10 +100,7 @@ public class LobbyUIManager : MonoBehaviour
 
     public void OnLeaveLobbyButton()
     {
-        if (CustomNetworkManager.singleton != null)
-        {
-            CustomNetworkManager.singleton.LeaveGame();
-        }
+        CustomNetworkManager.singleton.LeaveGame();
     }
 
     public void OnStartGameButton()

@@ -20,16 +20,17 @@ public class BounceFeatures : NetworkBehaviour
     [SerializeField] private float bounceForceOnPlayer = 100f;
 
     [Header("Release Settings")]
-    [SerializeField] private float releaseVelocityThreshold = 1f;
+    [SerializeField] private float bounceDuration = 0.5f;
 
     public bool hasCollided = false;
+    private float bounceTimer = 0f;
 
     private void FixedUpdate()
     {
         if (hasCollided)
         {
-            // Zodra de bounce bijna gestopt is
-            if (cartRigidbody.linearVelocity.magnitude < releaseVelocityThreshold)
+            bounceTimer -= Time.fixedDeltaTime;
+            if (bounceTimer <= 0f)
             {
                 hasCollided = false;
             }
@@ -57,7 +58,8 @@ public class BounceFeatures : NetworkBehaviour
 
                 // Jezelf extra wegbeuken via physics
                 cartRigidbody.AddForce(bounceDirection * bounceForce, ForceMode.Impulse);
-                hasCollided = true;
+
+                TriggerBounceState();
 
                 // De andere speler wegbeuken via netwerk
                 if (collision.gameObject.CompareTag("Player"))
@@ -79,6 +81,12 @@ public class BounceFeatures : NetworkBehaviour
                 return;
             }
         }
+    }
+
+    private void TriggerBounceState()
+    {
+        hasCollided = true;
+        bounceTimer = bounceDuration;
     }
 
     // Een Command stuurt data van de Client naar de Server
@@ -107,7 +115,7 @@ public class BounceFeatures : NetworkBehaviour
             cartRigidbody.AddForce(force, ForceMode.Impulse);
             
             // Zet hun eigen hasCollided op true
-            hasCollided = true; 
+            TriggerBounceState();
         }
     }
 }
