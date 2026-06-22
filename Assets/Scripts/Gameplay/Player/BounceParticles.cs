@@ -27,7 +27,7 @@ public class BounceParticles : NetworkBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(!isServer) return;
+        if(!isServerOnly && !isLocalPlayer) return;
 
         // Ignore collisions with certain tags
         if (collision.gameObject.CompareTag("PhyObject") || collision.gameObject.CompareTag("Bridge"))
@@ -46,9 +46,16 @@ public class BounceParticles : NetworkBehaviour
                     return;
 
                 //Debug.Log("Bounce collision detected at point: " + contact.point);
-                RpcPlayBounceEffect(contact.point, contact.normal);
+                CmdRequestBounceEffect(contact.point, contact.normal);
             }
         }
+    }
+
+    [Command]
+    private void CmdRequestBounceEffect(Vector3 point, Vector3 normal)
+    {
+        // De server stuurt dit door naar ALLE clients (inclusief de host zelf)
+        RpcPlayBounceEffect(point, normal);
     }
 
     [ClientRpc]
@@ -67,7 +74,10 @@ public class BounceParticles : NetworkBehaviour
 
     private IEnumerator DestroyEffect(ParticleSystem effectInstance)
     {
-        yield return new WaitForSeconds(effectInstance.main.duration);
-        Destroy(effectInstance.gameObject);
+        if (effectInstance != null)
+        {
+            yield return new WaitForSeconds(effectInstance.main.duration);
+            Destroy(effectInstance.gameObject);
+        }
     }
 }
