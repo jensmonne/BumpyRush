@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 555763790058590018}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.25340125, y: -0.00000012471243, z: 0.00000003266854, w: 0.9673613}
+  m_LocalRotation: {x: 0.25340143, y: -9.0477603e-10, z: 2.3700714e-10, w: 0.9673612}
   m_LocalPosition: {x: 0, y: 2.25, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -404,8 +404,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e79bebe98c9c4f44a96b440914eb0d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grounded
-  isGrounded: 0
-  HELP: 0
 --- !u!1 &4695840473734020107
 GameObject:
   m_ObjectHideFlags: 0
@@ -592,6 +590,8 @@ GameObject:
   - component: {fileID: 2203779776815334678}
   - component: {fileID: 6997471598470826754}
   - component: {fileID: 5607461066471248116}
+  - component: {fileID: 3755582457864927055}
+  - component: {fileID: 4995633113876898984}
   - component: {fileID: 949687005481906122}
   - component: {fileID: 8235560503445132504}
   - component: {fileID: 7095203929338817549}
@@ -767,9 +767,7 @@ MonoBehaviour:
   velocityRotateSpeed: 3
   grounded: {fileID: 3224136865344549061}
   stopMovement_Bounce: {fileID: 6997471598470826754}
-  JumpParticles: {fileID: 7520421686675044695, guid: 952c38976813399de8293ca090294673, type: 3}
   JumpEffectPoint: {fileID: 4439486215587831642}
-  jumpSound: {fileID: 8300000, guid: 7da5040d9b5d68595a6213747a631948, type: 3}
 --- !u!114 &2595668279047013397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -797,6 +795,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FlipCar
   checkRotation: 30
   Bounce: {fileID: 264265708228970933}
+  waitTimeBeforeHelp: 2
+  grounded: {fileID: 3224136865344549061}
 --- !u!114 &6997471598470826754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -817,7 +817,7 @@ MonoBehaviour:
   bounceForceMultiplier: 20
   maxBounceForce: 70
   minimumImpactForce: 3
-  bounceForceOnPlayer: 60
+  bounceForceOnPlayer: 100
   releaseVelocityThreshold: 1
   hasCollided: 0
 --- !u!114 &5607461066471248116
@@ -832,9 +832,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c9c8f66ab4f20a4ea666ed9f35d7822, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BounceParticles
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
   effect: {fileID: 3307933997718635271, guid: 137d6dc529f0b0f4e81ecfdd924606df, type: 3}
   bounceCollider: {fileID: 264265708228970933}
   minimumImpactForce: 8
+--- !u!114 &3755582457864927055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5253260172628986182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ecaa4d4f928131d99fd0f25c19ad8e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerEffects
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
+  jumpParticles: {fileID: 7520421686675044695, guid: 952c38976813399de8293ca090294673, type: 3}
+--- !u!114 &4995633113876898984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5253260172628986182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b91d6f31edaaf1819bbeb823960e6f40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerSFX
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
+  jumpSound: {fileID: 8300000, guid: 7da5040d9b5d68595a6213747a631948, type: 3}
 --- !u!114 &949687005481906122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -905,7 +940,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5253260172628986182}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ee53513f88b5b574fb1f8e037664ff81, type: 3}
   m_Name: 
@@ -1060,7 +1095,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5775993099546245929}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.25340125, y: -0.00000012480784, z: 0.000000033032823, w: 0.9673613}
+  m_LocalRotation: {x: 0.2534014, y: -6.201747e-10, z: -8.4945984e-10, w: 0.9673613}
   m_LocalPosition: {x: 0, y: 2.25, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
