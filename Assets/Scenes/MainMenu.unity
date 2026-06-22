@@ -8660,23 +8660,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8315560628460999602}
   m_Mesh: {fileID: 4345254262334407911, guid: 653882094a944be0a8b3837a13b9c6c5, type: 3}
---- !u!1 &1459274593088582967
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4458039249760108949}
-  - component: {fileID: 8056080593456840546}
-  m_Layer: 0
-  m_Name: LandingStabilizer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!4 &2004675949079476641
 Transform:
   m_ObjectHideFlags: 0
@@ -8693,7 +8676,6 @@ Transform:
   - {fileID: 3063195292245658864}
   - {fileID: 8556346092240758041}
   - {fileID: 5063832317026666807}
-  - {fileID: 4458039249760108949}
   m_Father: {fileID: 1034889301}
   m_LocalEulerAnglesHint: {x: 0, y: -48.824, z: 0}
 --- !u!1 &2048264823521810988
@@ -8853,21 +8835,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!4 &4458039249760108949
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1459274593088582967}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2004675949079476641}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &5063832317026666807
 Transform:
   m_ObjectHideFlags: 0
@@ -8883,18 +8850,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2004675949079476641}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8056080593456840546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1459274593088582967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::IgnoreCollider
 --- !u!1 &8315560628460999602
 GameObject:
   m_ObjectHideFlags: 0
