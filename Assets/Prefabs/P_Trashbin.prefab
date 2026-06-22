@@ -67,7 +67,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 783e146f37af1d84992160ea8c54b567, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: daa4a8f80dc907b408fdf1d9d813365f, type: 2}
+      objectReference: {fileID: 2100000, guid: 31f5ea1512ebadc4184659bbc722315f, type: 2}
     - target: {fileID: 919132149155446097, guid: 783e146f37af1d84992160ea8c54b567, type: 3}
       propertyPath: m_Name
       value: P_Trashbin

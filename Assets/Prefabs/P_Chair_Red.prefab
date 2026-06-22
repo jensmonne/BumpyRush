@@ -67,7 +67,11 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 1616115ebff0e3e4b8d0994e9d4a71ab, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 41b12577c872a3e4eae6495225c1810f, type: 2}
+      objectReference: {fileID: 2100000, guid: 31f5ea1512ebadc4184659bbc722315f, type: 2}
+    - target: {fileID: -5754084199372789682, guid: 1616115ebff0e3e4b8d0994e9d4a71ab, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -741305928598453439, guid: e5434d772dcedcf48875c6b175db9d15, type: 3}
     - target: {fileID: 919132149155446097, guid: 1616115ebff0e3e4b8d0994e9d4a71ab, type: 3}
       propertyPath: m_Name
       value: P_Chair_Red
