@@ -19,6 +19,8 @@ public class BounceFeatures : NetworkBehaviour
     [Tooltip("Hoeveel kracht er op de speler wordt toegepast bij een bounce, als deze een andere speler raakt.")]
     [SerializeField] private float bounceForceOnPlayer = 100f;
 
+    [SerializeField] private float environmentBounceMultiplier = 2.5f;
+
     [Header("Release Settings")]
     [SerializeField] private float maxBounceDuration = 0.35f;
 
@@ -35,7 +37,6 @@ public class BounceFeatures : NetworkBehaviour
                 hasCollided = false;
             }
         }
-        else return;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -45,6 +46,8 @@ public class BounceFeatures : NetworkBehaviour
 
         if (collision.gameObject.CompareTag("PhyObject") || collision.gameObject.CompareTag("Bridge"))
             return;
+
+        bool isPlayerCollision = collision.gameObject.CompareTag("Player");
 
         foreach (ContactPoint contact in collision.contacts)
         {
@@ -56,16 +59,22 @@ public class BounceFeatures : NetworkBehaviour
                 Vector3 bounceDirection = contact.normal;
                 float bounceForce = Mathf.Clamp(impactForce * bounceForceMultiplier, 0f, maxBounceForce);
 
+                float selfApplyForce = bounceForce;
+
+                if (!isPlayerCollision)
+                {
+                    selfApplyForce *= environmentBounceMultiplier;
+                }
+
+                cartRigidbody.AddForce(bounceDirection * selfApplyForce, ForceMode.Impulse);
+
                 float impactPercentage = bounceForce / maxBounceForce;
                 float calculatedDuration = impactPercentage * maxBounceDuration;
-
-                // Jezelf extra wegbeuken via physics
-                cartRigidbody.AddForce(bounceDirection * bounceForce, ForceMode.Impulse);
 
                 TriggerBounceState(calculatedDuration);
 
                 // De andere speler wegbeuken via netwerk
-                if (collision.gameObject.CompareTag("Player"))
+                if (isPlayerCollision)
                 {
                     //Debug.Log($"Player {collision.gameObject.name} has been hit with a force of {bounceForce} in direction {bounceDirection}");
                     // Mirror NetworkIdentity
