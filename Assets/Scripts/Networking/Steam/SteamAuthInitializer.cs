@@ -53,7 +53,7 @@ public class SteamAuthInitializer : MonoBehaviour
         }
     }
 
-    private void OnDestroy()
+    private void OnApplicationQuit()
     {
         if (IsAuthenticated)
         {

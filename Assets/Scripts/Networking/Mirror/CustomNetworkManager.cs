@@ -29,8 +29,7 @@ public class CustomNetworkManager : NetworkManager
         base.OnServerReady(conn);
 
         string currentScene = SceneManager.GetActiveScene().name;
-        Debug.Log($"[NetworkManager] Scene was loaded: {currentScene}");
-        if (currentScene.Contains("MainMenu") || currentScene.Contains("Assets/Scenes/Lobby.unity") || currentScene.Contains("Lobby")) return;
+        if (currentScene.Contains("MainMenu") || currentScene.Contains("Lobby")) return;
 
         if (conn.identity != null && conn.identity.TryGetComponent(out LobbyPlayer lobbyPlayer))
         {
@@ -66,8 +65,14 @@ public class CustomNetworkManager : NetworkManager
 
     public void LeaveGame()
     {
+        SteamLobbyManager.Instance.LeaveLobby();
         if (NetworkServer.active && NetworkClient.isConnected) StopHost();
         else if (NetworkClient.isConnected) StopClient();
+
+        if (SceneManager.GetActiveScene().name != "MainMenu")
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
     }
 
     public override void OnStopHost()
@@ -78,10 +83,7 @@ public class CustomNetworkManager : NetworkManager
     public override void OnClientDisconnect()
     {
         SteamLobbyManager.Instance.LeaveLobby();
-    }
 
-    public override void OnStopClient()
-    {
         if (SceneManager.GetActiveScene().name != "MainMenu")
         {
             SceneManager.LoadScene("MainMenu");
