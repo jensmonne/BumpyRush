@@ -51,10 +51,10 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 90382ecda032307429865c6b97d3af68, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 182b8ba39210ec84a8a3794d37372e94, type: 2}
+      objectReference: {fileID: 2100000, guid: 266705044becaec4b8e40e2dc5cc8ac5, type: 2}
     - target: {fileID: 919132149155446097, guid: 90382ecda032307429865c6b97d3af68, type: 3}
       propertyPath: m_Name
-      value: Hek
+      value: P_Hek
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
