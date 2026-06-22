@@ -20,7 +20,7 @@ public class BounceFeatures : NetworkBehaviour
     [SerializeField] private float bounceForceOnPlayer = 100f;
 
     [Header("Release Settings")]
-    [SerializeField] private float bounceDuration = 0.5f;
+    [SerializeField] private float maxBounceDuration = 0.35f;
 
     public bool hasCollided = false;
     private float bounceTimer = 0f;
@@ -56,10 +56,13 @@ public class BounceFeatures : NetworkBehaviour
                 Vector3 bounceDirection = contact.normal;
                 float bounceForce = Mathf.Clamp(impactForce * bounceForceMultiplier, 0f, maxBounceForce);
 
+                float impactPercentage = bounceForce / maxBounceForce;
+                float calculatedDuration = impactPercentage * maxBounceDuration;
+
                 // Jezelf extra wegbeuken via physics
                 cartRigidbody.AddForce(bounceDirection * bounceForce, ForceMode.Impulse);
 
-                TriggerBounceState();
+                TriggerBounceState(calculatedDuration);
 
                 // De andere speler wegbeuken via netwerk
                 if (collision.gameObject.CompareTag("Player"))
@@ -75,7 +78,7 @@ public class BounceFeatures : NetworkBehaviour
                         Vector3 finalForce = pushDirection * bumpyPushForce;
 
                         // request voor de beuk
-                        CmdRequestBounce(targetIdentity, finalForce);
+                        CmdRequestBounce(targetIdentity, finalForce, calculatedDuration);
                     }
                 }
                 return;
@@ -83,15 +86,15 @@ public class BounceFeatures : NetworkBehaviour
         }
     }
 
-    private void TriggerBounceState()
+    private void TriggerBounceState(float duration)
     {
         hasCollided = true;
-        bounceTimer = bounceDuration;
+        bounceTimer = duration;
     }
 
     // Een Command stuurt data van de Client naar de Server
     [Command]
-    private void CmdRequestBounce(NetworkIdentity targetIdentity, Vector3 force)
+    private void CmdRequestBounce(NetworkIdentity targetIdentity, Vector3 force, float duration)
     {
         if (targetIdentity == null) return;
 
@@ -101,13 +104,13 @@ public class BounceFeatures : NetworkBehaviour
         if (targetBounceScript != null)
         {
             // TargetRpc stuurt data specifiek naar de client die de 'targetIdentity' bezit
-            targetBounceScript.TargetApplyBounce(targetIdentity.connectionToClient, force);
+            targetBounceScript.TargetApplyBounce(targetIdentity.connectionToClient, force, duration);
         }
     }
 
     // Een TargetRpc voert ALTIJD uit op de PC van de speler die gekoppeld is aan de NetworkConnection
     [TargetRpc]
-    private void TargetApplyBounce(NetworkConnectionToClient target, Vector3 force)
+    private void TargetApplyBounce(NetworkConnectionToClient target, Vector3 force, float duration)
     {
         if (cartRigidbody != null)
         {
@@ -115,7 +118,7 @@ public class BounceFeatures : NetworkBehaviour
             cartRigidbody.AddForce(force, ForceMode.Impulse);
             
             // Zet hun eigen hasCollided op true
-            TriggerBounceState();
+            TriggerBounceState(duration);
         }
     }
 }

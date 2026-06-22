@@ -817,8 +817,8 @@ MonoBehaviour:
   bounceForceMultiplier: 20
   maxBounceForce: 70
   minimumImpactForce: 3
-  bounceForceOnPlayer: 100
-  releaseVelocityThreshold: 1
+  bounceForceOnPlayer: 1000
+  maxBounceDuration: 0.35
   hasCollided: 0
 --- !u!114 &5607461066471248116
 MonoBehaviour:
