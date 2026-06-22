@@ -19,7 +19,7 @@ public class BounceFeatures : NetworkBehaviour
     [Tooltip("Hoeveel kracht er op de speler wordt toegepast bij een bounce, als deze een andere speler raakt.")]
     [SerializeField] private float bounceForceOnPlayer = 100f;
 
-    [SerializeField] private float environmentBounceMultiplier = 2.5f;
+    [SerializeField] private float environmentBounceMultiplier = 5f;
 
     [Header("Release Settings")]
     [SerializeField] private float maxBounceDuration = 0.35f;

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SteamAuthInitializer : MonoBehaviour
 {
+    public static SteamAuthInitializer Instance { get; private set; }
     public static bool IsAuthenticated { get; private set; } = false;
     public static event Action OnAuthenticated;
 
@@ -15,6 +16,14 @@ public class SteamAuthInitializer : MonoBehaviour
 
     private void Awake()
     {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject); 
+            return;
+        }
+
+        Instance = this;
+
         DontDestroyOnLoad(gameObject);
         Authenticate();
     }

@@ -6850,7 +6850,7 @@ MonoBehaviour:
   sendRate: 60
   offlineScene: Assets/Scenes/MainMenu.unity
   onlineScene: Assets/Scenes/Lobby.unity
-  offlineSceneLoadDelay: 3
+  offlineSceneLoadDelay: 0
   transport: {fileID: 1700020172}
   networkAddress: localhost
   maxConnections: 100
