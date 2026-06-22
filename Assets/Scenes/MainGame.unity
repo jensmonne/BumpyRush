@@ -2661,7 +2661,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 570930311}
         m_TargetAssemblyTypeName: PauseMenuManager, Assembly-CSharp
-        m_MethodName: OnLeaveButton
+        m_MethodName: OnLeaveGameButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

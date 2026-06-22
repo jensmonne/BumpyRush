@@ -348,7 +348,6 @@ GameObject:
   m_Component:
   - component: {fileID: 565332694968675881}
   - component: {fileID: 947501092705377331}
-  - component: {fileID: 205823302772271520}
   - component: {fileID: 3224136865344549061}
   m_Layer: 0
   m_Name: Grounded
@@ -393,20 +392,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.71004295, y: 0.07144421, z: 1.4262692}
   m_Center: {x: -0.002727032, y: -0.12941232, z: -0.103979416}
---- !u!114 &205823302772271520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4615718941161335954}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98ebd784fcfe7a14d9a9400aff8cca30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BounceIgnoreObject
-  myCollider: {fileID: 947501092705377331}
-  objectToIgnore: {fileID: 1178700937028986570}
 --- !u!114 &3224136865344549061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -419,8 +404,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e79bebe98c9c4f44a96b440914eb0d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Grounded
-  isGrounded: 0
-  HELP: 0
 --- !u!1 &4695840473734020107
 GameObject:
   m_ObjectHideFlags: 0
@@ -431,7 +414,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1286879999556638462}
   - component: {fileID: 922390749793286601}
-  - component: {fileID: 4019977001233442025}
   m_Layer: 0
   m_Name: Bounce
   m_TagString: Player
@@ -475,20 +457,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.1558075, y: 0.056455612, z: 1.9920887}
   m_Center: {x: 0.002509594, y: -0.05808425, z: 0.0033817887}
---- !u!114 &4019977001233442025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4695840473734020107}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98ebd784fcfe7a14d9a9400aff8cca30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BounceIgnoreObject
-  myCollider: {fileID: 922390749793286601}
-  objectToIgnore: {fileID: 1178700937028986570}
 --- !u!1 &4886673685550316325
 GameObject:
   m_ObjectHideFlags: 0
@@ -654,7 +622,6 @@ Transform:
   - {fileID: 1286879999556638462}
   - {fileID: 565332694968675881}
   - {fileID: 7732750049251817156}
-  - {fileID: 853790303982096711}
   - {fileID: 5385463652281029234}
   - {fileID: 4439486215587831642}
   m_Father: {fileID: 0}
@@ -799,7 +766,6 @@ MonoBehaviour:
   stopMovement_Bounce: {fileID: 6997471598470826754}
   JumpParticles: {fileID: 7520421686675044695, guid: 952c38976813399de8293ca090294673, type: 3}
   JumpEffectPoint: {fileID: 4439486215587831642}
-  jumpSound: {fileID: 8300000, guid: 7da5040d9b5d68595a6213747a631948, type: 3}
 --- !u!114 &2595668279047013397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -827,6 +793,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FlipCar
   checkRotation: 30
   Bounce: {fileID: 922390749793286601}
+  waitTimeBeforeHelp: 2
+  grounded: {fileID: 0}
 --- !u!114 &6997471598470826754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -839,6 +807,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e5195ef36415f840a8483302c19bdc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StopMovement_Bounce
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
   bounceCollider: {fileID: 922390749793286601}
   cartRigidbody: {fileID: 3418328798921122687}
   bounceForceMultiplier: 20
@@ -889,7 +860,7 @@ MonoBehaviour:
   - {fileID: 555763790058590018}
   - {fileID: 5775993099546245929}
   - {fileID: 4615718941161335954}
-  - {fileID: 3025343042110332255}
+  - {fileID: 0}
   nameText: {fileID: 3451344196145341943}
 --- !u!114 &4650655322136876136
 MonoBehaviour:
@@ -995,7 +966,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7732750049251817156}
   - component: {fileID: 8990695652269894756}
-  - component: {fileID: 8606714608690910890}
   - component: {fileID: 4633297221395255847}
   m_Layer: 0
   m_Name: LandingStabilizer
@@ -1040,20 +1010,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.4408069, y: 0.1636604, z: 2.2369442}
   m_Center: {x: -0.0094509125, y: -0.4181698, z: 0.021325588}
---- !u!114 &8606714608690910890
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5603599067671866264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98ebd784fcfe7a14d9a9400aff8cca30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::IgnoreCollider
-  myCollider: {fileID: 8990695652269894756}
-  objectToIgnore: {fileID: 947501092705377331}
 --- !u!114 &4633297221395255847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1325,7 +1281,6 @@ GameObject:
   - component: {fileID: 8598468535560849361}
   - component: {fileID: 1196557964879844067}
   - component: {fileID: 5279577998176044545}
-  - component: {fileID: 2487112815425455412}
   m_Layer: 0
   m_Name: Bumpy_Car
   m_TagString: Player
@@ -1427,20 +1382,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4345254262334407911, guid: 653882094a944be0a8b3837a13b9c6c5, type: 3}
---- !u!114 &2487112815425455412
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6113648209564410056}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98ebd784fcfe7a14d9a9400aff8cca30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::IgnoreCollider
-  myCollider: {fileID: 5279577998176044545}
-  objectToIgnore: {fileID: 922390749793286601}
 --- !u!1 &7129941232091441839
 GameObject:
   m_ObjectHideFlags: 0
@@ -1644,118 +1585,3 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4296095113479025719, guid: 653882094a944be0a8b3837a13b9c6c5, type: 3}
---- !u!1001 &4597724780650212850
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 8038837364762019089}
-    m_Modifications:
-    - target: {fileID: 1599423434604228781, guid: 6013c0445ffdddf54a48ae0c2c97d56e, type: 3}
-      propertyPath: m_Name
-      value: PauseMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 3753507941591563445, guid: 6013c0445ffdddf54a48ae0c2c97d56e, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3753507941591563445, guid: 6013c0445ffdddf54a48ae0c2c97d56e, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3753507941591563445, guid: 6013c0445ffdddf54a48ae0c2c97d56e, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3753507941591563445, guid: 6013c0445ffdddf54a48ae0c2c97d56e, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3753507941591563445, guid: 6013c0445ffdddf54a48ae0c2c97d56e, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3753507941591563445, guid: 6013c0445ffdddf54a48ae0c2c97d56e, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3753507941591563445, guid: 6013c0445ffdddf54a48ae0c2c97d56e, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3753507941591563445, guid: 6013c0445ffdddf54a48ae0c2c97d56e, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3753507941591563445, guid: 6013c0445ffdddf54a48ae0c2c97d56e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3753507941591563445, guid: 6013c0445ffdddf54a48ae0c2c97d56e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3753507941591563445, guid: 6013c0445ffdddf54a48ae0c2c97d56e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3753507941591563445, guid: 6013c0445ffdddf54a48ae0c2c97d56e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3753507941591563445, guid: 6013c0445ffdddf54a48ae0c2c97d56e, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3753507941591563445, guid: 6013c0445ffdddf54a48ae0c2c97d56e, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3753507941591563445, guid: 6013c0445ffdddf54a48ae0c2c97d56e, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3753507941591563445, guid: 6013c0445ffdddf54a48ae0c2c97d56e, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3753507941591563445, guid: 6013c0445ffdddf54a48ae0c2c97d56e, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3753507941591563445, guid: 6013c0445ffdddf54a48ae0c2c97d56e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3753507941591563445, guid: 6013c0445ffdddf54a48ae0c2c97d56e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3753507941591563445, guid: 6013c0445ffdddf54a48ae0c2c97d56e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5590208700376474658, guid: 6013c0445ffdddf54a48ae0c2c97d56e, type: 3}
-      propertyPath: carTransform
-      value: 
-      objectReference: {fileID: 8038837364762019089}
-    - target: {fileID: 8482359041826685114, guid: 6013c0445ffdddf54a48ae0c2c97d56e, type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 3145206654906303328}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6013c0445ffdddf54a48ae0c2c97d56e, type: 3}
---- !u!224 &853790303982096711 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 3753507941591563445, guid: 6013c0445ffdddf54a48ae0c2c97d56e, type: 3}
-  m_PrefabInstance: {fileID: 4597724780650212850}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &3025343042110332255 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1599423434604228781, guid: 6013c0445ffdddf54a48ae0c2c97d56e, type: 3}
-  m_PrefabInstance: {fileID: 4597724780650212850}
-  m_PrefabAsset: {fileID: 0}

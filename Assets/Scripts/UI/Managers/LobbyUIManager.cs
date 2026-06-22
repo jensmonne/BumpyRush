@@ -10,7 +10,6 @@ public class LobbyUIManager : MonoBehaviour
     [Header("UI References")]
     [SerializeField] private GameObject playerCardPrefab;
     [SerializeField] private Transform playerCardContainer;
-    [SerializeField] private Button readyButton;
     [SerializeField] private Button startGameButton;
 
     private LobbyPlayer localPlayer;
@@ -35,9 +34,6 @@ public class LobbyUIManager : MonoBehaviour
         if (player.isLocalPlayer)
         {
             localPlayer = player;
-            
-            readyButton.onClick.RemoveAllListeners();
-            readyButton.onClick.AddListener(OnReadyClicked);
 
             UpdateStartButton();
         }
@@ -80,6 +76,8 @@ public class LobbyUIManager : MonoBehaviour
 
         foreach (var player in playerCards.Keys)
         {
+            if (player == null) continue;
+
             if (!player.isReady)
             {
                 allReady = false;
@@ -98,6 +96,14 @@ public class LobbyUIManager : MonoBehaviour
     public void OnInviteButton()
     {
         SteamLobbyManager.Instance.OpenSteamInviteOverlay();
+    }
+
+    public void OnLeaveLobbyButton()
+    {
+        if (CustomNetworkManager.singleton != null)
+        {
+            CustomNetworkManager.singleton.LeaveGame();
+        }
     }
 
     public void OnStartGameButton()

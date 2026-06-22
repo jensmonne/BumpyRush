@@ -68,13 +68,17 @@ public class CustomNetworkManager : NetworkManager
         else if (NetworkClient.isConnected) StopClient();
     }
 
+    public override void OnStopHost()
+    {
+        base.OnStopHost();
+
+        SteamLobbyManager.Instance.LeaveLobby();
+    }
+
     public override void OnClientDisconnect()
     {
         base.OnClientDisconnect();
 
-        if (SteamLobbyManager.Instance != null)
-        {
-            SteamLobbyManager.Instance.LeaveLobby();
-        }
+        SteamLobbyManager.Instance.LeaveLobby();
     }
 }

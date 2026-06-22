@@ -37,10 +37,8 @@ public class PauseMenuManager : MonoBehaviour
         CursorController.Instance.LockCursor();
     }
 
-    public void OnLeaveButton()
+    public void OnLeaveGameButton()
     {
-        CursorController.Instance.UnlockCursor();
-        SteamLobbyManager.Instance.LeaveLobby();
         CustomNetworkManager.singleton.LeaveGame();
     }
 
