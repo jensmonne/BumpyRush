@@ -1,7 +1,8 @@
 using UnityEngine;
 using System.Collections;
+using Mirror;
 
-public class BounceParticles : MonoBehaviour
+public class BounceParticles : NetworkBehaviour
 {
     [Tooltip("The particle system Prefab for bounce")]
     [SerializeField] private ParticleSystem effect;
@@ -26,6 +27,8 @@ public class BounceParticles : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        if(!isServer) return;
+
         // Ignore collisions with certain tags
         if (collision.gameObject.CompareTag("PhyObject") || collision.gameObject.CompareTag("Bridge"))
         {
@@ -43,13 +46,23 @@ public class BounceParticles : MonoBehaviour
                     return;
 
                 //Debug.Log("Bounce collision detected at point: " + contact.point);
-                ParticleSystem effectInstance = Instantiate(effect, contact.point, Quaternion.LookRotation(contact.normal));
-                effectInstance.transform.position = contact.point;
-                effectInstance.transform.rotation = Quaternion.LookRotation(contact.normal);
-                effectInstance.Play();
-                StartCoroutine(DestroyEffect(effectInstance));
+                RpcPlayBounceEffect(contact.point, contact.normal);
             }
         }
+    }
+
+    [ClientRpc]
+    private void RpcPlayBounceEffect(Vector3 point, Vector3 normal)
+    {
+        if (effect == null) return;
+
+        // Bereken de rotatie op basis van de normal van de muur/ondergrond
+        Quaternion rotation = Quaternion.LookRotation(normal);
+
+        ParticleSystem effectInstance = Instantiate(effect, point, rotation);
+        effectInstance.Play();
+        
+        StartCoroutine(DestroyEffect(effectInstance));
     }
 
     private IEnumerator DestroyEffect(ParticleSystem effectInstance)

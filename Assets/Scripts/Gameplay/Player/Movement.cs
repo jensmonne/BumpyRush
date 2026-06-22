@@ -27,11 +27,11 @@ public class Movement : MonoBehaviour
     [SerializeField] private BounceFeatures stopMovement_Bounce;
 
     [Header("Effects")]
-    [SerializeField] private ParticleSystem JumpParticles;
     [SerializeField] private Transform JumpEffectPoint;
 
     private Rigidbody rb3D;
     private PlayerSFX playerSFX;
+    private PlayerEffects playerVFX;
 
     private float driveInput;
     private float steer;
@@ -41,6 +41,7 @@ public class Movement : MonoBehaviour
     {
         rb3D = GetComponent<Rigidbody>();
         playerSFX = GetComponent<PlayerSFX>();
+        playerVFX = GetComponent<PlayerEffects>();
     }
 
     // Vangt de input op voor gas geven (1) en achteruitrijden/remmen (-1)
@@ -174,15 +175,9 @@ public class Movement : MonoBehaviour
             Vector3.up * jumpForce,
             ForceMode.Impulse
         );
-
-        // Spawnt de jump-particlessssss
-        ParticleSystem JumpEffect = Instantiate(
-            JumpParticles,
-            JumpEffectPoint.position,
-            Quaternion.identity
-        );
-        JumpEffect.Play();
-        Destroy(JumpEffect.gameObject, JumpEffect.main.duration);
+        
+        // jump VFX (expects a Transform)
+        playerVFX.PlayJumpEffect(JumpEffectPoint);
 
         // jump sfx
         playerSFX.PlayJumpSound();

@@ -359,6 +359,9 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5253260172628986182, guid: 8b0f3d09fc0c7f1c388a15cbbb03e856, type: 3}
       insertIndex: 8
+      addedObject: {fileID: 148858266}
+    - targetCorrespondingSourceObject: {fileID: 5253260172628986182, guid: 8b0f3d09fc0c7f1c388a15cbbb03e856, type: 3}
+      insertIndex: 9
       addedObject: {fileID: 148858265}
   m_SourcePrefab: {fileID: 100100000, guid: 8b0f3d09fc0c7f1c388a15cbbb03e856, type: 3}
 --- !u!1 &148858264 stripped
@@ -378,7 +381,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b91d6f31edaaf1819bbeb823960e6f40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerSFX
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
   jumpSound: {fileID: 8300000, guid: 7da5040d9b5d68595a6213747a631948, type: 3}
+--- !u!114 &148858266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148858264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ecaa4d4f928131d99fd0f25c19ad8e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerEffects
+  jumpParticles: {fileID: 7520421686675044695, guid: 952c38976813399de8293ca090294673, type: 3}
 --- !u!1 &208892682
 GameObject:
   m_ObjectHideFlags: 0

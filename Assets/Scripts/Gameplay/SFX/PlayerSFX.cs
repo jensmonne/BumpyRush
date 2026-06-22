@@ -1,15 +1,31 @@
 using UnityEngine;
+using Mirror;
 
 /// <summary>
 /// Dit script beheert alle geluidseffecten specifiek voor de speler/het object
 /// en communiceert met de centrale SoundManager.
 /// </summary>
-public class PlayerSFX : MonoBehaviour
+public class PlayerSFX : NetworkBehaviour
 {
     [Header("Player SFX Clips")]
     [SerializeField] private AudioClip jumpSound;
 
     public void PlayJumpSound()
+    {
+        if(isLocalPlayer)
+        {
+            CmdPlayJumpSound();
+        }
+    }
+
+    [Command]
+    private void CmdPlayJumpSound()
+    {
+        RpcPlayJumpSound();
+    }
+
+    [ClientRpc]
+    private void RpcPlayJumpSound()
     {
         if (jumpSound != null)
         {
@@ -17,7 +33,7 @@ public class PlayerSFX : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning($"JumpSound is niet toegewezen op {gameObject.name}", this);
+            Debug.LogWarning("Jump sound clip is not assigned in PlayerSFX.");
         }
     }
 }
