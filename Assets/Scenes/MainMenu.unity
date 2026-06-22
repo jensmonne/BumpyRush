@@ -8628,22 +8628,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!1 &722667496607176881
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2107237975660654630}
-  m_Layer: 0
-  m_Name: Proxy_Car_SFX
-  m_TagString: Player
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!33 &1188594691695876614
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -8661,10 +8645,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2004675949079476641}
-  - component: {fileID: 9019322013627026180}
-  - component: {fileID: 1265790903892098095}
-  - component: {fileID: 4297614769600232761}
-  - component: {fileID: 4018857283873960896}
   m_Layer: 0
   m_Name: BumpyTheCarMP (1)
   m_TagString: Player
@@ -8672,29 +8652,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1265790903892098095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1196227466848822043}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 652be7485058ba1a88fc166655c39c7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Movement
-  speed: 50
-  maxSpeed: 10
-  jumpForce: 800
-  throttleResponse: 5
-  turnSpeed: 100
-  driftFactor: 0.95
-  velocityRotateSpeed: 2
-  bounceDriftFactor: 0.996
-  grounded: {fileID: 0}
-  stopMovement_Bounce: {fileID: 4018857283873960896}
-  JumpEffectPoint: {fileID: 0}
 --- !u!33 &1282870194418783590
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -8712,9 +8669,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4458039249760108949}
-  - component: {fileID: 8798827772742817470}
   - component: {fileID: 8056080593456840546}
-  - component: {fileID: 6379225812486038369}
   m_Layer: 0
   m_Name: LandingStabilizer
   m_TagString: Untagged
@@ -8739,7 +8694,6 @@ Transform:
   - {fileID: 8556346092240758041}
   - {fileID: 5063832317026666807}
   - {fileID: 4458039249760108949}
-  - {fileID: 2107237975660654630}
   m_Father: {fileID: 1034889301}
   m_LocalEulerAnglesHint: {x: 0, y: -48.824, z: 0}
 --- !u!1 &2048264823521810988
@@ -8760,21 +8714,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2107237975660654630
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 722667496607176881}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2004675949079476641}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2169900940392645370
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -8914,46 +8853,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &4018857283873960896
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1196227466848822043}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e5195ef36415f840a8483302c19bdc1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::StopMovement_Bounce
-  syncDirection: 0
-  syncMode: 0
-  syncInterval: 0
-  bounceCollider: {fileID: 0}
-  cartRigidbody: {fileID: 0}
-  bounceForceMultiplier: 20
-  maxBounceForce: 70
-  minimumImpactForce: 3
-  bounceForceOnPlayer: 100
-  environmentBounceMultiplier: 2.5
-  maxBounceDuration: 0.35
-  hasCollided: 0
---- !u!114 &4297614769600232761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1196227466848822043}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49f83f854f9b4e741bdff6f47d539a23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FlipCar
-  checkRotation: 30
-  Bounce: {fileID: 0}
-  waitTimeBeforeHelp: 2
-  grounded: {fileID: 0}
 --- !u!4 &4458039249760108949
 Transform:
   m_ObjectHideFlags: 0
@@ -8984,25 +8883,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2004675949079476641}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6379225812486038369
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1459274593088582967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3536ffba38c8ca4085d0e0569b4d0eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LandingStabilizer
-  rb: {fileID: 0}
-  GroundedCollider: {fileID: 0}
-  BounceCollider: {fileID: 0}
-  hardLandingThreshold: 7
-  lockDuration: 0.1
-  angularDamping: 0.15
-  velocityDamping: 0.8
 --- !u!114 &8056080593456840546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9048,27 +8928,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2004675949079476641}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &8798827772742817470
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1459274593088582967}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.4408069, y: 0.1636604, z: 2.2369442}
-  m_Center: {x: -0.0094509125, y: -0.4181698, z: 0.021325588}
 --- !u!23 &9007060633399973902
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9118,108 +8977,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &9019322013627026180
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1196227466848822043}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
-  m_Actions: {fileID: -944628639613478452, guid: 4619cba5d33a04529805cbd3735f2209, type: 3}
-  m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1265790903892098095}
-        m_TargetAssemblyTypeName: Movement, Assembly-CSharp
-        m_MethodName: OnAccelerate
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 202e9f46-0400-4837-bc03-99f12a09f6e7
-    m_ActionName: 'Player/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]'
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1265790903892098095}
-        m_TargetAssemblyTypeName: Movement, Assembly-CSharp
-        m_MethodName: OnJump
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 3d674b9a-8337-4c88-8434-5664fb1414b1
-    m_ActionName: 'Player/Jump[/Keyboard/space]'
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1265790903892098095}
-        m_TargetAssemblyTypeName: Movement, Assembly-CSharp
-        m_MethodName: OnBrake
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 4ebe2d0a-63ad-417f-95f1-ebca6c4b6e81
-    m_ActionName: 'Player/Brake/Reverse[/Keyboard/s,/Gamepad/leftTrigger]'
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1265790903892098095}
-        m_TargetAssemblyTypeName: Movement, Assembly-CSharp
-        m_MethodName: OnSteer
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 6fb76803-4826-43b6-910c-b3ec805ba14e
-    m_ActionName: 'Player/Steering[/Keyboard/a,/Gamepad/leftStick/left,/Keyboard/d,/Gamepad/leftStick/right]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: d7876cf9-8b60-47da-8605-07d541b6cd02
-    m_ActionName: 'Player/Menu[/Keyboard/escape]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: e29e4f86-4f8c-4e04-8079-a1e95716826a
-    m_ActionName: 'Player/UseItem[/Keyboard/e]'
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: Player
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
