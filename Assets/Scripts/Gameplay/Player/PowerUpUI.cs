@@ -5,31 +5,43 @@ using UnityEngine;
 public class PowerUpUI : MonoBehaviour
 {
     [SerializeField] private GameObject powerUpText;
-
     private TextMeshProUGUI tmp;
 
     public static event Action<string> OnPowerupChanged;
+    private static string current;
 
     private void Awake()
     {
-        tmp = powerUpText.GetComponentInChildren<TextMeshProUGUI>();
+        tmp = powerUpText.GetComponentInChildren<TextMeshProUGUI>(true);
+        OnPowerupChanged += HandlePowerupChanged;
+        Debug.Log("PowerUpUI subscribed");
     }
 
-    private void OnEnable() => OnPowerupChanged += HandlePowerupChanged;
-    private void OnDisable() => OnPowerupChanged -= HandlePowerupChanged;
+    private void OnEnable()
+    {
+        OnPowerupChanged += HandlePowerupChanged;
+        HandlePowerupChanged(current);
+    }
 
-    private void Start() => powerUpText.SetActive(false);
+    private void OnDisable() => OnPowerupChanged -= HandlePowerupChanged;
 
     private void HandlePowerupChanged(string powerupName)
     {
-        Debug.Log($"PowerUpUI: Powerup changed to {powerupName}");
         bool hasPowerup = !string.IsNullOrEmpty(powerupName);
-
         powerUpText.SetActive(hasPowerup);
         if (hasPowerup && tmp != null)
             tmp.text = powerupName;
     }
 
-    public static void SetPowerup(string powerupName) => OnPowerupChanged?.Invoke(powerupName);
-    public static void ClearPowerup() => OnPowerupChanged?.Invoke(null);
+    public static void SetPowerup(string powerupName)
+    {
+        current = powerupName;
+        OnPowerupChanged?.Invoke(powerupName);
+    }
+
+    public static void ClearPowerup()
+    {
+        current = null;
+        OnPowerupChanged?.Invoke(null);
+    }
 }

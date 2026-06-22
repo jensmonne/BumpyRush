@@ -2063,7 +2063,7 @@ MonoBehaviour:
   syncDirection: 0
   syncMode: 0
   syncInterval: 0
-  pickupsToWin: 10
+  scoreToWin: 10
   matchDuration: 240
   lobbySceneName: Lobby
   returnToLobbyDelay: 3
@@ -2090,6 +2090,7 @@ MonoBehaviour:
   - {fileID: 1258339748}
   powerupsToSpawn: 5
   powerupRespawnInterval: 15
+  minSpawnDistance: 2
 --- !u!114 &869692442
 MonoBehaviour:
   m_ObjectHideFlags: 0

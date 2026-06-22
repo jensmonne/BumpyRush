@@ -597,6 +597,7 @@ GameObject:
   - component: {fileID: 7095203929338817549}
   - component: {fileID: 8661618039940638744}
   - component: {fileID: 41460902095741939}
+  - component: {fileID: -4727601454046323904}
   m_Layer: 0
   m_Name: BumpyTheCarMPV3
   m_TagString: Player
@@ -819,6 +820,7 @@ MonoBehaviour:
   maxBounceForce: 70
   minimumImpactForce: 3
   bounceForceOnPlayer: 80
+  environmentBounceMultiplier: 2.5
   maxBounceDuration: 0.35
   hasCollided: 0
 --- !u!114 &5607461066471248116
@@ -984,7 +986,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5253260172628986182}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 92cc8ac339c041741b353746346bd0ab, type: 3}
   m_Name: 
@@ -994,6 +996,23 @@ MonoBehaviour:
   syncInterval: 0
   availableItems: []
   currentItems: []
+--- !u!114 &-4727601454046323904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5253260172628986182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6de8b5c8067efe5468dd2a7e74960318, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerNameSync
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
+  playerPrefsKey: PlayerName
+  steamName: 
 --- !u!1 &5603599067671866264
 GameObject:
   m_ObjectHideFlags: 0

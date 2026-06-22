@@ -39,8 +39,12 @@ public class WinScreenUI : MonoBehaviour
         uint localNetId = NetworkClient.connection?.identity?.netId ?? 0;
         bool localWon = localNetId != 0 && localNetId == winnerNetId;
 
+        string winnerName = GameManager.Instance != null
+            ? GameManager.Instance.GetPlayerName(winnerNetId)
+            : $"Player {winnerNetId}";
+
         resultText.text = localWon ? "YOU WIN!" : "YOU LOSE!";
-        subtitleText.text = localWon ? "Great driving!" : $"Player {winnerNetId} wins!";
+        subtitleText.text = localWon ? "Great driving!" : $"{winnerName} wins!";
     }
 
     private void HandleCountdownChanged(int seconds)

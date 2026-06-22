@@ -14,22 +14,20 @@ public class LeaderboardUI : MonoBehaviour
 
     private void Start()
     {
-        foreach (var entry in playerTMPs)
-            entry.SetActive(false);
-
+        foreach (var entry in playerTMPs) entry.SetActive(false);
         Rebuild();
     }
 
     private void Rebuild()
     {
-        foreach (var entry in playerTMPs)
-            entry.SetActive(false);
+        foreach (var entry in playerTMPs) entry.SetActive(false);
 
-        if (GameManager.Instance == null) return;
+        GameManager gm = GameManager.Instance;
+        if (gm == null) return;
 
         uint localNetId = NetworkClient.connection?.identity?.netId ?? 0;
 
-        List<KeyValuePair<uint, int>> sorted = new(GameManager.Instance.playerScores);
+        List<KeyValuePair<uint, int>> sorted = new(gm.playerScores);
         sorted.Sort((a, b) => b.Value.CompareTo(a.Value));
 
         for (int i = 0; i < sorted.Count && i < playerTMPs.Count; i++)
@@ -42,11 +40,11 @@ public class LeaderboardUI : MonoBehaviour
             entry.SetActive(true);
 
             TextMeshProUGUI tmp = entry.GetComponentInChildren<TextMeshProUGUI>();
-            if (tmp != null)
-            {
-                tmp.text = $"{i + 1}. {(isLocal ? "You" : $"Player {netId}")} - {score}";
-                tmp.color = isLocal ? localPlayerColor : defaultColor;
-            }
+            if (tmp == null) continue;
+
+            string displayName = isLocal ? "You" : gm.GetPlayerName(netId);
+            tmp.text = $"{i + 1}. {displayName} - {score}";
+            tmp.color = isLocal ? localPlayerColor : defaultColor;
         }
     }
 }

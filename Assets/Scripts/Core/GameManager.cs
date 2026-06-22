@@ -9,8 +9,8 @@ public class GameManager : NetworkBehaviour
     public static GameManager Instance { get; private set; }
 
     [Header("Win Condition")]
-    [Tooltip("If 0 or less, the match only ends when the timer runs out.")]
-    [SerializeField] private int pickupsToWin = 0;
+    [Tooltip("First player to reach this score wins. If 0 or less, only the timer ends the match.")]
+    [SerializeField] private int scoreToWin = 10;
 
     [Header("Match Timer")]
     [SerializeField] private float matchDuration = 180f;
@@ -30,6 +30,10 @@ public class GameManager : NetworkBehaviour
     [SerializeField] private Transform[] powerupSpawnpoints;
     [SerializeField] private int powerupsToSpawn = 5;
     [SerializeField] private float powerupRespawnInterval = 15f;
+
+    [Header("Spawn Tuning")]
+    [Tooltip("A spawn point counts as occupied if a pickup is within this distance.")]
+    [SerializeField] private float minSpawnDistance = 2f;
 
     private List<NetworkIdentity> spawnedPickups = new();
     private List<NetworkIdentity> spawnedPowerups = new();
@@ -62,11 +66,15 @@ public class GameManager : NetworkBehaviour
     public class ScoreMap : SyncDictionary<uint, int> { }
     public readonly ScoreMap playerScores = new();
 
+    public class NameMap : SyncDictionary<uint, string> { }
+    public readonly NameMap playerNames = new();
+
     public static event Action<int, int> OnPickupProgressChanged;
     public static event Action<bool, uint, bool> OnMatchStateChanged;
     public static event Action<int> OnTimerChanged;
     public static event Action<int> OnReturnCountdownChanged;
     public static event Action OnScoresChanged;
+
     public int TotalPickups => totalPickups;
     public int CollectedPickups => collectedPickups;
     public bool IsMatchOver => isMatchOver;
@@ -76,6 +84,11 @@ public class GameManager : NetworkBehaviour
     public int ReturnCountdownSeconds => returnCountdownSeconds;
     public int SpawnedItemCount => spawnedPickups.Count;
     public int SpawnedPowerupCount => spawnedPowerups.Count;
+
+    public string GetPlayerName(uint netId) =>
+        playerNames.TryGetValue(netId, out string name) && !string.IsNullOrEmpty(name)
+            ? name
+            : $"Player {netId}";
 
     private void Awake()
     {
@@ -88,11 +101,25 @@ public class GameManager : NetworkBehaviour
         if (Instance == this) Instance = null;
     }
 
+    [Server]
+    private void RegisterExistingPlayers()
+    {
+        foreach (var conn in NetworkServer.connections.Values)
+        {
+            if (conn?.identity == null) continue;
+            if (conn.identity.TryGetComponent(out PlayerNameSync sync))
+                RegisterPlayerName(conn.identity.netId, sync.steamName);
+        }
+    }
+
     public override void OnStartServer()
     {
         base.OnStartServer();
+        RegisterExistingPlayers();
+
 
         playerScores.Clear();
+        playerNames.Clear();
         spawnedPickups.Clear();
         spawnedPowerups.Clear();
 
@@ -110,13 +137,32 @@ public class GameManager : NetworkBehaviour
         SpawnAllPowerups();
     }
 
+    public override void OnStartClient()
+    {
+        base.OnStartClient();
+        playerScores.OnChange += HandleScoreOp;
+        playerNames.OnChange += HandleNameOp;
+        OnScoresChanged?.Invoke();
+    }
+
+    public override void OnStopClient()
+    {
+        playerScores.OnChange -= HandleScoreOp;
+        playerNames.OnChange -= HandleNameOp;
+        base.OnStopClient();
+    }
+
     public override void OnStopServer()
     {
         ClearSpawnedItems();
         ClearSpawnedPowerups();
         playerScores.Clear();
+        playerNames.Clear();
         base.OnStopServer();
     }
+
+    private void HandleScoreOp(ScoreMap.Operation op, uint key, int value) => OnScoresChanged?.Invoke();
+    private void HandleNameOp(NameMap.Operation op, uint key, string value) => OnScoresChanged?.Invoke();
 
     private void Update()
     {
@@ -127,11 +173,9 @@ public class GameManager : NetworkBehaviour
             if (serverReturnTimer > 0f)
             {
                 serverReturnTimer -= Time.deltaTime;
-
                 int newSeconds = Mathf.CeilToInt(serverReturnTimer);
                 if (newSeconds != returnCountdownSeconds)
                     returnCountdownSeconds = newSeconds;
-
                 if (serverReturnTimer <= 0f)
                     NetworkManager.singleton.ServerChangeScene(lobbySceneName);
             }
@@ -139,7 +183,6 @@ public class GameManager : NetworkBehaviour
         }
 
         serverTimeRemaining -= Time.deltaTime;
-
         int remaining = Mathf.CeilToInt(serverTimeRemaining);
         if (remaining != timeRemainingSeconds)
             timeRemainingSeconds = remaining;
@@ -155,79 +198,110 @@ public class GameManager : NetworkBehaviour
         if (respawnTimer <= 0f)
         {
             respawnTimer = respawnInterval;
-            CheckAndRespawnItems();
+            RespawnMissing(bearPrefab != null ? bearPrefab.gameObject : null, bearSpawnpoints, bearsToSpawn, spawnedPickups);
         }
 
         powerupRespawnTimer -= Time.deltaTime;
         if (powerupRespawnTimer <= 0f)
         {
             powerupRespawnTimer = powerupRespawnInterval;
-            CheckAndRespawnPowerups();
+            RespawnMissing(powerupPrefab != null ? powerupPrefab.gameObject : null, powerupSpawnpoints, powerupsToSpawn, spawnedPowerups);
         }
     }
-
 
     [Server]
     public void SpawnAllItems()
     {
         if (bearPrefab == null) { Debug.LogError("GameManager: Bear prefab not assigned!"); return; }
+        if (bearSpawnpoints == null || bearSpawnpoints.Length == 0) { Debug.LogError("GameManager: No bear spawnpoints assigned!"); return; }
+
         ClearSpawnedItems();
-        for (int i = 0; i < bearsToSpawn; i++)
-            SpawnItemAt(bearSpawnpoints[i % bearSpawnpoints.Length].position,
-                        bearSpawnpoints[i % bearSpawnpoints.Length].rotation);
+        SpawnWave(bearPrefab.gameObject, bearSpawnpoints, bearsToSpawn, spawnedPickups);
         totalPickups = spawnedPickups.Count;
-        if (pickupsToWin <= 0 || pickupsToWin > totalPickups)
-            pickupsToWin = totalPickups;
     }
 
     [Server]
     public void SpawnAllPowerups()
     {
         if (powerupPrefab == null) { Debug.LogError("GameManager: Powerup prefab not assigned!"); return; }
+        if (powerupSpawnpoints == null || powerupSpawnpoints.Length == 0) { Debug.LogError("GameManager: No powerup spawnpoints assigned!"); return; }
+
         ClearSpawnedPowerups();
-        for (int i = 0; i < powerupsToSpawn; i++)
-            SpawnPowerupAt(powerupSpawnpoints[i % powerupSpawnpoints.Length].position,
-                           powerupSpawnpoints[i % powerupSpawnpoints.Length].rotation);
+        SpawnWave(powerupPrefab.gameObject, powerupSpawnpoints, powerupsToSpawn, spawnedPowerups);
     }
 
     [Server]
-    private void CheckAndRespawnItems()
+    private void SpawnWave(GameObject prefab, Transform[] points, int count, List<NetworkIdentity> tracker)
     {
-        spawnedPickups.RemoveAll(id => id == null || id.gameObject == null);
-        int needed = bearsToSpawn - spawnedPickups.Count;
-        for (int i = 0; i < needed; i++)
+        if (prefab == null || points == null || points.Length == 0) return;
+        if (count > points.Length)
+            Debug.LogWarning($"GameManager: spawning {count} into {points.Length} points; some will share.");
+
+        List<int> order = ShuffledIndices(points.Length);
+        for (int i = 0; i < count; i++)
         {
-            Transform point = bearSpawnpoints[UnityEngine.Random.Range(0, bearSpawnpoints.Length)];
-            SpawnItemAt(point.position, point.rotation);
+            Transform p = points[order[i % order.Count]];
+            SpawnOne(prefab, p.position, p.rotation, tracker);
         }
     }
 
     [Server]
-    private void CheckAndRespawnPowerups()
+    private void RespawnMissing(GameObject prefab, Transform[] points, int target, List<NetworkIdentity> tracker)
     {
-        spawnedPowerups.RemoveAll(id => id == null || id.gameObject == null);
-        int needed = powerupsToSpawn - spawnedPowerups.Count;
+        if (prefab == null || points == null || points.Length == 0) return;
+
+        tracker.RemoveAll(id => id == null || id.gameObject == null);
+        int needed = target - tracker.Count;
         for (int i = 0; i < needed; i++)
         {
-            Transform point = powerupSpawnpoints[UnityEngine.Random.Range(0, powerupSpawnpoints.Length)];
-            SpawnPowerupAt(point.position, point.rotation);
+            Transform p = PickFreePoint(points, tracker);
+            if (p == null) break;
+            SpawnOne(prefab, p.position, p.rotation, tracker);
         }
     }
 
     [Server]
-    private void SpawnItemAt(Vector3 position, Quaternion rotation)
+    private Transform PickFreePoint(Transform[] points, List<NetworkIdentity> tracker)
     {
-        GameObject obj = Instantiate(bearPrefab.gameObject, position, rotation);
-        if (obj.TryGetComponent<NetworkIdentity>(out var id)) { spawnedPickups.Add(id); NetworkServer.Spawn(obj); }
-        else Destroy(obj);
+        List<int> order = ShuffledIndices(points.Length);
+        float sqr = minSpawnDistance * minSpawnDistance;
+
+        foreach (int idx in order)
+        {
+            Transform p = points[idx];
+            bool occupied = false;
+            foreach (var id in tracker)
+            {
+                if (id == null) continue;
+                if ((id.transform.position - p.position).sqrMagnitude < sqr) { occupied = true; break; }
+            }
+            if (!occupied) return p;
+        }
+        return points[order[0]];
     }
 
     [Server]
-    private void SpawnPowerupAt(Vector3 position, Quaternion rotation)
+    private void SpawnOne(GameObject prefab, Vector3 position, Quaternion rotation, List<NetworkIdentity> tracker)
     {
-        GameObject obj = Instantiate(powerupPrefab.gameObject, position, rotation);
-        if (obj.TryGetComponent<NetworkIdentity>(out var id)) { spawnedPowerups.Add(id); NetworkServer.Spawn(obj); }
+        GameObject obj = Instantiate(prefab, position, rotation);
+        if (obj.TryGetComponent(out NetworkIdentity id))
+        {
+            tracker.Add(id);
+            NetworkServer.Spawn(obj);
+        }
         else Destroy(obj);
+    }
+
+    private List<int> ShuffledIndices(int n)
+    {
+        List<int> list = new(n);
+        for (int i = 0; i < n; i++) list.Add(i);
+        for (int i = n - 1; i > 0; i--)
+        {
+            int j = UnityEngine.Random.Range(0, i + 1);
+            (list[i], list[j]) = (list[j], list[i]);
+        }
+        return list;
     }
 
     [Server]
@@ -249,32 +323,44 @@ public class GameManager : NetworkBehaviour
     [Server] public void UnregisterPickup(NetworkIdentity id) => spawnedPickups.Remove(id);
     [Server] public void UnregisterPowerup(NetworkIdentity id) => spawnedPowerups.Remove(id);
 
+    [Server]
+    public void RegisterPlayerName(uint netId, string name)
+    {
+        playerNames[netId] = string.IsNullOrWhiteSpace(name) ? $"Player {netId}" : name;
+        if (!playerScores.ContainsKey(netId))
+            playerScores[netId] = 0;
+    }
 
     [Server]
     public void RegisterPickup(NetworkIdentity playerIdentity)
     {
-        if (isMatchOver || totalPickups <= 0) return;
+        if (isMatchOver) return;
 
-        collectedPickups = Mathf.Min(collectedPickups + 1, totalPickups);
+        collectedPickups++;
+        if (playerIdentity == null) return;
 
-        if (playerIdentity != null)
-        {
-            uint netId = playerIdentity.netId;
-            playerScores[netId] = (playerScores.TryGetValue(netId, out int score) ? score : 0) + 1;
-            OnScoresChanged?.Invoke();
-        }
+        uint netId = playerIdentity.netId;
+        int newScore = (playerScores.TryGetValue(netId, out int score) ? score : 0) + 1;
+        playerScores[netId] = newScore;
 
-        if (pickupsToWin > 0 && collectedPickups >= pickupsToWin)
-            EndMatch(GetHighestScoringPlayer(), false);
+        CheckScoreWin(netId, newScore);
     }
 
     [Server]
     public void ChangeScore(uint playerNetId, int scoreDelta)
     {
-        playerScores[playerNetId] = (playerScores.TryGetValue(playerNetId, out int current) ? current : 0) + scoreDelta;
-        OnScoresChanged?.Invoke();
+        int newScore = (playerScores.TryGetValue(playerNetId, out int current) ? current : 0) + scoreDelta;
+        playerScores[playerNetId] = newScore;
+        CheckScoreWin(playerNetId, newScore);
     }
 
+    [Server]
+    private void CheckScoreWin(uint netId, int score)
+    {
+        if (isMatchOver) return;
+        if (scoreToWin > 0 && score >= scoreToWin)
+            EndMatch(netId, false);
+    }
 
     [Server]
     public int GetScoreDifference(NetworkIdentity playerIdentity)
@@ -286,9 +372,8 @@ public class GameManager : NetworkBehaviour
         foreach (var entry in playerScores)
             if (entry.Key != playerNetId && entry.Value > highestOpponent)
                 highestOpponent = entry.Value;
-        return playerScore - highestOpponent;
+        return highestOpponent == int.MinValue ? playerScore : playerScore - highestOpponent;
     }
-
 
     [Server]
     private bool IsTied()
@@ -327,9 +412,8 @@ public class GameManager : NetworkBehaviour
     [ClientRpc]
     private void RpcAnnounceMatchResult(uint winnerPlayerNetId, bool tied)
     {
-        Debug.Log(tied ? "Match ended in a tie!" : $"Match finished. Winner is player netId {winnerPlayerNetId}.");
+        Debug.Log(tied ? "Match ended in a tie!" : $"Match finished. Winner: {GetPlayerName(winnerPlayerNetId)}.");
     }
-
 
     private void HandleTotalPickupsChanged(int _, int newValue) =>
         OnPickupProgressChanged?.Invoke(collectedPickups, newValue);

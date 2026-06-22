@@ -29,9 +29,14 @@ public class ItemManager : NetworkBehaviour
     {
         currentItems.Add(item);
         Debug.Log("Item added: " + item.name);
+        TargetItemAdded(item.name);
+    }
 
-        if (isLocalPlayer)
-            PowerUpUI.SetPowerup(item.name);
+    [TargetRpc]
+    private void TargetItemAdded(string itemName)
+    {
+        Debug.Log("TargetItemAdded received: " + itemName);
+        PowerUpUI.SetPowerup(itemName);
     }
 
     public void UseItem(InputAction.CallbackContext context)
@@ -43,7 +48,9 @@ public class ItemManager : NetworkBehaviour
 
         CmdUseItem(0);
         lastItemUseTime = Time.time;
+        Debug.Log("Current items count: " + currentItems.Count);
         PowerUpUI.ClearPowerup();
+
     }
 
     [Command]
