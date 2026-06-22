@@ -20,6 +20,8 @@ public class Movement : MonoBehaviour
     [SerializeField] private float driftFactor = 0.98f;
     [SerializeField] private float velocityRotateSpeed = 2f;
 
+    [SerializeField] private float bounceDriftFactor = 0.996f;
+
     [Header("Ground Check")]
     [SerializeField] private Grounded grounded;
 
@@ -72,11 +74,10 @@ public class Movement : MonoBehaviour
     }
 
     // MOVEMENT (Vooruit/achteruit)
-    void HandleMovement()
+    private void HandleMovement()
     {
         // Stop de code direct als de auto in de lucht hangt of net ergens tegenaan is gebonst
         if (!grounded.isGrounded) return;
-        if (stopMovement_Bounce.hasCollided) return;
 
         float currentThrottle = smoothedThrottle;
 
@@ -99,19 +100,16 @@ public class Movement : MonoBehaviour
             }
         }
 
-        // Snelheid omzetten naar lokale coördinaten om de maximale voorwaartse snelheid te begrenzen
-        Vector3 localVelocity = transform.InverseTransformDirection(rb3D.linearVelocity);
-        
-        // BUG HIER GEVONDEN!!!! -maxspeed = vooruit en maxspeed = achteruit.
-        // (Opmerking: Deze Clamp begrenst nu de Z-snelheid tussen de achteruit-limiet en vooruit-limiet)
-        localVelocity.z = Mathf.Clamp(localVelocity.z, -maxSpeed * 0.5f, maxSpeed * 0.5f);
-        
-        // Zet de begrensde snelheid weer terug naar de wereld-coördinaten van de Rigidbody
-        rb3D.linearVelocity = transform.TransformDirection(localVelocity);
+        if (stopMovement_Bounce != null && !stopMovement_Bounce.hasCollided)
+        {
+            Vector3 localVelocity = transform.InverseTransformDirection(rb3D.linearVelocity);
+            localVelocity.z = Mathf.Clamp(localVelocity.z, -maxSpeed * 0.5f, maxSpeed * 0.5f);
+            rb3D.linearVelocity = transform.TransformDirection(localVelocity);
+        }
     }
 
     // STUREN
-    void HandleSteering()
+    private void HandleSteering()
     {
         // Berekent hoe snel de auto rijdt t.o.v. de topsnelheid (sturen werkt alleen als je rijdt)
         float speedFactor = rb3D.linearVelocity.magnitude / maxSpeed;
@@ -141,21 +139,34 @@ public class Movement : MonoBehaviour
                 Quaternion.Euler(0f, rotationAmount, 0f) *
                 rb3D.linearVelocity;
 
+            float currentVelocityRotateSpeed = velocityRotateSpeed;
+            if (stopMovement_Bounce != null && stopMovement_Bounce.hasCollided)
+            {
+                // Verlaag de grip-rotatie met bijvoorbeeld 75% tijdens de bounce-fase
+                currentVelocityRotateSpeed = velocityRotateSpeed * 0.25f;
+            }
+
             // Zorgt voor een soepele overgang tussen de oude richting en de nieuwe rijrichting
             rb3D.linearVelocity = Vector3.Lerp(
                 rb3D.linearVelocity,
                 rotatedVelocity,
-                velocityRotateSpeed * Time.fixedDeltaTime
+                currentVelocityRotateSpeed * Time.fixedDeltaTime
             );
         }
     }
 
     // DRIFTEN (Zwaartekracht/Grip-simulatie)
-    void ApplyDrift()
+    private void ApplyDrift()
     {
         // Haalt de lokale snelheid op (X = zijwaarts, Z = voorwaarts)
         Vector3 localVelocity = transform.InverseTransformDirection(rb3D.linearVelocity);
 
+        float currentDriftFactor = driftFactor;
+        if (stopMovement_Bounce != null && stopMovement_Bounce.hasCollided)
+        {
+            currentDriftFactor = bounceDriftFactor;
+        }
+        
         // Hoe lager de factor, hoe sneller de auto stopt met slippen en grip krijgt.
         localVelocity.x *= driftFactor;
 

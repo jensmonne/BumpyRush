@@ -765,6 +765,7 @@ MonoBehaviour:
   turnSpeed: 250
   driftFactor: 0.95
   velocityRotateSpeed: 3
+  bounceDriftFactor: 0.996
   grounded: {fileID: 3224136865344549061}
   stopMovement_Bounce: {fileID: 6997471598470826754}
   JumpEffectPoint: {fileID: 4439486215587831642}
@@ -817,7 +818,7 @@ MonoBehaviour:
   bounceForceMultiplier: 20
   maxBounceForce: 70
   minimumImpactForce: 3
-  bounceForceOnPlayer: 1000
+  bounceForceOnPlayer: 80
   maxBounceDuration: 0.35
   hasCollided: 0
 --- !u!114 &5607461066471248116
