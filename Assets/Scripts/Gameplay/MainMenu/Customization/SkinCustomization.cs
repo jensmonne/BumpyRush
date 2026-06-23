@@ -4,7 +4,7 @@ public class SkinCustomization : MonoBehaviour
 {
     [SerializeField] private Material[] skinMaterials; // Array of available skin materials
     [SerializeField] private GameObject bumpyPrefab;  // The prefab to spawn
-    [SerializeField] private Transform spawnPoint;     // Where to spawn the prefab
+    [SerializeField] private Transform spawnPoint;     // Where to spawn the prefab (will become the parent)
 
     public static SkinCustomization Instance { get; private set; }
 
@@ -30,13 +30,13 @@ public class SkinCustomization : MonoBehaviour
         SpawnCharacterPrefab();
     }
 
-    // Methode om de prefab te spawnen en zijn renderers te registreren
+    // Methode om de prefab te spawnen en als child in te stellen
     private void SpawnCharacterPrefab()
     {
         if (bumpyPrefab != null && spawnPoint != null)
         {
-            // Instantiëren en opslaan in de variabele
-            spawnedCharacter = Instantiate(bumpyPrefab, spawnPoint.position, spawnPoint.rotation);
+            // Fix: Door 'spawnPoint' als derde argument mee te geven, wordt het direct de parent in de hiërarchie
+            spawnedCharacter = Instantiate(bumpyPrefab, spawnPoint.position, spawnPoint.rotation, spawnPoint);
             
             // Haal automatisch ALLE renderers uit de children (de meshes)
             characterRenderers = spawnedCharacter.GetComponentsInChildren<Renderer>();
@@ -50,8 +50,7 @@ public class SkinCustomization : MonoBehaviour
         }
     }
 
-    // Fix voor de Lobby: Als je van scène wisselt, kun je hier een nieuw spawnpoint doorgeven 
-    // en het personage opnieuw spawnen in de lobby.
+    // Voor de Lobby: Als je van scène wisselt, geef je het nieuwe spawnpoint in de lobby door
     public void SetupInNewScene(Transform newSpawnPoint)
     {
         spawnPoint = newSpawnPoint;
@@ -78,7 +77,7 @@ public class SkinCustomization : MonoBehaviour
         ChangeSkin(currentSkinIndex + 1);
     }
 
-    // Vernieuwde hulpmethode die door alle renderers in de children loopt
+    // Hulpmethode die door alle renderers in de children loopt
     private void ApplySkinToModels()
     {
         if (characterRenderers == null || skinMaterials.Length == 0) return;
