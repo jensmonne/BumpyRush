@@ -70,10 +70,39 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: fa1052c3422f4c04da24ac7ef6832787, type: 2}
     - target: {fileID: 919132149155446097, guid: 5dd21bda33ba1bd45949fb1da4ce2f07, type: 3}
       propertyPath: m_Name
-      value: TicketBooth
+      value: P_TicketBooth
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5dd21bda33ba1bd45949fb1da4ce2f07, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1376593574382073357}
   m_SourcePrefab: {fileID: 100100000, guid: 5dd21bda33ba1bd45949fb1da4ce2f07, type: 3}
+--- !u!1 &5241690769685966054 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5dd21bda33ba1bd45949fb1da4ce2f07, type: 3}
+  m_PrefabInstance: {fileID: 4935751859443749303}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1376593574382073357
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5241690769685966054}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.3770065, y: 2.0410118, z: 1.9257209}
+  m_Center: {x: -0.0019484676, y: 1.0212965, z: 0}

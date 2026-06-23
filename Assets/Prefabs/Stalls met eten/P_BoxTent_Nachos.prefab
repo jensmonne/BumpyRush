@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 371663602725885207}
+  - component: {fileID: 2578137911885564759}
   m_Layer: 0
   m_Name: P_BoxTent_Nachos
   m_TagString: Untagged
@@ -32,6 +33,27 @@ Transform:
   - {fileID: 4951333473977864551}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2578137911885564759
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4871630891245016370}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4.2589393, y: 2.9072464, z: 2.8185368}
+  m_Center: {x: -0.04304242, y: 1.441523, z: -0.09610152}
 --- !u!1001 &24821953801847561
 PrefabInstance:
   m_ObjectHideFlags: 0
