@@ -37,6 +37,14 @@ public class SteamLobbyManager : MonoBehaviour
     {
         try
         {
+            if (Mirror.NetworkServer.active || Mirror.NetworkClient.active)
+            {
+                Debug.LogWarning("[Steam Lobby] Clean up active ghost networks before starting a new host...");
+                CustomNetworkManager.singleton.LeaveGame();
+
+                await System.Threading.Tasks.Task.Delay(500);
+            }
+
             Lobby? lobbyOutput = await SteamMatchmaking.CreateLobbyAsync(maxPlayers);
             if (!lobbyOutput.HasValue)
             {
@@ -61,12 +69,6 @@ public class SteamLobbyManager : MonoBehaviour
 
             Debug.Log($"[Steam Lobby] Lobby Created Successfully with Steam ID: {lobby.Id}");
 
-            if (Mirror.NetworkServer.active || Mirror.NetworkClient.active)
-            {
-                Debug.LogWarning("[Steam Lobby] Clean up active ghost networks before starting a new host...");
-                CustomNetworkManager.singleton.LeaveGame();
-            }
-
             CustomNetworkManager.singleton.StartHost();
         }
         catch (Exception e)
@@ -78,6 +80,12 @@ public class SteamLobbyManager : MonoBehaviour
 
     public async void JoinLobbyDirectly(Lobby targetLobby, Action onFailure)
     {
+        if (Mirror.NetworkClient.active)
+        {
+            CustomNetworkManager.singleton.LeaveGame();
+            await System.Threading.Tasks.Task.Delay(500);
+        }
+        
         RoomEnter result = await targetLobby.Join();
         if (result != RoomEnter.Success)
         {

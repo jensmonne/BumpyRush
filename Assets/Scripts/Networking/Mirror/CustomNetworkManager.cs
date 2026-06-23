@@ -69,15 +69,18 @@ public class CustomNetworkManager : NetworkManager
         if (NetworkServer.active && NetworkClient.isConnected) StopHost();
         else if (NetworkClient.isConnected) StopClient();
 
+        foreach (var LobbyPlayer in FindObjectsByType<LobbyPlayer>())
+        {
+            if (LobbyPlayer != null && LobbyPlayer.isLocalPlayer)
+            {
+                Destroy(LobbyPlayer.gameObject);
+            }
+        }
+
         if (SceneManager.GetActiveScene().name != "MainMenu")
         {
             SceneManager.LoadScene("MainMenu");
         }
-    }
-
-    public override void OnStopHost()
-    {
-        SteamLobbyManager.Instance.LeaveLobby();
     }
 
     public override void OnClientDisconnect()
