@@ -46,7 +46,9 @@ Material:
     - _AlphaClip: 0.56
     - _QueueControl: 0
     - _QueueOffset: 0
-    m_Colors: []
+    - _Speed: 0.54
+    m_Colors:
+    - _Direction: {r: 0.5, g: 0.06, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &4093424956712720030
