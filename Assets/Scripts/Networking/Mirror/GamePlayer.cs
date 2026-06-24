@@ -6,8 +6,8 @@ using TMPro;
 public class GamePlayer : NetworkBehaviour
 {
     [Header("Player Data")]
-    [SyncVar(hook = nameof(HandleNameChanged))]
-    public string PlayerName = "Player";
+    [SyncVar(hook = nameof(HandlePlayerDataChanged))]
+    public PlayerNetworkData networkData;
 
     [Header("Local Only Components")]
     [SerializeField] private Rigidbody playerRigidbody;
@@ -27,11 +27,11 @@ public class GamePlayer : NetworkBehaviour
         }
     }
 
-    private void HandleNameChanged(string oldName, string newName)
+    private void HandlePlayerDataChanged(PlayerNetworkData oldData, PlayerNetworkData newData)
     {
         if (nameText != null) 
         {
-            nameText.text = newName;
+            nameText.text = newData.playerName;
         }
     }
 
