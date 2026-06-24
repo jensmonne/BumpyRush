@@ -21,7 +21,7 @@ public class SkinCustomization : MonoBehaviour
         }
 
         Instance = this;
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
     }
 
     private void Start()
@@ -63,6 +63,8 @@ public class SkinCustomization : MonoBehaviour
 
         // Zorg dat de index altijd binnen de array-grenzen blijft (modulo)
         currentSkinIndex = (skinIndex + skinMaterials.Length) % skinMaterials.Length;
+
+        PlayerPrefs.SetInt("PlayerSkin", currentSkinIndex);
 
         ApplySkinToModels();
     }

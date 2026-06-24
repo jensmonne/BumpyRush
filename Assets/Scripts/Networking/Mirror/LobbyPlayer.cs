@@ -4,8 +4,8 @@ using UnityEngine;
 public class LobbyPlayer : NetworkBehaviour
 {
     [Header("Player Data")]
-    [SyncVar(hook = nameof(HandleNameChanged))]
-    public string PlayerName = "Player";
+    [SyncVar(hook = nameof(HandlePlayerDataChanged))]
+    public PlayerNetworkData networkData;
 
     [SyncVar(hook = nameof(HandleReadyStatusChanged))]
     public bool isReady = false;
@@ -21,14 +21,22 @@ public class LobbyPlayer : NetworkBehaviour
     {
         base.OnStartLocalPlayer();
 
-        string localName = PlayerPrefs.GetString("PlayerName");
-        CmdSetPlayerName(localName);
+        string localName = PlayerPrefs.GetString("PlayerName", "Player");
+        int localSkin = PlayerPrefs.GetInt("PlayerSkin", 0);
+
+        PlayerNetworkData localData = new PlayerNetworkData
+        {
+            playerName = localName,
+            skinIndex = localSkin
+        };
+
+        CmdSetPlayerData(localData);
     }
 
     [Command]
-    public void CmdSetPlayerName(string nameToSet)
+    public void CmdSetPlayerData(PlayerNetworkData dataToSet)
     {
-        PlayerName = nameToSet;
+        networkData = dataToSet;
     }
 
     [Command]
@@ -50,9 +58,10 @@ public class LobbyPlayer : NetworkBehaviour
         }
     }
 
-    private void HandleNameChanged(string oldName, string newName)
+    private void HandlePlayerDataChanged(PlayerNetworkData oldData, PlayerNetworkData newData)
     {
-        if (myCard != null) myCard.UpdateName(newName);
+        if (myCard != null) myCard.UpdateName(newData.playerName);
+        // need to implement a way of showing the skin stuffs.
     }
 
     private void HandleReadyStatusChanged(bool oldStatus, bool newStatus)
@@ -65,7 +74,7 @@ public class LobbyPlayer : NetworkBehaviour
     public void SetCard(LobbyPlayerCard card)
     {
         myCard = card;
-        myCard.UpdateName(PlayerName);
+        myCard.UpdateName(networkData.playerName);
         myCard.UpdateReadyStatus(isReady);
     }
 }

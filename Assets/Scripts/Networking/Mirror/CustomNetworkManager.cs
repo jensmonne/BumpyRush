@@ -33,7 +33,8 @@ public class CustomNetworkManager : NetworkManager
 
         if (conn.identity != null && conn.identity.TryGetComponent(out LobbyPlayer lobbyPlayer))
         {
-            string retainedName = lobbyPlayer.PlayerName;
+            PlayerNetworkData retainedData = lobbyPlayer.networkData;
+
             Transform spawnPoint = GetStartPosition();
             GameObject gamePlayerInstance = spawnPoint != null 
                 ? Instantiate(gamePlayerPrefab, spawnPoint.position, spawnPoint.rotation)
@@ -41,7 +42,7 @@ public class CustomNetworkManager : NetworkManager
 
             if (gamePlayerInstance.TryGetComponent(out GamePlayer gameScript))
             {
-                gameScript.PlayerName = retainedName;
+                gameScript.networkData = retainedData;
             }
             
             NetworkServer.ReplacePlayerForConnection(conn, gamePlayerInstance, ReplacePlayerOptions.Destroy);
@@ -71,11 +72,13 @@ public class CustomNetworkManager : NetworkManager
 
         foreach (var LobbyPlayer in FindObjectsByType<LobbyPlayer>())
         {
-            if (LobbyPlayer != null && LobbyPlayer.isLocalPlayer)
+            if (LobbyPlayer != null)
             {
                 Destroy(LobbyPlayer.gameObject);
             }
         }
+
+        NetworkClient.Shutdown();
 
         if (SceneManager.GetActiveScene().name != "MainMenu")
         {
@@ -86,6 +89,8 @@ public class CustomNetworkManager : NetworkManager
     public override void OnClientDisconnect()
     {
         SteamLobbyManager.Instance.LeaveLobby();
+
+        NetworkClient.Shutdown();
 
         if (SceneManager.GetActiveScene().name != "MainMenu")
         {
