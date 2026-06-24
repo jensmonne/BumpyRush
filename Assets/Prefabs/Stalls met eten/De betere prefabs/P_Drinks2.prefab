@@ -1,0 +1,3545 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2619203061028518738
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7120591945959595274}
+  m_Layer: 0
+  m_Name: P_Drinks2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7120591945959595274
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2619203061028518738}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2461783540143977609}
+  - {fileID: 8433559076768768285}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3641125448513422940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8433559076768768285}
+  m_Layer: 0
+  m_Name: Drinks
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8433559076768768285
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3641125448513422940}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.45, y: -9.353, z: 16.68}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 1268847440328808897}
+  - {fileID: 293323003318965803}
+  - {fileID: 5569765348968587335}
+  - {fileID: 9205591792416282550}
+  - {fileID: 2435448464553071069}
+  - {fileID: 5171467974037832196}
+  - {fileID: 52192437801772566}
+  - {fileID: 5565450762160695478}
+  - {fileID: 1553609363251629186}
+  - {fileID: 5381221840286068079}
+  - {fileID: 4097983540692898647}
+  - {fileID: 6796116631980318984}
+  - {fileID: 2875544400606326457}
+  - {fileID: 3880370085752273777}
+  - {fileID: 2991147439133280260}
+  - {fileID: 2955992867837025270}
+  - {fileID: 7723698332672003572}
+  - {fileID: 7470173513327024752}
+  - {fileID: 8439858565897434270}
+  - {fileID: 230650839796786742}
+  - {fileID: 6981218998421033716}
+  - {fileID: 3918161263652530038}
+  - {fileID: 2788585928592319406}
+  - {fileID: 1168585331095391040}
+  - {fileID: 4574851388797313121}
+  - {fileID: 7110457768464419908}
+  - {fileID: 6290709450486724160}
+  - {fileID: 4460731043422748825}
+  - {fileID: 7358176599064788646}
+  - {fileID: 570460377111843823}
+  - {fileID: 8157210381519270886}
+  - {fileID: 957306910171731155}
+  - {fileID: 2230428057917382216}
+  - {fileID: 6802975788420288915}
+  - {fileID: 7583932277478333635}
+  - {fileID: 4841456677963481011}
+  - {fileID: 7392323144481521671}
+  - {fileID: 7455931787386111566}
+  - {fileID: 6293210432677804915}
+  - {fileID: 7185946688102377620}
+  - {fileID: 3360591117213471672}
+  - {fileID: 1625870756384840172}
+  - {fileID: 6520200024921254724}
+  - {fileID: 5150974628065073835}
+  - {fileID: 822373145920428612}
+  - {fileID: 4247700939083581875}
+  - {fileID: 2021625025805055466}
+  - {fileID: 5528586750180785228}
+  - {fileID: 967868803642416395}
+  - {fileID: 1970905191132942834}
+  - {fileID: 1670303939390043318}
+  m_Father: {fileID: 7120591945959595274}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &424583351575479448
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.923
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.031184
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &6290709450486724160 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 424583351575479448}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &431363901633677739
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.5931866
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.927184
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (27)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &6293210432677804915 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 431363901633677739}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &636447658057865628
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.929
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.927184
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (46)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &6520200024921254724 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 636447658057865628}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &918871535187944267
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.693
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.031184
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (14)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &6802975788420288915 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 918871535187944267}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &935010071011136464
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.268
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.138185
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (16)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &6796116631980318984 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 935010071011136464}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1268103696499281259
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.143
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.031184
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (26)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &4841456677963481011 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 1268103696499281259}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1544105873584042204
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.929
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.138185
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &5171467974037832196 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 1544105873584042204}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1572471534303963251
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.806
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.927184
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (11)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &5150974628065073835 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 1572471534303963251}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1730660326880616375
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.81799996
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.138185
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (12)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &5381221840286068079 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 1730660326880616375}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2166239112635567764
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.58800006
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.927184
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (49)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &5528586750180785228 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 2166239112635567764}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2275735487123839598
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.37900007
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.138185
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (08)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &5565450762160695478 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 2275735487123839598}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2297595256256516767
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.5931866
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.138185
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (17)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &5569765348968587335 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 2297595256256516767}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2566279083823595838
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.8060001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.031184
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (10)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &8157210381519270886 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 2566279083823595838}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2848839039901828678
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.1431866
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.031184
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &8439858565897434270 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 2848839039901828678}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3272338277167719790
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.48818672
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.138185
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (05)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &9205591792416282550 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 3272338277167719790}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3459909172181253788
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.37900007
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.031184
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (37)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &7110457768464419908 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 3459909172181253788}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3535579513385327180
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.48818672
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.927184
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (45)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &7185946688102377620 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 3535579513385327180}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3608340508620978262
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7120591945959595274}
+    m_Modifications:
+    - target: {fileID: 1169077200539749599, guid: 1d643945a4102e94385887a1a8df62fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169077200539749599, guid: 1d643945a4102e94385887a1a8df62fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169077200539749599, guid: 1d643945a4102e94385887a1a8df62fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169077200539749599, guid: 1d643945a4102e94385887a1a8df62fa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169077200539749599, guid: 1d643945a4102e94385887a1a8df62fa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169077200539749599, guid: 1d643945a4102e94385887a1a8df62fa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169077200539749599, guid: 1d643945a4102e94385887a1a8df62fa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169077200539749599, guid: 1d643945a4102e94385887a1a8df62fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169077200539749599, guid: 1d643945a4102e94385887a1a8df62fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169077200539749599, guid: 1d643945a4102e94385887a1a8df62fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1977842376476874341, guid: 1d643945a4102e94385887a1a8df62fa, type: 3}
+      propertyPath: m_Name
+      value: P_Foodstall_Red
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1d643945a4102e94385887a1a8df62fa, type: 3}
+--- !u!4 &2461783540143977609 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1169077200539749599, guid: 1d643945a4102e94385887a1a8df62fa, type: 3}
+  m_PrefabInstance: {fileID: 3608340508620978262}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3624059686881304620
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.5931866
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.031184
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (22)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &6981218998421033716 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 3624059686881304620}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3764925857651487455
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.1431866
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.927184
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &7392323144481521671 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 3764925857651487455}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3797664804238167166
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.3729999
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.031184
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (24)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &7358176599064788646 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 3797664804238167166}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3819643601384908968
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.1429999
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.138185
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (21)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &7470173513327024752 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 3819643601384908968}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3878075163521512598
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.0381867
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.927184
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (44)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &7455931787386111566 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 3878075163521512598}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4150467361573879596
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.58799994
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.138185
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (32)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &7723698332672003572 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 4150467361573879596}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4293883851759988251
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.58800006
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.031184
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (42)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &7583932277478333635 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 4293883851759988251}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4800516762261780888
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.929
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.031184
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (36)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &1168585331095391040 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 4800516762261780888}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4842109172788095769
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.1431866
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.138185
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &1268847440328808897 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 4842109172788095769}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4916024737475603252
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.034
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.927184
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &1625870756384840172 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 4916024737475603252}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5010085467404682862
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.0381867
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.8291845
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (51)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &1670303939390043318 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 5010085467404682862}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5127064335953313370
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.9229999
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.138185
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &1553609363251629186 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 5127064335953313370}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5328731913747456810
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.1431866
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.8291845
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &1970905191132942834 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 5328731913747456810}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5502668828720327824
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.2560002
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.031184
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (25)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &2230428057917382216 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 5502668828720327824}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5667564191119165234
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.693
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.927184
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (15)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &2021625025805055466 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 5667564191119165234}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5880035430815765742
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.0381867
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.031184
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (34)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &230650839796786742 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 5880035430815765742}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5913250618346394830
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.484
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.138185
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (18)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &52192437801772566 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 5913250618346394830}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6143987506097971511
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.268
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.031184
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (39)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &570460377111843823 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 6143987506097971511}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6249708835271910643
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.0381867
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.138185
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &293323003318965803 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 6249708835271910643}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6467400656221104284
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.7010001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.927184
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (47)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &822373145920428612 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 6467400656221104284}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6901754514354630611
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.143
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.927184
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (31)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &967868803642416395 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 6901754514354630611}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6908648501947115019
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.7010002
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.031184
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (40)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &957306910171731155 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 6908648501947115019}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7262441760523277742
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.48818672
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.031184
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (35)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &3918161263652530038 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 7262441760523277742}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7453636250484296105
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.7010001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.138185
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (28)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &3880370085752273777 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 7453636250484296105}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7519788561318296427
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.256
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.927184
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (30)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &4247700939083581875 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 7519788561318296427}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7671755470304076175
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.3729999
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.138185
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (19)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &4097983540692898647 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 7671755470304076175}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7914049109524271801
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.484
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.031184
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (23)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &4574851388797313121 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 7914049109524271801}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8020569973598646849
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.8180001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.031184
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (38)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &4460731043422748825 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 8020569973598646849}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8315063131721392901
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.034
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.138185
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &2435448464553071069 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 8315063131721392901}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8366129574855201142
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.034
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.031184
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &2788585928592319406 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 8366129574855201142}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8452841713223294049
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.806
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.138185
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &2875544400606326457 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 8452841713223294049}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8875409707592612572
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.256
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.138185
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (20)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &2991147439133280260 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 8875409707592612572}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8911692923343743278
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.6929998
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -8.138185
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (13)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &2955992867837025270 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 8911692923343743278}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8938041577751716192
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8433559076768768285}
+    m_Modifications:
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.277
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.438384
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.927184
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -4.3297806e-17
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6476926173903841378, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+      propertyPath: m_Name
+      value: Drink Cup (48)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+--- !u!4 &3360591117213471672 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5956426833095799512, guid: 7ca5b7eb4dfdaee4d8a883a52d24c5d3, type: 3}
+  m_PrefabInstance: {fileID: 8938041577751716192}
+  m_PrefabAsset: {fileID: 0}

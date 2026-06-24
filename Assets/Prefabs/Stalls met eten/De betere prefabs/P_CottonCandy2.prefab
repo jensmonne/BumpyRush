@@ -1,0 +1,4253 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4819522045274389344
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2057817410485895762}
+  m_Layer: 0
+  m_Name: CottonCandy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2057817410485895762
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4819522045274389344}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.00000058114523}
+  m_LocalPosition: {x: -0.06, y: -0.089, z: 1.301}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 7861569686678724280}
+  - {fileID: 2365319658302465838}
+  - {fileID: 2413841614708061536}
+  - {fileID: 3363265244122029808}
+  - {fileID: 5576201689493104824}
+  - {fileID: 2763024082413291480}
+  - {fileID: 3916466679150008209}
+  - {fileID: 8254830876323516077}
+  - {fileID: 6327998027756182438}
+  - {fileID: 7277712596341084131}
+  - {fileID: 6536279209164942816}
+  - {fileID: 7281898960634836387}
+  - {fileID: 8334503205201107341}
+  - {fileID: 1598133922794985524}
+  - {fileID: 3248338637053567510}
+  - {fileID: 3983760851943474133}
+  - {fileID: 111277608740486946}
+  - {fileID: 4049843778871497132}
+  - {fileID: 8911197279309631863}
+  - {fileID: 8352703880315326706}
+  - {fileID: 3668330806522678746}
+  - {fileID: 7970376987460575198}
+  - {fileID: 2710133746091450504}
+  - {fileID: 3917356956041314004}
+  - {fileID: 8377271871018573481}
+  - {fileID: 417743280397101157}
+  - {fileID: 2385911771536714144}
+  - {fileID: 6731526282967664622}
+  - {fileID: 2697565977272773078}
+  - {fileID: 4674622157546247740}
+  - {fileID: 94867113757991202}
+  - {fileID: 1446503224883724453}
+  - {fileID: 1906080237054647491}
+  - {fileID: 4680382172237670794}
+  - {fileID: 4105881132217300415}
+  - {fileID: 4001081523872433866}
+  - {fileID: 7088747488950644652}
+  - {fileID: 6052972126580703612}
+  - {fileID: 1700936043857283981}
+  - {fileID: 7432273177211565144}
+  - {fileID: 8168875084501481206}
+  - {fileID: 4695488386402109269}
+  - {fileID: 5668890775506030514}
+  - {fileID: 673267060903889704}
+  - {fileID: 2136275125201814597}
+  - {fileID: 1619118837332973944}
+  - {fileID: 6142519095173934005}
+  - {fileID: 8254621228121171721}
+  - {fileID: 916537110995500703}
+  - {fileID: 4937293038992240518}
+  - {fileID: 7647725626926261263}
+  - {fileID: 8361599113337859690}
+  - {fileID: 7704040592258294770}
+  - {fileID: 3917710453332013331}
+  - {fileID: 6046169764668186096}
+  m_Father: {fileID: 2541584125039184570}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!1 &8623418590613851141
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2541584125039184570}
+  m_Layer: 0
+  m_Name: P_CottonCandy2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2541584125039184570
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8623418590613851141}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 46.56134, y: 8.66922, z: -198.96881}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2057817410485895762}
+  - {fileID: 7308683834046481785}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &131832033269854050
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 1673684081088999837, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Blue (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666645
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666665
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.41100693
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1050129
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.34394836
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.68945926
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7230875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.01148063
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.04072699
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -93.612
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 403.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 321.103
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+--- !u!4 &2136275125201814597 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+  m_PrefabInstance: {fileID: 131832033269854050}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &502347207869732704
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 8509986925621402797, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Yellow (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666657
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.66666645
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.2009888
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.114006
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.20996094
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.09796718
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.48714775
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.47195446
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7282504
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 231.522
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 262.623
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -30.643005
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+--- !u!4 &8911197279309631863 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+  m_PrefabInstance: {fileID: 502347207869732704}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &548654066960603417
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 7082634988729654397, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Pink (02)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666645
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666665
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.083999634
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1110067
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.47994995
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.68945926
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7230875
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.01148063
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.04072699
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -93.612
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 403.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 321.103
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+--- !u!4 &7970376987460575198 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+  m_PrefabInstance: {fileID: 548654066960603417}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &723261361321767519
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 1673684081088999837, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Blue (08)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666645
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666665
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.38599396
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1050091
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.6449585
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.68945926
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7230875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.01148063
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.04072699
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -93.612
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 403.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 321.103
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+--- !u!4 &1619118837332973944 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+  m_PrefabInstance: {fileID: 723261361321767519}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &819945519870896491
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 7082634988729654397, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Pink (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666668
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666675
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.66666675
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.72499084
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1190138
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.47894287
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.07420391
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.40429884
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.63286686
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.656137
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -62.936
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 253.66699
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 245.60199
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+--- !u!4 &7088747488950644652 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+  m_PrefabInstance: {fileID: 819945519870896491}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &858848532558045354
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 1673684081088999837, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Blue (01)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666645
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666665
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.09899521
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.0980082
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.47595215
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.68945926
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7230875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.01148063
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.04072699
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -93.612
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 403.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 321.103
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+--- !u!4 &1700936043857283981 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+  m_PrefabInstance: {fileID: 858848532558045354}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1078689249291427738
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 8509986925621402797, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Yellow (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.66666657
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666645
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.051651
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1290131
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.58421326
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.2867722
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.72866595
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.39999187
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.47625023
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -53.027
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 129.417
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -211
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+--- !u!4 &8334503205201107341 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+  m_PrefabInstance: {fileID: 1078689249291427738}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1143158235589576890
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 8509986925621402797, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Yellow (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666645
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666665
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.25400925
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1110134
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.33195496
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.68945926
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7230875
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.01148063
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.04072699
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -93.612
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 403.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 321.103
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+--- !u!4 &8254830876323516077 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+  m_PrefabInstance: {fileID: 1143158235589576890}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1174238096190298287
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 8509986925621402797, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Yellow
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666645
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666665
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.7380829
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1040001
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.1663971
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.68945926
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7230875
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.01148063
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.04072699
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -93.612
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 403.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 321.103
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+--- !u!4 &7861569686678724280 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+  m_PrefabInstance: {fileID: 1174238096190298287}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1209779193166960056
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 1673684081088999837, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Blue (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.66666675
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.91122055
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1270161
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.6065521
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.42784476
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.75703967
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.24023719
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.4314232
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -58.768
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 239.694
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 539.4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+--- !u!4 &916537110995500703 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+  m_PrefabInstance: {fileID: 1209779193166960056}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1523943673440280591
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 1673684081088999837, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Blue (06)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666645
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666665
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.108997345
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1050043
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.61795044
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.68945926
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7230875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.01148063
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.04072699
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -93.612
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 403.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 321.103
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+--- !u!4 &673267060903889704 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+  m_PrefabInstance: {fileID: 1523943673440280591}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1755520053429498804
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 8509986925621402797, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Yellow (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.66666675
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.88300705
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1270161
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.19494629
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.24146603
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.6940952
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.4151432
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.53626686
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 231.302
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 299.537
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -30.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+--- !u!4 &7281898960634836387 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+  m_PrefabInstance: {fileID: 1755520053429498804}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1850413910656174580
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 8509986925621402797, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Yellow (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.66666687
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.2565727
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.127017
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.3540802
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.36212358
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.8296616
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.31546295
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.2846247
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 231.302
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 337.048
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -30.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+--- !u!4 &7277712596341084131 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+  m_PrefabInstance: {fileID: 1850413910656174580}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1939786722362742325
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 7082634988729654397, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Pink
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666645
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666665
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.89294815
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1110191
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.15486145
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.68945926
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7230875
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.01148063
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.04072699
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -93.612
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 403.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 321.103
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+--- !u!4 &8352703880315326706 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+  m_PrefabInstance: {fileID: 1939786722362742325}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2108615028816255086
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 7082634988729654397, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Pink (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666645
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666665
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.1000061
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1170111
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.32095337
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.68945926
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7230875
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.01148063
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.04072699
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -93.612
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 403.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 321.103
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+--- !u!4 &8377271871018573481 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+  m_PrefabInstance: {fileID: 2108615028816255086}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2875508670762691575
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 8509986925621402797, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Yellow (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666665
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.66666645
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.8030052
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1270151
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.6419525
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.11253911
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.51156324
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.46688765
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7124984
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 231.302
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 266.273
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -30.5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+--- !u!4 &6536279209164942816 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+  m_PrefabInstance: {fileID: 2875508670762691575}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3017088796412694779
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 7082634988729654397, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Pink (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.66666657
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6666665
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666668
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.2737007
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1380177
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.4982605
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.55979556
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5316665
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.2755226
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.5727539
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -65.625
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 766.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -122.448
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+--- !u!4 &4674622157546247740 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+  m_PrefabInstance: {fileID: 3017088796412694779}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3023406949678427981
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 7082634988729654397, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Pink (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.66666675
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.66666675
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.2320061
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1360092
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.5199585
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.1648545
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.09419546
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.6111406
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7684123
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -114.748
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 484.194
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 61.67
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+--- !u!4 &4680382172237670794 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+  m_PrefabInstance: {fileID: 3023406949678427981}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3039734616207989300
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 1673684081088999837, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Blue (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666657
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.66666645
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.5994644
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1170111
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.6665497
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.36508235
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.6509679
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.33599734
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.57450986
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -59.472
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 261.702
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 542.026
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+--- !u!4 &3917710453332013331 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+  m_PrefabInstance: {fileID: 3039734616207989300}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3063516489858817457
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 8509986925621402797, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Yellow (08)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666645
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666665
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.22899628
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1110172
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.6329498
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.68945926
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7230875
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.01148063
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.04072699
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -93.612
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 403.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 321.103
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+--- !u!4 &6327998027756182438 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+  m_PrefabInstance: {fileID: 3063516489858817457}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3472549423831772847
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 8509986925621402797, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Yellow (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666645
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666665
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.74832916
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1110067
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.3081665
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.68945926
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7230875
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.01148063
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.04072699
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -93.612
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 403.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 321.103
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+--- !u!4 &5576201689493104824 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+  m_PrefabInstance: {fileID: 3472549423831772847}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3776951284359610665
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 7082634988729654397, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Pink (08)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666665
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.9220009
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1300135
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.5639496
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.49089134
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.8593481
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.08012839
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.118852705
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -120.374
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 14.382996
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 362.384
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+--- !u!4 &6731526282967664622 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+  m_PrefabInstance: {fileID: 3776951284359610665}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4999474819925252027
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 8509986925621402797, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Yellow (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666664
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666645
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.66666687
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.7179527
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1140051
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.5879364
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.35317802
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.81887794
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.32803312
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.31160638
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 231.523
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 333.397
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -30.643005
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+--- !u!4 &4049843778871497132 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+  m_PrefabInstance: {fileID: 4999474819925252027}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5196367058385104743
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 7082634988729654397, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Pink (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.66666657
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666657
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.1436462
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1300144
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.44104004
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.35380048
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.63176364
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.34959805
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5945428
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -120.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 85.157
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 362.383
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+--- !u!4 &2385911771536714144 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+  m_PrefabInstance: {fileID: 5196367058385104743}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5220151857788643931
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 1673684081088999837, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666645
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666665
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.5812149
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.0980062
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.17782593
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.68945926
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7230875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.01148063
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.04072699
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -93.612
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 403.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 321.103
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+--- !u!4 &6052972126580703612 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+  m_PrefabInstance: {fileID: 5220151857788643931}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5282532095063490706
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 1673684081088999837, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Blue (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666664
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6666664
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.7249832
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1250038
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.73353577
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5520677
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5113656
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.2937446
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.589441
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -114.369
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 582.453
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 58.128
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+--- !u!4 &6142519095173934005 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+  m_PrefabInstance: {fileID: 5282532095063490706}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5339991296446776770
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 8509986925621402797, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Yellow (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.2625046
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1190147
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.17314148
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.12477587
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.46596295
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.48619187
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7286474
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 235.569
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 260.534
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -28.669006
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+--- !u!4 &3983760851943474133 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+  m_PrefabInstance: {fileID: 5339991296446776770}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5406651721079476614
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 8509986925621402797, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Yellow (06)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666645
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666665
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.26599503
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1110115
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.6059418
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.68945926
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7230875
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.01148063
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.04072699
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -93.612
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 403.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 321.103
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+--- !u!4 &3916466679150008209 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+  m_PrefabInstance: {fileID: 5406651721079476614}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5507602887943810833
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 7082634988729654397, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Pink (09)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666668
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666657
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.66666657
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.0249901
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1300077
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.19494629
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.44741848
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7893767
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.21728067
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.35984766
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -120.374
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 47.647003
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 362.383
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+--- !u!4 &2697565977272773078 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+  m_PrefabInstance: {fileID: 5507602887943810833}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5520593027067799119
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 7082634988729654397, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Pink (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666645
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666665
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.90219116
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1170044
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.29658508
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.68945926
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7230875
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.01148063
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.04072699
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -93.612
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 403.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 321.103
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+--- !u!4 &2710133746091450504 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+  m_PrefabInstance: {fileID: 5520593027067799119}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5735757698217572055
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 1673684081088999837, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Blue (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.66666657
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666668
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.3139954
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1170149
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.1239624
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.49221247
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.8634037
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.062507376
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.09139934
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -59.472
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 190.928
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 542.026
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+--- !u!4 &6046169764668186096 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+  m_PrefabInstance: {fileID: 5735757698217572055}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5784370618846716929
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 8509986925621402797, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Yellow (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666645
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.66666657
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.74599075
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.129015
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.08496094
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.4918983
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.8006976
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.016381219
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.3415423
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -53.026
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -118.044
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -211.001
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+--- !u!4 &3248338637053567510 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+  m_PrefabInstance: {fileID: 5784370618846716929}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5907112413743936376
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 7082634988729654397, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Pink (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666675
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.66666657
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.6019974
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1360054
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.080947876
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.606123
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.77081174
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.18245018
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.071946025
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -114.748
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 667.506
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -298.33002
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+--- !u!4 &4105881132217300415 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+  m_PrefabInstance: {fileID: 5907112413743936376}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5970150507342193813
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 1673684081088999837, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Blue (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666645
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666665
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.08400726
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1050053
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.31695557
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.68945926
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7230875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.01148063
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.04072699
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -93.612
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 403.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 321.103
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+--- !u!4 &5668890775506030514 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+  m_PrefabInstance: {fileID: 5970150507342193813}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6052533619730028775
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 8509986925621402797, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Yellow (03)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666645
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666665
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.23900604
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1040001
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.49194336
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.68945926
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7230875
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.01148063
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.04072699
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -93.612
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 403.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 321.103
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+--- !u!4 &3363265244122029808 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+  m_PrefabInstance: {fileID: 6052533619730028775}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6410038154708731041
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 1673684081088999837, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Blue (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666668
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.1549988
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1270094
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.39894104
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.48792505
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.8670188
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.0519073
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.08667922
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -58.768
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 528.919
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 179.401
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+--- !u!4 &4937293038992240518 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+  m_PrefabInstance: {fileID: 6410038154708731041}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6560169514066608591
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 8509986925621402797, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Yellow (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666645
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666665
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.24100494
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1110134
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.3049469
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.68945926
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7230875
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.01148063
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.04072699
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -93.612
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 403.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 321.103
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+--- !u!4 &2763024082413291480 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+  m_PrefabInstance: {fileID: 6560169514066608591}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6623041594874628893
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 7082634988729654397, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Pink (01)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666645
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666665
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.41101074
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1110106
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.45295715
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.68945926
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7230875
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.01148063
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.04072699
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -93.612
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 403.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 321.103
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+--- !u!4 &3668330806522678746 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+  m_PrefabInstance: {fileID: 6623041594874628893}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6642225065023452023
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 8509986925621402797, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Yellow (02)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666645
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666665
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.25600052
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1040039
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.46495056
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.68945926
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7230875
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.01148063
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.04072699
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -93.612
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 403.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 321.103
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+--- !u!4 &2413841614708061536 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+  m_PrefabInstance: {fileID: 6642225065023452023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6726257632740453490
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 1673684081088999837, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Blue (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666645
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666665
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.59145355
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1049995
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.31959534
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.68945926
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7230875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.01148063
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.04072699
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -93.612
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 403.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 321.103
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+--- !u!4 &4695488386402109269 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+  m_PrefabInstance: {fileID: 6726257632740453490}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6737685327450497337
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 8509986925621402797, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Yellow (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666645
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666665
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.23100662
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1040001
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.16394043
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.68945926
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7230875
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.01148063
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.04072699
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -93.612
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 403.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 321.103
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+--- !u!4 &2365319658302465838 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+  m_PrefabInstance: {fileID: 6737685327450497337}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6811676986642006029
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 7082634988729654397, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Pink (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666663
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666657
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.66666675
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.1283417
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1190205
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.22686768
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.30599838
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.050358742
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.55892086
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7690491
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -62.935
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 324.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 245.60199
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+--- !u!4 &4001081523872433866 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+  m_PrefabInstance: {fileID: 6811676986642006029}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6871504805923452947
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 7082634988729654397, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Pink (04)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666645
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666665
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.41999435
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1170006
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.59495544
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.68945926
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7230875
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.01148063
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.04072699
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -93.612
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 403.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 321.103
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+--- !u!4 &3917356956041314004 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+  m_PrefabInstance: {fileID: 6871504805923452947}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7516590724673103845
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 7082634988729654397, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Pink (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.66666657
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666657
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666665
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.93299484
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1380177
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.7049713
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.2968225
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.10176469
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.54879737
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7748302
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -65.625
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 695.966
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -122.448
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+--- !u!4 &94867113757991202 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+  m_PrefabInstance: {fileID: 7516590724673103845}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7528770042008175949
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 1673684081088999837, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Blue (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666657
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666664
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.1501083
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.114008
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.08584595
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.4930956
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.8630495
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.028418139
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.10580537
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -58.998
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 197.467
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 533.838
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+--- !u!4 &8361599113337859690 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+  m_PrefabInstance: {fileID: 7528770042008175949}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7746168252587564579
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 8509986925621402797, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Yellow (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.66666657
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666657
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.0880089
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1290131
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.5239563
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0021580309
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.31825715
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.49216416
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.8102359
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -53.026
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 58.643
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -211
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+--- !u!4 &1598133922794985524 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+  m_PrefabInstance: {fileID: 7746168252587564579}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7840024915945959074
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 7082634988729654397, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Pink (06)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666645
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666665
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.07499695
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1170158
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.6219635
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.68945926
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7230875
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.01148063
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.04072699
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -93.612
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 403.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 321.103
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+--- !u!4 &417743280397101157 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+  m_PrefabInstance: {fileID: 7840024915945959074}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7866771477658770897
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 1673684081088999837, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Blue (03)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666645
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666665
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.39600754
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.0980053
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.5029297
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.68945926
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7230875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.01148063
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.04072699
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -93.612
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 403.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 321.103
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+--- !u!4 &8168875084501481206 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+  m_PrefabInstance: {fileID: 7866771477658770897}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7998252359311871022
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 1673684081088999837, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Blue (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.66666675
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.3359985
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1249981
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.26394653
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.27997047
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.07555178
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.5591771
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7766785
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -114.369
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 511.67902
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 58.127
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+--- !u!4 &8254621228121171721 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+  m_PrefabInstance: {fileID: 7998252359311871022}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8318856270174181892
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 7082634988729654397, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Pink (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666645
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666668
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.99916077
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1360073
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.71954346
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.48830968
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.36819127
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.40277067
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.68100274
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -114.748
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 554.968
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 61.67
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+--- !u!4 &1906080237054647491 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+  m_PrefabInstance: {fileID: 8318856270174181892}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8454607509428439462
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2541584125039184570}
+    m_Modifications:
+    - target: {fileID: 1169077200539749599, guid: 1d643945a4102e94385887a1a8df62fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169077200539749599, guid: 1d643945a4102e94385887a1a8df62fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169077200539749599, guid: 1d643945a4102e94385887a1a8df62fa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169077200539749599, guid: 1d643945a4102e94385887a1a8df62fa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169077200539749599, guid: 1d643945a4102e94385887a1a8df62fa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169077200539749599, guid: 1d643945a4102e94385887a1a8df62fa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169077200539749599, guid: 1d643945a4102e94385887a1a8df62fa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169077200539749599, guid: 1d643945a4102e94385887a1a8df62fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169077200539749599, guid: 1d643945a4102e94385887a1a8df62fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1169077200539749599, guid: 1d643945a4102e94385887a1a8df62fa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1977842376476874341, guid: 1d643945a4102e94385887a1a8df62fa, type: 3}
+      propertyPath: m_Name
+      value: P_Foodstall_Red
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1d643945a4102e94385887a1a8df62fa, type: 3}
+--- !u!4 &7308683834046481785 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1169077200539749599, guid: 1d643945a4102e94385887a1a8df62fa, type: 3}
+  m_PrefabInstance: {fileID: 8454607509428439462}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8526408733359476520
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 1673684081088999837, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Blue (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666645
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.6720085
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1270218
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.20596313
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.037783667
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.061583012
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.48921824
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.8691637
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -58.768
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 352.232
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 179.4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+--- !u!4 &7647725626926261263 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+  m_PrefabInstance: {fileID: 8526408733359476520}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8546581366354446549
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 1673684081088999837, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Blue (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.66666675
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666645
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.66666657
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.58499146
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1140203
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.45396423
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.41845658
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.76487964
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.2623809
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.413533
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -58.997
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 486.693
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 173.838
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+--- !u!4 &7704040592258294770 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+  m_PrefabInstance: {fileID: 8546581366354446549}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8887136377114894207
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 1673684081088999837, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Blue (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666645
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666665
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.42100525
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.0980091
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.20195007
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.68945926
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7230875
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.01148063
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.04072699
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -93.612
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 403.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 321.103
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+--- !u!4 &7432273177211565144 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2049646222598826791, guid: ab9a4b79e4e1dde42887f78de7657ace, type: 3}
+  m_PrefabInstance: {fileID: 8887136377114894207}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8996233605130746165
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 8509986925621402797, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Yellow (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666664
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.66666657
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.63000107
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1190119
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.58795166
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.17982978
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.0420776
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.4686274
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.86387455
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 235.569
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 189.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -28.669983
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+--- !u!4 &111277608740486946 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9030382087950140951, guid: b26fe9890d126a642b224ed357ef5f4b, type: 3}
+  m_PrefabInstance: {fileID: 8996233605130746165}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9012337647580694114
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2057817410485895762}
+    m_Modifications:
+    - target: {fileID: 7082634988729654397, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_Name
+      value: Cotton Candy Pink (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.66666657
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.66666645
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666666
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.9569931
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.13801
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.31895447
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.4414845
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.3192827
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.44087908
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.71328515
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -65.625
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 729.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -122.448
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+--- !u!4 &1446503224883724453 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7566401776065939143, guid: 4f7b60def6e20e948901e3e0c5dc214f, type: 3}
+  m_PrefabInstance: {fileID: 9012337647580694114}
+  m_PrefabAsset: {fileID: 0}
