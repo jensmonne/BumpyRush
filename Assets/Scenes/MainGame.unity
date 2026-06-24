@@ -349,6 +349,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1365543014070851596, guid: 66037ac10fcd2804db6821ccd187b2f2, type: 3}
+      propertyPath: m_ProvidesContacts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1552993124617368251, guid: 66037ac10fcd2804db6821ccd187b2f2, type: 3}
       propertyPath: m_TagString
       value: PhyObject
@@ -389,6 +393,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: PhyObject
       objectReference: {fileID: 0}
+    - target: {fileID: 3318342078008053693, guid: 66037ac10fcd2804db6821ccd187b2f2, type: 3}
+      propertyPath: m_TagString
+      value: Bridge
+      objectReference: {fileID: 0}
     - target: {fileID: 3394287123931553016, guid: 66037ac10fcd2804db6821ccd187b2f2, type: 3}
       propertyPath: m_TagString
       value: PhyObject
@@ -413,6 +421,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: PhyObject
       objectReference: {fileID: 0}
+    - target: {fileID: 4073919289946092308, guid: 66037ac10fcd2804db6821ccd187b2f2, type: 3}
+      propertyPath: m_TagString
+      value: Bridge
+      objectReference: {fileID: 0}
     - target: {fileID: 4158331253877168800, guid: 66037ac10fcd2804db6821ccd187b2f2, type: 3}
       propertyPath: m_TagString
       value: PhyObject
@@ -436,6 +448,10 @@ PrefabInstance:
     - target: {fileID: 5127042133522667628, guid: 66037ac10fcd2804db6821ccd187b2f2, type: 3}
       propertyPath: m_TagString
       value: PhyObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 5221318531594437613, guid: 66037ac10fcd2804db6821ccd187b2f2, type: 3}
+      propertyPath: m_TagString
+      value: Bridge
       objectReference: {fileID: 0}
     - target: {fileID: 5234600335553665108, guid: 66037ac10fcd2804db6821ccd187b2f2, type: 3}
       propertyPath: m_TagString
@@ -493,6 +509,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: PhyObject
       objectReference: {fileID: 0}
+    - target: {fileID: 7823014350639544959, guid: 66037ac10fcd2804db6821ccd187b2f2, type: 3}
+      propertyPath: m_TagString
+      value: Bridge
+      objectReference: {fileID: 0}
     - target: {fileID: 7927246388304811343, guid: 66037ac10fcd2804db6821ccd187b2f2, type: 3}
       propertyPath: m_TagString
       value: PhyObject
@@ -504,6 +524,10 @@ PrefabInstance:
     - target: {fileID: 8319618294234710624, guid: 66037ac10fcd2804db6821ccd187b2f2, type: 3}
       propertyPath: m_TagString
       value: PhyObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 8365046153955625949, guid: 66037ac10fcd2804db6821ccd187b2f2, type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 8551875750428680672, guid: 66037ac10fcd2804db6821ccd187b2f2, type: 3}
       propertyPath: m_TagString
