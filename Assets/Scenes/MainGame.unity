@@ -285,6 +285,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: PhyObject
       objectReference: {fileID: 0}
+    - target: {fileID: 93848825182043640, guid: 66037ac10fcd2804db6821ccd187b2f2, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 280452962437083739, guid: 66037ac10fcd2804db6821ccd187b2f2, type: 3}
       propertyPath: m_TagString
       value: PhyObject
