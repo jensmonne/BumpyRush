@@ -76,7 +76,7 @@ public class Movement : MonoBehaviour
     // MOVEMENT (Vooruit/achteruit)
     private void HandleMovement()
     {
-        // Stop de code direct als de auto in de lucht hangt of net ergens tegenaan is gebonst
+        // Stop de code direct als de auto in de lucht hangt of net ergens tegenaan is geBOBed :)
         if (!grounded.isGrounded) return;
 
         float currentThrottle = smoothedThrottle;
@@ -94,7 +94,7 @@ public class Movement : MonoBehaviour
             }
             else
             {
-                // Achteruitrijden gaat langzamer (30% van de kracht) dan vooruitrijden
+                // Achteruitrijden gaat langzamer dan vooruitrijden
                 float reverseMultiplier = (currentThrottle < 0f) ? 0.3f : 1.0f;
                 rb3D.AddForce(transform.forward * currentThrottle * speed * reverseMultiplier, ForceMode.Acceleration);
             }
