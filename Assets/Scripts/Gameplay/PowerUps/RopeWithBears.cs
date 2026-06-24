@@ -2,110 +2,167 @@ using System.Collections.Generic;
 using Mirror;
 using UnityEngine;
 
-public class RopeWithCubes : NetworkBehaviour
+public class RopeWithBears : NetworkBehaviour
 {
     [Header("Bear Settings")]
     [SerializeField] private GameObject bearPrefab;
-    [SerializeField] private int initialBearCount = 5;
-    [SerializeField] private float bearMass = 0.5f;
-    [SerializeField] private LayerMask bearLayer;
+    [SerializeField] private int initialBearCount = 0;
 
     [Header("Chain Settings")]
     [SerializeField] private float segmentLength = 1f;
-    [SerializeField] private float springStrength = 50f;
-    [SerializeField] private float springDamper = 5f;
     [SerializeField] private float ropeHeight = 1f;
     [SerializeField] private Vector3 ropeOriginOffset = new Vector3(0, 0, -3f);
+    [SerializeField] private float recordDistance = 0.1f;
+    [SerializeField] private float teleportThreshold = 5f;
 
-    private GameObject anchor;
-    private Rigidbody anchorRb;
-    private Collider[] carColliders;
+    [SyncVar(hook = nameof(OnBearCountChanged))]
+    private int bearCount;
+
     private readonly List<GameObject> bears = new List<GameObject>();
-    private int bearLayerIndex;
+    private readonly List<Vector3> path = new List<Vector3>(); // [0] = most recent committed point
 
-    private void Start()
+    private Vector3 AnchorPos => transform.TransformPoint(ropeOriginOffset + Vector3.up * ropeHeight);
+
+    public override void OnStartServer()
     {
-        if (GetComponent<Rigidbody>() == null)
-        {
-            Debug.LogError("Car needs a Rigidbody!");
-            return;
-        }
-
-        carColliders = GetComponentsInChildren<Collider>();
-
-        bearLayerIndex = (int)Mathf.Log(bearLayer.value, 2);
-        // Only bears ignore each other — NOT the ground layer
-        Physics.IgnoreLayerCollision(bearLayerIndex, bearLayerIndex, true);
-
-        anchor = new GameObject("RopeAnchor");
-        anchor.transform.SetParent(transform);
-        anchor.transform.localPosition = ropeOriginOffset + Vector3.up * ropeHeight;
-        anchorRb = anchor.AddComponent<Rigidbody>();
-        anchorRb.isKinematic = true;
-
-        for (int i = 0; i < initialBearCount; i++)
-            AddBear();
+        bearCount = Mathf.Max(0, initialBearCount);
     }
 
-    public void AddBear()
+    public override void OnStartClient()
     {
-        int index = bears.Count;
+        SeedPath();
+        UpdateBearVisuals();
+    }
 
-        Vector3 spawnPos = transform.position
-            + ropeOriginOffset
-            + -transform.forward * segmentLength * index
-            + Vector3.up * ropeHeight;
+    public override void OnStopClient() => ClearBearVisuals();
+    private void OnDestroy() => ClearBearVisuals();
 
-        GameObject bear = Instantiate(bearPrefab, spawnPos, Quaternion.identity);
+    private void OnBearCountChanged(int oldCount, int newCount) => UpdateBearVisuals();
 
-        foreach (Transform t in bear.GetComponentsInChildren<Transform>(true))
-            t.gameObject.layer = bearLayerIndex;
+    private void LateUpdate()
+    {
+        if (bears.Count == 0) return;
+        if (path.Count == 0) SeedPath();
+
+        Vector3 anchor = AnchorPos;
+
+        if (Vector3.Distance(anchor, path[0]) > teleportThreshold)
+            SeedPath();
+        else if (Vector3.Distance(anchor, path[0]) >= recordDistance)
+        {
+            path.Insert(0, anchor);
+            TrimPath();
+        }
+
+        for (int i = 0; i < bears.Count; i++)
+        {
+            if (bears[i] == null) continue;
+
+            Vector3 target = SamplePath((i + 1) * segmentLength);
+            Vector3 leader = (i == 0) ? anchor : bears[i - 1].transform.position;
+
+            bears[i].transform.position = target;
+
+            Vector3 look = leader - target;
+            if (look.sqrMagnitude > 0.0001f)
+                bears[i].transform.rotation = Quaternion.LookRotation(look);
+        }
+    }
+
+    private Vector3 SamplePath(float distance)
+    {
+        Vector3 prev = AnchorPos;
+        float covered = 0f;
+
+        for (int i = 0; i < path.Count; i++)
+        {
+            Vector3 cur = path[i];
+            float seg = Vector3.Distance(prev, cur);
+            if (seg > 0.0001f)
+            {
+                if (covered + seg >= distance)
+                    return Vector3.Lerp(prev, cur, (distance - covered) / seg);
+                covered += seg;
+            }
+            prev = cur;
+        }
+
+        Vector3 dir = path.Count >= 2 ? (path[path.Count - 1] - path[path.Count - 2]).normalized : -transform.forward;
+        if (dir == Vector3.zero) dir = -transform.forward;
+        return prev + dir * (distance - covered);
+    }
+
+    private void SeedPath()
+    {
+        path.Clear();
+        Vector3 a = AnchorPos;
+        Vector3 back = -transform.forward;
+        if (back == Vector3.zero) back = Vector3.back;
+
+        int pts = Mathf.CeilToInt(((bearCount + 2) * segmentLength) / Mathf.Max(0.01f, recordDistance)) + 1;
+        for (int i = 1; i <= pts; i++)
+            path.Add(a + back * recordDistance * i);
+    }
+
+    private void TrimPath()
+    {
+        float maxDist = (bearCount + 2) * segmentLength;
+        Vector3 prev = AnchorPos;
+        float covered = 0f;
+        int keep = path.Count;
+
+        for (int i = 0; i < path.Count; i++)
+        {
+            covered += Vector3.Distance(prev, path[i]);
+            prev = path[i];
+            if (covered > maxDist) { keep = i + 1; break; }
+        }
+
+        if (keep < path.Count)
+            path.RemoveRange(keep, path.Count - keep);
+    }
+
+    private void UpdateBearVisuals()
+    {
+        if (bearPrefab == null) return;
+        if (path.Count == 0) SeedPath();
+
+        while (bears.Count < bearCount) SpawnBearVisual();
+        while (bears.Count > bearCount) DespawnLastBearVisual();
+    }
+
+    private void SpawnBearVisual()
+    {
+        Vector3 pos = SamplePath((bears.Count + 1) * segmentLength);
+        GameObject bear = Instantiate(bearPrefab, pos, Quaternion.identity);
 
         Rigidbody rb = bear.GetComponent<Rigidbody>();
-        if (rb == null) rb = bear.AddComponent<Rigidbody>();
-        rb.mass = bearMass;
-        rb.useGravity = true;
-        rb.constraints = RigidbodyConstraints.FreezeRotation;
-        rb.linearDamping = 1f;
-        rb.collisionDetectionMode = CollisionDetectionMode.ContinuousSpeculative;
+        if (rb != null) { rb.isKinematic = true; rb.useGravity = false; }
 
-        Collider col = bear.GetComponentInChildren<Collider>();
-        if (col == null) col = bear.AddComponent<BoxCollider>();
-        col.isTrigger = false;
-
-        // Ignore car colliders specifically, not the whole car layer
-        foreach (Collider carCol in carColliders)
-            Physics.IgnoreCollision(col, carCol);
-
-        Rigidbody connectedRb = index == 0 ? anchorRb : bears[index - 1].GetComponent<Rigidbody>();
-
-        SpringJoint joint = bear.AddComponent<SpringJoint>();
-        joint.connectedBody = connectedRb;
-        joint.spring = springStrength;
-        joint.damper = springDamper;
-        joint.minDistance = 0f;
-        joint.maxDistance = segmentLength;
-        joint.autoConfigureConnectedAnchor = false;
-        joint.anchor = Vector3.zero;
-        joint.connectedAnchor = Vector3.zero;
+        foreach (Collider c in bear.GetComponentsInChildren<Collider>(true))
+            c.enabled = false;
 
         bears.Add(bear);
     }
 
-    public void RemoveBear()
+    private void DespawnLastBearVisual()
     {
-        if (bears.Count == 0) return;
         int last = bears.Count - 1;
-        Destroy(bears[last]);
+        if (bears[last] != null) Destroy(bears[last]);
         bears.RemoveAt(last);
     }
 
-    public void ClearBears()
+    private void ClearBearVisuals()
     {
-        foreach (GameObject bear in bears)
-            if (bear != null) Destroy(bear);
+        foreach (GameObject b in bears)
+            if (b != null) Destroy(b);
         bears.Clear();
     }
 
-    public int BearCount => bears.Count;
+    [Server] public void AddBear() => bearCount++;
+    [Server] public void RemoveBear() => bearCount = Mathf.Max(0, bearCount - 1);
+    [Server] public void ClearBears() => bearCount = 0;
+    [Server] public void SetBearCount(int n) => bearCount = Mathf.Max(0, n);
+
+    public int BearCount => bearCount;
 }

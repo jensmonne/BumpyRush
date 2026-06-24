@@ -53,11 +53,9 @@ public class PowerupPickUp : NetworkBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Player entered powerup trigger");
             itemManager = other.GetComponentInParent<ItemManager>();
             if (itemManager != null)
             {
-                Debug.Log("Giving item to player");
                 GetItem(other.gameObject);
                 Destroy(gameObject);
             }

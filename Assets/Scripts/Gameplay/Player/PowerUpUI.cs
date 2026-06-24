@@ -14,7 +14,6 @@ public class PowerUpUI : MonoBehaviour
     {
         tmp = powerUpText.GetComponentInChildren<TextMeshProUGUI>(true);
         OnPowerupChanged += HandlePowerupChanged;
-        Debug.Log("PowerUpUI subscribed");
     }
 
     private void OnEnable()
