@@ -51,12 +51,15 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _Density_x: 19.8
+    - _Density_y: 48.8
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _WaterSpeed: 0.04
+    - _WaterSpeed: 0.004
     m_Colors:
-    - _Blue: {r: 0.44067636, g: 0.6050342, b: 0.7811319, a: 1}
-    - _LightBlue: {r: 0.34771797, g: 0.7675126, b: 0.8415094, a: 1}
+    - _Blue: {r: 0.3113207, g: 0.46161357, b: 0.6226415, a: 1}
+    - _LightBlue: {r: 0.4829713, g: 0.8632853, b: 0.9308176, a: 1}
+    - _Tiling_n_offset: {r: 17.8, g: 11.8, b: 0, a: 0}
     - _WaterDirectiojn: {r: 0, g: 2, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
