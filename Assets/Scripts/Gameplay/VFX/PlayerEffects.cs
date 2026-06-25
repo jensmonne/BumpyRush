@@ -3,37 +3,58 @@ using Mirror;
 
 public class PlayerEffects : NetworkBehaviour
 {
-    [SerializeField] private ParticleSystem jumpParticles;
+    //type van effecten
+    public enum EffectType
+    {
+        Jump,
+        Drift
+    }
 
-    public void PlayJumpEffect(Transform effectPoint)
+    [Header("Prefabs")]
+    [SerializeField] private ParticleSystem jumpParticles;
+    [SerializeField] private ParticleSystem driftParticles;
+
+    //roep deze functie aan!
+    public void PlayEffect(EffectType type, Transform effectPoint)
     {
         if (!isLocalPlayer) return;
 
-        if (jumpParticles != null && effectPoint != null)
+        if (effectPoint != null)
         {
-            // Stuur de positie door naar de server
-            CmdPlayJumpEffect(effectPoint.position);
+            CmdPlayEffect(type, effectPoint.position);
         }
     }
 
     [Command]
-    private void CmdPlayJumpEffect(Vector3 position)
+    private void CmdPlayEffect(EffectType type, Vector3 position)
     {
-        RpcPlayJumpEffect(position);
+        RpcPlayEffect(type, position);
     }
 
     [ClientRpc]
-    private void RpcPlayJumpEffect(Vector3 position)
+    private void RpcPlayEffect(EffectType type, Vector3 position)
     {
-        if (jumpParticles == null) return;
+        ParticleSystem prefabToSpawn = null;
 
-        ParticleSystem jumpEffectInstance = Instantiate(
-            jumpParticles,
+        switch (type)
+        {
+            case EffectType.Jump:
+                prefabToSpawn = jumpParticles;
+                break;
+            case EffectType.Drift:
+                prefabToSpawn = driftParticles;
+                break;
+        }
+
+        if (prefabToSpawn == null) return;
+
+        ParticleSystem effectInstance = Instantiate(
+            prefabToSpawn,
             position,
             Quaternion.identity
         );
         
-        jumpEffectInstance.Play();
-        Destroy(jumpEffectInstance.gameObject, jumpEffectInstance.main.duration);
+        effectInstance.Play();
+        Destroy(effectInstance.gameObject, effectInstance.main.duration);
     }
 }

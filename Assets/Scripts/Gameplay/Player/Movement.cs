@@ -18,7 +18,9 @@ public class Movement : MonoBehaviour
 
     [Header("Drift")]
     [SerializeField] private float driftFactor = 0.98f;
+    [SerializeField] private float extraDriftFactor = 0.995f;
     [SerializeField] private float velocityRotateSpeed = 2f;
+    [SerializeField] private float extraDriftVelocityRotateSpeed = 0.5f;
 
     [SerializeField] private float bounceDriftFactor = 0.996f;
 
@@ -38,6 +40,7 @@ public class Movement : MonoBehaviour
     private float driveInput;
     private float steer;
     private float smoothedThrottle;
+    private bool isExtraDrifting;
 
     private void Awake()
     {
@@ -58,7 +61,20 @@ public class Movement : MonoBehaviour
         steer = context.ReadValue<float>();
     }
 
-    // FixedUpdate wordt gebruikt voor physics-berekeningen (loopt synchroon met de physics engine)
+    // vangst input van drift knop
+    public void OnDrift(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            isExtraDrifting = true;
+        }
+        else if (context.canceled)
+        {
+            isExtraDrifting = false;
+        }
+    }
+
+    // FixedUpdate 
     private void FixedUpdate()
     {
         // Zorgt voor het geleidelijk optrekken en afremmen van de input (geen instant 0 naar 100)
@@ -140,9 +156,15 @@ public class Movement : MonoBehaviour
                 rb3D.linearVelocity;
 
             float currentVelocityRotateSpeed = velocityRotateSpeed;
-            if (stopMovement_Bounce != null && stopMovement_Bounce.hasCollided)
+            
+            // Checkt of de extra driftknop actief is, anders valt hij terug op de bounce of standaard waarde
+            if (isExtraDrifting)
             {
-                // Verlaag de grip-rotatie met bijvoorbeeld 75% tijdens de bounce-fase
+                currentVelocityRotateSpeed = extraDriftVelocityRotateSpeed;
+            }
+            else if (stopMovement_Bounce != null && stopMovement_Bounce.hasCollided)
+            {
+                // Verlaag de grip-rotatie
                 currentVelocityRotateSpeed = velocityRotateSpeed * 0.25f;
             }
 
@@ -158,17 +180,23 @@ public class Movement : MonoBehaviour
     // DRIFTEN (Zwaartekracht/Grip-simulatie)
     private void ApplyDrift()
     {
-        // Haalt de lokale snelheid op (X = zijwaarts, Z = voorwaarts)
+        // Haalt de lokale snelheid op
         Vector3 localVelocity = transform.InverseTransformDirection(rb3D.linearVelocity);
 
         float currentDriftFactor = driftFactor;
-        if (stopMovement_Bounce != null && stopMovement_Bounce.hasCollided)
+        
+        if (isExtraDrifting)
+        {
+            currentDriftFactor = extraDriftFactor;
+            playerVFX.PlayEffect(PlayerEffects.EffectType.Drift, JumpEffectPoint);
+        }
+        else if (stopMovement_Bounce != null && stopMovement_Bounce.hasCollided)
         {
             currentDriftFactor = bounceDriftFactor;
         }
         
         // Hoe lager de factor, hoe sneller de auto stopt met slippen en grip krijgt.
-        localVelocity.x *= driftFactor;
+        localVelocity.x *= currentDriftFactor;
 
         // Past de aangepaste snelheid weer toe op de Rigidbody
         rb3D.linearVelocity = transform.TransformDirection(localVelocity);
@@ -188,7 +216,7 @@ public class Movement : MonoBehaviour
         );
         
         // jump VFX (expects a Transform)
-        playerVFX.PlayJumpEffect(JumpEffectPoint);
+        playerVFX.PlayEffect(PlayerEffects.EffectType.Jump, JumpEffectPoint);
 
         // jump sfx
         playerSFX.PlayJumpSound();
