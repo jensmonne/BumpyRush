@@ -1858,6 +1858,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: e29e4f86-4f8c-4e04-8079-a1e95716826a
     m_ActionName: 'Player/UseItem[/Keyboard/e]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 0f9ea85d-00ea-47dd-9714-3da721bb4644
+    m_ActionName: 'Player/Drift[/Keyboard/e]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -2099,8 +2103,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Unstuck
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 40e555e43dcb6e44c92905e08f2fdd07, type: 2}
+  m_sharedMaterial: {fileID: -5526293966737130438, guid: 40e555e43dcb6e44c92905e08f2fdd07, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2826,14 +2830,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.9019608}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.62352943}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -1326293600, guid: dd47218a4fb6ad6478f0095e6c6b4b47, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3057,6 +3061,7 @@ GameObject:
   - component: {fileID: 1013013622}
   - component: {fileID: 1013013621}
   - component: {fileID: 1013013620}
+  - component: {fileID: 1013013623}
   m_Layer: 5
   m_Name: LeaveGameButton
   m_TagString: Untagged
@@ -3103,7 +3108,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -3113,10 +3118,10 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
+    m_HighlightedSprite: {fileID: 374837368, guid: 2567de2050a7bf74f9efcbf0f8208009, type: 3}
+    m_PressedSprite: {fileID: -1054316868, guid: 2567de2050a7bf74f9efcbf0f8208009, type: 3}
+    m_SelectedSprite: {fileID: -1054316868, guid: 2567de2050a7bf74f9efcbf0f8208009, type: 3}
+    m_DisabledSprite: {fileID: -609762587, guid: 2567de2050a7bf74f9efcbf0f8208009, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -3160,8 +3165,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -609762587, guid: 2567de2050a7bf74f9efcbf0f8208009, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3178,6 +3183,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1013013618}
   m_CullTransparentMesh: 1
+--- !u!114 &1013013623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013013618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66bf52bb32e1e06289060742b799866f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HoverSpriteAnimator
+  hoverSprites:
+  - {fileID: 374837368, guid: 2567de2050a7bf74f9efcbf0f8208009, type: 3}
+  - {fileID: -235939482, guid: 2567de2050a7bf74f9efcbf0f8208009, type: 3}
+  - {fileID: -571131077, guid: 2567de2050a7bf74f9efcbf0f8208009, type: 3}
+  timePerFrame: 0.33
 --- !u!1 &1082592636
 GameObject:
   m_ObjectHideFlags: 0
@@ -3648,8 +3670,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Leave Game
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 40e555e43dcb6e44c92905e08f2fdd07, type: 2}
+  m_sharedMaterial: {fileID: -5526293966737130438, guid: 40e555e43dcb6e44c92905e08f2fdd07, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4333,6 +4355,7 @@ GameObject:
   - component: {fileID: 1659935223}
   - component: {fileID: 1659935222}
   - component: {fileID: 1659935221}
+  - component: {fileID: 1659935224}
   m_Layer: 5
   m_Name: UnstuckButton
   m_TagString: Untagged
@@ -4379,7 +4402,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -4389,10 +4412,10 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
+    m_HighlightedSprite: {fileID: 1714128734, guid: e42c7328740f4f844b90c6a3131f0f2c, type: 3}
+    m_PressedSprite: {fileID: -1087361786, guid: e42c7328740f4f844b90c6a3131f0f2c, type: 3}
+    m_SelectedSprite: {fileID: -1087361786, guid: e42c7328740f4f844b90c6a3131f0f2c, type: 3}
+    m_DisabledSprite: {fileID: 1275996047, guid: e42c7328740f4f844b90c6a3131f0f2c, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -4436,8 +4459,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 1275996047, guid: e42c7328740f4f844b90c6a3131f0f2c, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4454,6 +4477,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1659935219}
   m_CullTransparentMesh: 1
+--- !u!114 &1659935224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659935219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66bf52bb32e1e06289060742b799866f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HoverSpriteAnimator
+  hoverSprites:
+  - {fileID: 1714128734, guid: e42c7328740f4f844b90c6a3131f0f2c, type: 3}
+  - {fileID: -1589475115, guid: e42c7328740f4f844b90c6a3131f0f2c, type: 3}
+  - {fileID: 252851971, guid: e42c7328740f4f844b90c6a3131f0f2c, type: 3}
+  timePerFrame: 0.33
 --- !u!1 &1801146974
 GameObject:
   m_ObjectHideFlags: 0
