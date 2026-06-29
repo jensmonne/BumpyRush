@@ -1,6 +1,7 @@
 using UnityEngine;
 using Mirror;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 
 /*
 	Documentation: https://mirror-networking.gitbook.io/docs/components/network-manager
@@ -96,5 +97,45 @@ public class CustomNetworkManager : NetworkManager
         {
             SceneManager.LoadScene("MainMenu");
         }
+    }
+
+    public override Transform GetStartPosition()
+    {
+        startPositions.RemoveAll(t => t == null);
+
+        if (startPositions.Count == 0) return null;
+
+        List<Transform> shuffledPoints = new List<Transform>(startPositions);
+
+        for (int i = shuffledPoints.Count - 1; i > 0; i--)
+        {
+            int r = Random.Range(0, i + 1);
+            Transform tmp = shuffledPoints[i];
+            shuffledPoints[i] = shuffledPoints[r];
+            shuffledPoints[r] = tmp;
+        }
+
+        GamePlayer[] currentPlayers = FindObjectsByType<GamePlayer>();
+        float proximityThreshold = 0.5f;
+
+        foreach (Transform point in shuffledPoints)
+        {
+            bool isOccupied = false;
+            foreach (var player in currentPlayers)
+            {
+                if (Vector3.Distance(player.transform.position, point.position) < proximityThreshold)
+                {
+                    isOccupied = true;
+                    break;
+                }
+            }
+
+            if (!isOccupied)
+            {
+                return point;
+            }
+        }
+
+        return shuffledPoints[0];
     }
 }
