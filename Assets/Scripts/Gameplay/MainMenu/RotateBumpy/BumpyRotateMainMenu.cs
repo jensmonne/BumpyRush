@@ -20,9 +20,18 @@ public class BumpyRotateMainMenu : MonoBehaviour
         currentDirection = 0f;
     }
 
-    // Deze wordt nu elke frame aangeroepen zolang de knop ingedrukt is
     public void SetRotationDirection(float direction)
     {
         currentDirection = direction;
+    }
+
+    public void RotateLeft()
+    {
+        SetRotationDirection(10f);
+    }
+
+    public void RotateRight()
+    {
+        SetRotationDirection(-10f);
     }
 }

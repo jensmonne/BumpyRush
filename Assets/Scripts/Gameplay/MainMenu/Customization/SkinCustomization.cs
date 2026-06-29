@@ -21,7 +21,7 @@ public class SkinCustomization : MonoBehaviour
         }
 
         Instance = this;
-        //DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(gameObject);
     }
 
     private void Start()
@@ -91,5 +91,13 @@ public class SkinCustomization : MonoBehaviour
                 renderer.material = skinMaterials[currentSkinIndex];
             }
         }
+    }
+
+    public Material GetSkinMaterial(int index)
+    {
+        if (skinMaterials == null || skinMaterials.Length == 0) return null;
+        
+        int safeIndex = (index + skinMaterials.Length) % skinMaterials.Length;
+        return skinMaterials[safeIndex];
     }
 }

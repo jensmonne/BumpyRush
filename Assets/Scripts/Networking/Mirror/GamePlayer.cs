@@ -15,8 +15,12 @@ public class GamePlayer : NetworkBehaviour
     [SerializeField] private List<GameObject> localOnlyObjects;
     [SerializeField] private TMP_Text nameText;
 
+    private Renderer[] characterRenderers;
+
     private void Start()
     {
+        characterRenderers = GetComponentsInChildren<Renderer>();
+
         if (!isLocalPlayer)
         {
             DisableRemoteComponents();
@@ -25,13 +29,38 @@ public class GamePlayer : NetworkBehaviour
         {
             SetupLocalPlayer();
         }
+
+        UpdateVisuals(networkData);
     }
 
     private void HandlePlayerDataChanged(PlayerNetworkData oldData, PlayerNetworkData newData)
     {
+        UpdateVisuals(newData);
+    }
+
+    private void UpdateVisuals(PlayerNetworkData data)
+    {
         if (nameText != null) 
         {
-            nameText.text = newData.playerName;
+            nameText.text = data.playerName;
+        }
+
+        if (SkinCustomization.Instance != null && characterRenderers != null)
+        {
+            Material networkedSkin = SkinCustomization.Instance.GetSkinMaterial(data.skinIndex);
+            
+            if (networkedSkin != null)
+            {
+                foreach (var renderer in characterRenderers)
+                {
+                    if (renderer != null)
+                    {
+                        if (nameText != null && renderer.gameObject == nameText.gameObject) continue;
+
+                        renderer.material = networkedSkin;
+                    }
+                }
+            }
         }
     }
 
