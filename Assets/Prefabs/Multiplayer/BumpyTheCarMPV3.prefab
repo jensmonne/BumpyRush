@@ -765,7 +765,9 @@ MonoBehaviour:
   throttleResponse: 5
   turnSpeed: 250
   driftFactor: 0.95
+  extraDriftFactor: 0.995
   velocityRotateSpeed: 3
+  extraDriftVelocityRotateSpeed: 0.5
   bounceDriftFactor: 0.996
   grounded: {fileID: 3224136865344549061}
   stopMovement_Bounce: {fileID: 6997471598470826754}
@@ -857,6 +859,7 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0
   jumpParticles: {fileID: 7520421686675044695, guid: 952c38976813399de8293ca090294673, type: 3}
+  driftParticles: {fileID: 0}
 --- !u!114 &4995633113876898984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -888,7 +891,6 @@ MonoBehaviour:
   syncDirection: 0
   syncMode: 0
   syncInterval: 0
-  PlayerName: Player
   playerRigidbody: {fileID: 3418328798921122687}
   localOnlyScripts:
   - {fileID: 7731796415646966805}
@@ -943,7 +945,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5253260172628986182}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ee53513f88b5b574fb1f8e037664ff81, type: 3}
   m_Name: 
@@ -952,16 +954,12 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0
   bearPrefab: {fileID: 2507459626876894017, guid: 58389718bc2db424d856a52559470337, type: 3}
-  initialBearCount: 5
-  bearMass: 0.5
-  bearLayer:
-    serializedVersion: 2
-    m_Bits: 64
+  initialBearCount: 0
   segmentLength: 0.5
-  springStrength: 50
-  springDamper: 5
   ropeHeight: 1
   ropeOriginOffset: {x: -1, y: 0, z: 0}
+  recordDistance: 0.1
+  teleportThreshold: 5
 --- !u!114 &8661618039940638744
 MonoBehaviour:
   m_ObjectHideFlags: 0
