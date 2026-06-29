@@ -49,6 +49,7 @@ public class PowerupPickUp : NetworkBehaviour
         return itemsPrefabs.Count - 1;
     }
 
+    [ServerCallback]
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -57,7 +58,7 @@ public class PowerupPickUp : NetworkBehaviour
             if (itemManager != null)
             {
                 GetItem(other.gameObject);
-                Destroy(gameObject);
+                NetworkServer.Destroy(gameObject);
             }
         }
     }

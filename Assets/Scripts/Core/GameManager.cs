@@ -115,8 +115,6 @@ public class GameManager : NetworkBehaviour
     public override void OnStartServer()
     {
         base.OnStartServer();
-        RegisterExistingPlayers();
-
 
         playerScores.Clear();
         playerNames.Clear();
@@ -133,6 +131,7 @@ public class GameManager : NetworkBehaviour
         respawnTimer = respawnInterval;
         powerupRespawnTimer = powerupRespawnInterval;
 
+        RegisterExistingPlayers();
         SpawnAllItems();
         SpawnAllPowerups();
     }

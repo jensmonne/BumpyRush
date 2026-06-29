@@ -13,7 +13,6 @@ public class PowerUpUI : MonoBehaviour
     private void Awake()
     {
         tmp = powerUpText.GetComponentInChildren<TextMeshProUGUI>(true);
-        OnPowerupChanged += HandlePowerupChanged;
     }
 
     private void OnEnable()
