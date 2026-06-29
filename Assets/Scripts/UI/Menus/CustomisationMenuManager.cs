@@ -15,4 +15,14 @@ public class CustomisationMenuManager : MonoBehaviour
         
         nameText.text = steamName;
     }
+
+    public void OnLeftButton()
+    {
+        SkinCustomization.Instance.ChangeSkinScrollLeft();
+    }
+
+    public void OnRightButton()
+    {
+        SkinCustomization.Instance.ChangeSkinScrollRight();
+    }
 }

@@ -1228,9 +1228,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 252970144}
-        m_TargetAssemblyTypeName: SkinCustomization, Assembly-CSharp
-        m_MethodName: ChangeSkinScrollLeft
+      - m_Target: {fileID: 1144197045}
+        m_TargetAssemblyTypeName: CustomisationMenuManager, Assembly-CSharp
+        m_MethodName: OnLeftButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2305,8 +2305,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 9c65cacb1344a574f9e44c9c5f7be4b9, type: 2}
   - {fileID: 2100000, guid: d60c2272e3196147da29d249fbf880d7, type: 2}
   - {fileID: 2100000, guid: 8d59c843e97d9674f903a9e6699f5b5b, type: 2}
-  bumpyPrefab: {fileID: 6857565668948790400, guid: b62b203b3a939ecec859adc6e23b3062, type: 3}
-  spawnPoint: {fileID: 259267364}
 --- !u!4 &252970145
 Transform:
   m_ObjectHideFlags: 0
@@ -2409,6 +2407,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 259267364}
+  - component: {fileID: 259267365}
   m_Layer: 0
   m_Name: BumpySpawn
   m_TagString: Untagged
@@ -2431,6 +2430,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 723172652}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &259267365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 259267363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59cdeb111530ff156b52f5b9aae82e88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BumpySpawner
+  bumpyPrefab: {fileID: 6857565668948790400, guid: b62b203b3a939ecec859adc6e23b3062, type: 3}
 --- !u!1001 &264724891
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11107,9 +11119,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 252970144}
-        m_TargetAssemblyTypeName: SkinCustomization, Assembly-CSharp
-        m_MethodName: ChangeSkinScrollRight
+      - m_Target: {fileID: 1144197045}
+        m_TargetAssemblyTypeName: CustomisationMenuManager, Assembly-CSharp
+        m_MethodName: OnRightButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
