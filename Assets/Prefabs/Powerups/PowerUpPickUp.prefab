@@ -51,7 +51,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2378443831222444687}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -146,13 +146,19 @@ MonoBehaviour:
   syncDirection: 0
   syncMode: 0
   syncInterval: 0
-  playerTag: Player
   itemsPrefabs:
   - {fileID: 4963747753855302940, guid: 486e492f68fd77a4284992a95ff77c2d, type: 3}
   - {fileID: 8447199496572862295, guid: a0baa570fe2183347a809f9a83ee3a0f, type: 3}
-  - {fileID: 4257430912239762077, guid: ec23db7208c76344a9f8cbb1f6cdb0b7, type: 3}
   - {fileID: 3377156372138394928, guid: d78837375944e7e478248b551d445316, type: 3}
   - {fileID: 5166177179225334353, guid: 1e7f641547f72394c9151eedb68d21ac, type: 3}
   - {fileID: 7692330061401101784, guid: c97c9f9509e5aed43a7b3b0ebbd0544d, type: 3}
   - {fileID: 9155224417946463482, guid: 5fc7fb3a95b6d7e4b878e7fd647678f9, type: 3}
-  itemsPickUpPrefabs: []
+  itemPickUpPrefabs:
+  - {fileID: 3421277605583025434, guid: c96a7f8027af8a84da69f8abf98b5323, type: 3}
+  - {fileID: 1624095064838202669, guid: eb76c2dcf00aff04e9e918d862ddf079, type: 3}
+  - {fileID: 1573827634670821378, guid: 23ccad44613f71c4e91cc8f44ce9606d, type: 3}
+  - {fileID: 2007919999818137876, guid: c57ff477a6585254fabd7cdcfba83436, type: 3}
+  - {fileID: 1800766100575668067, guid: 0b62548d5840dfa40bfad24ce6a29103, type: 3}
+  - {fileID: 1205406854045966232, guid: 8caa3675e699f1c4b935e0b84957b472, type: 3}
+  spinSpeed: 90
+  modelRoot: {fileID: 8949218598905918866}
