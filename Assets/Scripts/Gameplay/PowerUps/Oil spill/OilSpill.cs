@@ -8,7 +8,7 @@ public class OilSpill : MonoBehaviour
         {
             Debug.Log("Player hit the oil spill!" + other.gameObject.name);
             Rigidbody rb = other.gameObject.GetComponentInParent<Rigidbody>();
-            rb.AddExplosionForce(1000, transform.position, 5f, 5f, ForceMode.Impulse);
+            rb.AddExplosionForce(1500, transform.position, 5f, 20f, ForceMode.Impulse);
             Destroy(gameObject);
         }
     }

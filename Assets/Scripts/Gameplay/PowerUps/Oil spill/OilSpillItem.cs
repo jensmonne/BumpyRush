@@ -7,7 +7,7 @@ public class OilSpillItem : NetworkBehaviour
     [SerializeField] private GameObject oilSpillPrefab;
     [SerializeField] private float distanceBehind = 3f;
     [SerializeField]
-    private float heightOffset = -0.8f;
+    private float heightOffset = -0.7f;
 
     private void Start()
     {
