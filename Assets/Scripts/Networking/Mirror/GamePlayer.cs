@@ -14,11 +14,14 @@ public class GamePlayer : NetworkBehaviour
     [SerializeField] private List<MonoBehaviour> localOnlyScripts;
     [SerializeField] private List<GameObject> localOnlyObjects;
     [SerializeField] private TMP_Text nameText;
-
+    private Vector3 originalSpawnPosition;
+    
     private Renderer[] characterRenderers;
 
     private void Start()
     {
+        originalSpawnPosition = transform.position;
+
         characterRenderers = GetComponentsInChildren<Renderer>();
 
         if (!isLocalPlayer)
@@ -96,8 +99,30 @@ public class GamePlayer : NetworkBehaviour
 
     public void UnstuckPlayer()
     {
-        transform.position = new Vector3(13f, 10f, -100f);
-        transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+        if (!isLocalPlayer) return;
+
+        CmdUnstuckPlayer();
+    }
+
+    [Command]
+    private void CmdUnstuckPlayer()
+    {
+        transform.position = originalSpawnPosition;
+
+        if (playerRigidbody != null)
+        {
+            playerRigidbody.linearVelocity = Vector3.zero;
+            playerRigidbody.angularVelocity = Vector3.zero;
+        }
+
+        TargetTeleportPlayer(originalSpawnPosition, Quaternion.Euler(0f, 0f, 0f));
+    }
+
+    [TargetRpc]
+    private void TargetTeleportPlayer(Vector3 targetPosition, Quaternion targetRotation)
+    {
+        transform.position = targetPosition;
+        transform.rotation = targetRotation;
 
         if (playerRigidbody != null)
         {

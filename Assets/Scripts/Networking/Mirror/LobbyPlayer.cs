@@ -61,7 +61,6 @@ public class LobbyPlayer : NetworkBehaviour
     private void HandlePlayerDataChanged(PlayerNetworkData oldData, PlayerNetworkData newData)
     {
         if (myCard != null) myCard.UpdateName(newData.playerName);
-        // need to implement a way of showing the skin stuffs.
     }
 
     private void HandleReadyStatusChanged(bool oldStatus, bool newStatus)

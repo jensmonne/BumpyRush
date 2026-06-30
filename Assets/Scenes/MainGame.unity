@@ -541,6 +541,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: PhyObject
       objectReference: {fileID: 0}
+    - target: {fileID: 7939007777400561864, guid: 66037ac10fcd2804db6821ccd187b2f2, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 8156703072051290159, guid: 66037ac10fcd2804db6821ccd187b2f2, type: 3}
       propertyPath: m_TagString
       value: PhyObject
@@ -3645,7 +3649,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -3.649997, y: 0}
+  m_AnchoredPosition: {x: -3.649994, y: 0}
   m_SizeDelta: {x: 7.299994, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1212715495
