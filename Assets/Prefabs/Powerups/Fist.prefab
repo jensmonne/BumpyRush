@@ -131,7 +131,7 @@ MonoBehaviour:
   syncInterval: 0
   speed: 100
   lifetime: 5
-  knockbackAmount: 18000
+  knockbackAmount: 1500
 --- !u!114 &551031348476581094
 MonoBehaviour:
   m_ObjectHideFlags: 0

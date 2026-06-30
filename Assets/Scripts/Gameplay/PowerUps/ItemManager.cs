@@ -59,10 +59,8 @@ public class ItemManager : NetworkBehaviour
         if (index < 0 || index >= currentItems.Count) { Debug.Log("Invalid item index: " + index); return; }
 
         GameObject item = currentItems[index];
-        Vector3 spawnPos = transform.position + -transform.forward * 1.5f;
-        //Vector3 spawnPos = new Vector3(0.07f, 0f, 0.185f);
+        Vector3 spawnPos = transform.position - transform.forward * 1.5f;
         Quaternion spawnRot = Quaternion.LookRotation(transform.forward);
-
         GameObject spawnedItem = Instantiate(item, spawnPos, spawnRot, gameObject.transform);
         NetworkIdentity netIdentity = spawnedItem.GetComponent<NetworkIdentity>();
         if (netIdentity != null) NetworkServer.Spawn(spawnedItem);

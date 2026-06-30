@@ -13,6 +13,7 @@ public class Fist : NetworkBehaviour
         {
             Destroy(gameObject, lifetime);
         }
+        gameObject.transform.SetParent(null);
         gameObject.transform.rotation = Quaternion.Euler(gameObject.transform.rotation.eulerAngles.x, gameObject.transform.rotation.eulerAngles.y + 180f, gameObject.transform.rotation.eulerAngles.z);
     }
 
@@ -36,11 +37,11 @@ public class Fist : NetworkBehaviour
             Rigidbody rb = other.gameObject.GetComponentInParent<Rigidbody>();
             if (rb != null)
             {
-                rb.AddForce(transform.forward * knockbackAmount, ForceMode.Impulse);
+                Vector3 dir = (transform.forward * 0.85f + Vector3.up * 0.15f).normalized;
+                rb.AddForce(dir * knockbackAmount, ForceMode.Impulse);
+                NetworkServer.Destroy(gameObject);
+
             }
         }
-
-        if (other.gameObject.CompareTag("Ground")) { return; }
-        NetworkServer.Destroy(gameObject);
     }
 }
