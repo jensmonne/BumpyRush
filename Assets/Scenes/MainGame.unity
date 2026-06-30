@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 0.8
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 0}
+  m_Sun: {fileID: 1801146975}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -93,7 +93,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 20201, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 70dc1a375d8766a8f9d4255cb57283a0, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -3501,6 +3501,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: PhyObject
       objectReference: {fileID: 0}
+    - target: {fileID: 295720234099573906, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 362704341029230035, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 420546475220678066, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       propertyPath: m_TagString
       value: Bridge
@@ -3513,6 +3521,18 @@ PrefabInstance:
       propertyPath: m_TagString
       value: PhyObject
       objectReference: {fileID: 0}
+    - target: {fileID: 558323806164604924, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 576215602945345418, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 628522010566102740, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 799555855312685806, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       propertyPath: m_TagString
       value: PhyObject
@@ -3521,17 +3541,45 @@ PrefabInstance:
       propertyPath: m_TagString
       value: PhyObject
       objectReference: {fileID: 0}
+    - target: {fileID: 945081310945693123, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1013213055667616839, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       propertyPath: m_TagString
       value: PhyObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 1020798927448136273, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 1046819600477277594, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       propertyPath: m_TagString
       value: PhyObject
       objectReference: {fileID: 0}
+    - target: {fileID: 1126361888407728404, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1221270993305159196, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1242309822832759843, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1351115111419476146, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.8
+      objectReference: {fileID: 0}
     - target: {fileID: 1352204785326166766, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       propertyPath: m_TagString
       value: PhyObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 1424985417181492594, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 1436939332895562421, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       propertyPath: m_TagString
@@ -3553,6 +3601,18 @@ PrefabInstance:
       propertyPath: m_TagString
       value: PhyObject
       objectReference: {fileID: 0}
+    - target: {fileID: 1631844092087237288, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1681663427619777651, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1723380665306102924, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_Name
+      value: Terrain
+      objectReference: {fileID: 0}
     - target: {fileID: 1723380665306102924, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       propertyPath: m_TagString
       value: Ground
@@ -3560,6 +3620,10 @@ PrefabInstance:
     - target: {fileID: 1883409229067655341, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       propertyPath: m_TagString
       value: PhyObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 1912072980648812033, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 1969084997787163215, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       propertyPath: m_TagString
@@ -3572,6 +3636,10 @@ PrefabInstance:
     - target: {fileID: 2160250584939053849, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       propertyPath: m_TagString
       value: PhyObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 2174044750712402780, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 2184600958295702566, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       propertyPath: m_TagString
@@ -3593,6 +3661,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: PhyObject
       objectReference: {fileID: 0}
+    - target: {fileID: 2529867075803414364, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2621684597242791714, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 2750276540498303277, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       propertyPath: m_TagString
       value: PhyObject
@@ -3609,6 +3685,18 @@ PrefabInstance:
       propertyPath: m_TagString
       value: PhyObject
       objectReference: {fileID: 0}
+    - target: {fileID: 2974834476534838810, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3084686159905836538, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3151243718406914116, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3308557343359788493, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       propertyPath: m_TagString
       value: PhyObject
@@ -3622,12 +3710,44 @@ PrefabInstance:
       value: PhyObject
       objectReference: {fileID: 0}
     - target: {fileID: 3807601162232674271, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_ReceiveGI
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3807601162232674271, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       propertyPath: m_TreeDistance
-      value: 500
+      value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3807601162232674271, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_HeightmapMaximumLOD
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3807601162232674271, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       propertyPath: m_TreeCrossFadeLength
-      value: 80
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3807601162232674271, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_DetailObjectDistance
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3807601162232674271, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_TreeBillboardDistance
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3807601162232674271, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_BakeLightProbesForTrees
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3807601162232674271, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_DeringLightProbesForTrees
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3807601162232674271, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_PreserveTreePrototypeLayers
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3807601162232674271, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_HeightmapMinimumLODSimplification
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3839101418317566306, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       propertyPath: m_TagString
@@ -3641,21 +3761,45 @@ PrefabInstance:
       propertyPath: m_TagString
       value: PhyObject
       objectReference: {fileID: 0}
+    - target: {fileID: 4029828701455566204, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4045860136420483663, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4068818028981532945, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       propertyPath: m_TagString
       value: PhyObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 4071600138444586579, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 4138887321323242804, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       propertyPath: m_TagString
       value: PhyObject
       objectReference: {fileID: 0}
+    - target: {fileID: 4168604103330724653, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.8
+      objectReference: {fileID: 0}
     - target: {fileID: 4239256711589435286, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       propertyPath: m_TagString
       value: PhyObject
       objectReference: {fileID: 0}
+    - target: {fileID: 4246362860417024577, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.8
+      objectReference: {fileID: 0}
     - target: {fileID: 4254768216436086000, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       propertyPath: m_TagString
       value: PhyObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 4286680774544624349, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.3
       objectReference: {fileID: 0}
     - target: {fileID: 4313433951394763397, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       propertyPath: m_TagString
@@ -3685,6 +3829,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: PhyObject
       objectReference: {fileID: 0}
+    - target: {fileID: 4860495434605096147, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.8
+      objectReference: {fileID: 0}
     - target: {fileID: 4920015593386415450, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       propertyPath: m_TagString
       value: PhyObject
@@ -3696,6 +3844,10 @@ PrefabInstance:
     - target: {fileID: 4994193852929578568, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       propertyPath: m_TagString
       value: PhyObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 5039194917187149411, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 5124144190098707670, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       propertyPath: m_TagString
@@ -3721,6 +3873,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: PhyObject
       objectReference: {fileID: 0}
+    - target: {fileID: 5459664606972013695, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5670208098477774258, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       propertyPath: m_TagString
       value: PhyObject
@@ -3729,9 +3885,17 @@ PrefabInstance:
       propertyPath: m_TagString
       value: PhyObject
       objectReference: {fileID: 0}
+    - target: {fileID: 5734486211466018969, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 5751707730258472469, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       propertyPath: m_TagString
       value: PhyObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 5819895567987298614, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 5821237648922609142, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3773,9 +3937,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5913810459152070283, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.3
+      objectReference: {fileID: 0}
     - target: {fileID: 5974264620573102850, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       propertyPath: m_TagString
       value: PhyObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 6071036810305376803, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6076275073638273969, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 6249755245590276374, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       propertyPath: m_TagString
@@ -3785,17 +3961,49 @@ PrefabInstance:
       propertyPath: m_TagString
       value: PhyObject
       objectReference: {fileID: 0}
+    - target: {fileID: 6480913272465345109, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_EnableTreeColliders
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6519785918444405803, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6550106263453504479, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6673888254530007675, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       propertyPath: m_TagString
       value: PhyObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 6726024250908241552, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.3
       objectReference: {fileID: 0}
     - target: {fileID: 6736045727678420470, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       propertyPath: m_TagString
       value: PhyObject
       objectReference: {fileID: 0}
+    - target: {fileID: 6860615142431967561, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7063564802089568842, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7064214370266028914, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.8
+      objectReference: {fileID: 0}
     - target: {fileID: 7129579529800818317, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       propertyPath: m_TagString
       value: PhyObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 7138039407547462096, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 7160985520582459665, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       propertyPath: m_TagString
@@ -3829,17 +4037,45 @@ PrefabInstance:
       propertyPath: m_TagString
       value: PhyObject
       objectReference: {fileID: 0}
+    - target: {fileID: 7534178976189695446, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.8
+      objectReference: {fileID: 0}
     - target: {fileID: 7580103943219913325, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       propertyPath: m_TagString
       value: PhyObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 7636231239103980691, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7649382596560126537, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7654385854900199381, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       propertyPath: m_TagString
       value: PhyObject
       objectReference: {fileID: 0}
+    - target: {fileID: 7687257269999984401, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.8
+      objectReference: {fileID: 0}
     - target: {fileID: 7806442637532109083, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       propertyPath: m_TagString
       value: PhyObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 7806817008992869990, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7841439556255964551, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7891004613994388474, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.3
       objectReference: {fileID: 0}
     - target: {fileID: 8074882294337622470, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       propertyPath: m_TagString
@@ -3849,9 +4085,21 @@ PrefabInstance:
       propertyPath: m_TagString
       value: PhyObject
       objectReference: {fileID: 0}
+    - target: {fileID: 8387144065967347197, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8392975344791306982, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8604327258434926701, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       propertyPath: m_TagString
       value: PhyObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662630195387682865, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.3
       objectReference: {fileID: 0}
     - target: {fileID: 8709523408529768094, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       propertyPath: m_TagString
@@ -3889,8 +4137,15 @@ PrefabInstance:
       propertyPath: m_TagString
       value: PhyObject
       objectReference: {fileID: 0}
+    - target: {fileID: 9179953564923837814, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5428663332654573957, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+    - {fileID: 6569915436439117158, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
+    - {fileID: 3417436813414203796, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 5821237648922609142, guid: bbc83c4b228ba02449806cf00885e8cd, type: 3}
       insertIndex: -1
