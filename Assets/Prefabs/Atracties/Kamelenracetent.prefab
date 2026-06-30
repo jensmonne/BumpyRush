@@ -158,23 +158,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 91abe0356e12e4847abb61ef3153fdb4, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.0000002533197
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 91abe0356e12e4847abb61ef3153fdb4, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 91abe0356e12e4847abb61ef3153fdb4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 91abe0356e12e4847abb61ef3153fdb4, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 91abe0356e12e4847abb61ef3153fdb4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 91abe0356e12e4847abb61ef3153fdb4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -184,6 +184,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 91abe0356e12e4847abb61ef3153fdb4, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ff85d67b2e0fcf34194709b61fb034f9, type: 2}
     - target: {fileID: 919132149155446097, guid: 91abe0356e12e4847abb61ef3153fdb4, type: 3}
       propertyPath: m_Name
       value: KamelenRace
