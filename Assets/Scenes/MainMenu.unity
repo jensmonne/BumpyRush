@@ -2301,8 +2301,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SkinCustomization
   skinMaterials:
-  - {fileID: 2100000, guid: f4b553fb8b9308352a60f638c6ffc857, type: 2}
-  - {fileID: 2100000, guid: 9c65cacb1344a574f9e44c9c5f7be4b9, type: 2}
+  - {fileID: 2100000, guid: c51c4b28fdd3d8b43944234a179b0f38, type: 2}
+  - {fileID: 2100000, guid: 099f1cccc48edef4caad7d1656b5173e, type: 2}
   - {fileID: 2100000, guid: d60c2272e3196147da29d249fbf880d7, type: 2}
   - {fileID: 2100000, guid: 8d59c843e97d9674f903a9e6699f5b5b, type: 2}
 --- !u!4 &252970145
@@ -2424,7 +2424,7 @@ Transform:
   m_GameObject: {fileID: 259267363}
   serializedVersion: 2
   m_LocalRotation: {x: 0.008599431, y: 0.6759101, z: 0.025061736, w: 0.73650765}
-  m_LocalPosition: {x: -2.6457832, y: -2.95, z: 3.7320466}
+  m_LocalPosition: {x: -2.6457832, y: -3.59, z: 3.7320466}
   m_LocalScale: {x: 1.2930928, y: 1.3097395, z: 1.3097392}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8277,7 +8277,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1235226632}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
