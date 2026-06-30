@@ -286,6 +286,17 @@ Transform:
   - {fileID: 7791823111171986925}
   - {fileID: 7146160444782730620}
   - {fileID: 902865807105814155}
+  - {fileID: 4057320398574737784}
+  - {fileID: 6303376514671963185}
+  - {fileID: 170490793380464430}
+  - {fileID: 44845828725286491}
+  - {fileID: 3720367536784567845}
+  - {fileID: 4610425671340637333}
+  - {fileID: 8259815584650618018}
+  - {fileID: 636340556729383934}
+  - {fileID: 8953445985155788893}
+  - {fileID: 4009606324432821860}
+  - {fileID: 3514978021382822270}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &796335411807783264
@@ -361,4 +372,686 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0ed25acfe0c09084ebd4520f71d305f1, type: 3}
   m_PrefabInstance: {fileID: 796335411807783264}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1326211222699063278
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4876777516339488750}
+    m_Modifications:
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.555
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.026
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3353085010899317552, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_Name
+      value: Food Bucket Wide (10)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+--- !u!4 &4009606324432821860 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+  m_PrefabInstance: {fileID: 1326211222699063278}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1514590748881940724
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4876777516339488750}
+    m_Modifications:
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.6299996
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.555
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.026
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3353085010899317552, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_Name
+      value: Food Bucket Wide (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+--- !u!4 &3514978021382822270 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+  m_PrefabInstance: {fileID: 1514590748881940724}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1612916702437640111
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4876777516339488750}
+    m_Modifications:
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.555
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.026
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3353085010899317552, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_Name
+      value: Food Bucket Wide (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+--- !u!4 &3720367536784567845 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+  m_PrefabInstance: {fileID: 1612916702437640111}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1889497647069189407
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4876777516339488750}
+    m_Modifications:
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.555
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.026
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3353085010899317552, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_Name
+      value: Food Bucket Wide (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+--- !u!4 &4610425671340637333 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+  m_PrefabInstance: {fileID: 1889497647069189407}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2129396433187057906
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4876777516339488750}
+    m_Modifications:
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.555
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.026
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3353085010899317552, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_Name
+      value: Food Bucket Wide
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+--- !u!4 &4057320398574737784 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+  m_PrefabInstance: {fileID: 2129396433187057906}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2692042804329402321
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4876777516339488750}
+    m_Modifications:
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.555
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.026
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3353085010899317552, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_Name
+      value: Food Bucket Wide (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+--- !u!4 &44845828725286491 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+  m_PrefabInstance: {fileID: 2692042804329402321}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2854976331514228388
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4876777516339488750}
+    m_Modifications:
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.555
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.026
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3353085010899317552, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_Name
+      value: Food Bucket Wide (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+--- !u!4 &170490793380464430 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+  m_PrefabInstance: {fileID: 2854976331514228388}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3249314131351704180
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4876777516339488750}
+    m_Modifications:
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.555
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.026
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3353085010899317552, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_Name
+      value: Food Bucket Wide (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+--- !u!4 &636340556729383934 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+  m_PrefabInstance: {fileID: 3249314131351704180}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6297051675655048488
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4876777516339488750}
+    m_Modifications:
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.555
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.026
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3353085010899317552, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_Name
+      value: Food Bucket Wide (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+--- !u!4 &8259815584650618018 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+  m_PrefabInstance: {fileID: 6297051675655048488}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6449816634373495255
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4876777516339488750}
+    m_Modifications:
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.555
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.026
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3353085010899317552, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_Name
+      value: Food Bucket Wide (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+--- !u!4 &8953445985155788893 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+  m_PrefabInstance: {fileID: 6449816634373495255}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8266720138760848827
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4876777516339488750}
+    m_Modifications:
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.555
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.026
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3353085010899317552, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+      propertyPath: m_Name
+      value: Food Bucket Wide (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+--- !u!4 &6303376514671963185 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2721121549337192842, guid: 79d0c7b7c86a1b14c8790b432323de86, type: 3}
+  m_PrefabInstance: {fileID: 8266720138760848827}
   m_PrefabAsset: {fileID: 0}
