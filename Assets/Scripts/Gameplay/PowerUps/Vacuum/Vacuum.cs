@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Vacuum : NetworkBehaviour
 {
-    private readonly int vacuumRange = 8;
+    private readonly int vacuumRange = 20
+        ;
     private readonly int vacuumDuration = 5;
 
     private void Start()
@@ -23,7 +24,7 @@ public class Vacuum : NetworkBehaviour
             {
                 Vector3 directionToVacuum = (transform.position - collision.transform.position).normalized;
                 float distance = Vector3.Distance(transform.position, collision.transform.position);
-                float forceMagnitude = Mathf.Lerp(10f, 0f, distance / vacuumRange);
+                float forceMagnitude = Mathf.Lerp(50f, 0f, distance / vacuumRange);
                 bearRigidbody.AddForce(directionToVacuum * forceMagnitude, ForceMode.Acceleration);
             }
         }

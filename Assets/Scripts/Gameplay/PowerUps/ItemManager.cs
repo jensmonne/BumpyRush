@@ -60,6 +60,7 @@ public class ItemManager : NetworkBehaviour
 
         GameObject item = currentItems[index];
         Vector3 spawnPos = transform.position + -transform.forward * 1.5f;
+        //Vector3 spawnPos = new Vector3(0.07f, 0f, 0.185f);
         Quaternion spawnRot = Quaternion.LookRotation(transform.forward);
 
         GameObject spawnedItem = Instantiate(item, spawnPos, spawnRot, gameObject.transform);

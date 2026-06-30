@@ -26,6 +26,8 @@ public class Fist : NetworkBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Fist hit: " + other.gameObject.name);
+
         if (!isServer) return;
 
         if (other.gameObject.CompareTag("Player"))

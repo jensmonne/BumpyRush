@@ -20,6 +20,8 @@ public class HammerHead : MonoBehaviour
             }
             handler.StartFlatten();
         }
+
+        Debug.Log($"HammerHead collided with {collision.gameObject.name}");
     }
 
     private void OnGroundHit(Vector3 point, Vector3 normal)
