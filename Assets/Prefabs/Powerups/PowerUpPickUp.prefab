@@ -51,7 +51,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2378443831222444687}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -152,13 +152,3 @@ MonoBehaviour:
   - {fileID: 3377156372138394928, guid: d78837375944e7e478248b551d445316, type: 3}
   - {fileID: 5166177179225334353, guid: 1e7f641547f72394c9151eedb68d21ac, type: 3}
   - {fileID: 7692330061401101784, guid: c97c9f9509e5aed43a7b3b0ebbd0544d, type: 3}
-  - {fileID: 6583600440983508120, guid: 9a2bc71ab4a57d849b14ca4f8f3ab136, type: 3}
-  itemPickUpPrefabs:
-  - {fileID: 3421277605583025434, guid: c96a7f8027af8a84da69f8abf98b5323, type: 3}
-  - {fileID: 1624095064838202669, guid: eb76c2dcf00aff04e9e918d862ddf079, type: 3}
-  - {fileID: 1573827634670821378, guid: 23ccad44613f71c4e91cc8f44ce9606d, type: 3}
-  - {fileID: 2007919999818137876, guid: c57ff477a6585254fabd7cdcfba83436, type: 3}
-  - {fileID: 1800766100575668067, guid: 0b62548d5840dfa40bfad24ce6a29103, type: 3}
-  - {fileID: 1205406854045966232, guid: 8caa3675e699f1c4b935e0b84957b472, type: 3}
-  spinSpeed: 90
-  modelRoot: {fileID: 8949218598905918866}
