@@ -48,6 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Bump_Obstacle
   bumpForce_: 20
   bumpEffect: {fileID: 7886320786369959834, guid: 04bc5638fbc737363896586676461cae, type: 3}
+  BumpSound: {fileID: 8300000, guid: f9e400289e9091ff596dccb6b7831610, type: 3}
 --- !u!136 &6746496907220569758
 CapsuleCollider:
   m_ObjectHideFlags: 0
