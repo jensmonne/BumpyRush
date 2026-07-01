@@ -43,7 +43,7 @@ public class LeaderboardUI : MonoBehaviour
             if (tmp == null) continue;
 
             string displayName = isLocal ? "You" : gm.GetPlayerName(netId);
-            tmp.text = $"{i + 1}. {displayName} - {score}";
+            tmp.text = $"{i + 1}. {displayName} : {score}";
             tmp.color = isLocal ? localPlayerColor : defaultColor;
         }
     }
