@@ -23,10 +23,11 @@ public class SettingsManager : MonoBehaviour
         ApplyAllSettings();
     }
 
-    public void ApplyAllSettings()
+    private void ApplyAllSettings()
     {
         UpdateFrameRate(CurrentSettings.FPS);
         UpdateVSync(CurrentSettings.VSync);
+        UpdateMainVolume(CurrentSettings.MainVolume);
     }
 
     public void UpdateFrameRate(int fps)
@@ -40,6 +41,17 @@ public class SettingsManager : MonoBehaviour
     {
         CurrentSettings.VSync = isEnabled;
         QualitySettings.vSyncCount = isEnabled ? 1 : 0;
+        SaveSystem.SaveSettings(CurrentSettings);
+    }
+
+    public void UpdateMainVolume(float volume)
+    {
+        volume = Mathf.Clamp01(volume);
+
+        CurrentSettings.MainVolume = volume;
+        
+        AudioListener.volume = volume; 
+
         SaveSystem.SaveSettings(CurrentSettings);
     }
 }
