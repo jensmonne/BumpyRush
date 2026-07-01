@@ -59,6 +59,7 @@ public class PowerupPickUp : NetworkBehaviour
             if (itemManager != null)
             {
                 GetItem(other.gameObject);
+                PowerUpUI.SetPowerup(itemsPrefabs[number].name);
                 NetworkServer.Destroy(gameObject);
             }
         }

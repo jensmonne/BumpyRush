@@ -45,9 +45,9 @@ public class ItemManager : NetworkBehaviour
 
         if (Time.time - lastItemUseTime < itemUseCooldown) { Debug.Log("Item use is on cooldown!"); return; }
         if (currentItems.Count == 0) { Debug.Log("No items to use!"); return; }
-
         CmdUseItem(0);
         lastItemUseTime = Time.time;
+        PowerUpUI.SetPowerup("");
         Debug.Log("Current items count: " + currentItems.Count);
         PowerUpUI.ClearPowerup();
 
@@ -64,7 +64,6 @@ public class ItemManager : NetworkBehaviour
         GameObject spawnedItem = Instantiate(item, spawnPos, spawnRot, gameObject.transform);
         NetworkIdentity netIdentity = spawnedItem.GetComponent<NetworkIdentity>();
         if (netIdentity != null) NetworkServer.Spawn(spawnedItem);
-
         currentItems.RemoveAt(index);
         RpcItemUsed(item.name);
     }

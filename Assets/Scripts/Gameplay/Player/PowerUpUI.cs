@@ -5,14 +5,15 @@ using UnityEngine;
 public class PowerUpUI : MonoBehaviour
 {
     [SerializeField] private GameObject powerUpText;
-    private TextMeshProUGUI tmp;
+    private TextMeshProUGUI text;
 
     public static event Action<string> OnPowerupChanged;
     private static string current;
 
     private void Awake()
     {
-        tmp = powerUpText.GetComponentInChildren<TextMeshProUGUI>(true);
+        text = powerUpText.GetComponentInChildren<TextMeshProUGUI>(true);
+        text.text = string.Empty;
     }
 
     private void OnEnable()
@@ -25,10 +26,7 @@ public class PowerUpUI : MonoBehaviour
 
     private void HandlePowerupChanged(string powerupName)
     {
-        bool hasPowerup = !string.IsNullOrEmpty(powerupName);
-        powerUpText.SetActive(hasPowerup);
-        if (hasPowerup && tmp != null)
-            tmp.text = powerupName;
+        text.text = powerupName;
     }
 
     public static void SetPowerup(string powerupName)
