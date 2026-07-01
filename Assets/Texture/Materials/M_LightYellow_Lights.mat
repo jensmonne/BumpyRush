@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_LightPink
+  m_Name: M_LightYellow_Lights
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -117,9 +117,9 @@ Material:
     - _XRMotionVectorsPass: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.64705884, g: 0.5411765, b: 0.68235296, a: 1}
-    - _Color: {r: 0.64705884, g: 0.5411765, b: 0.68235296, a: 1}
-    - _EmissionColor: {r: 2.5171993, g: 1.1391666, b: 3.033962, a: 1}
+    - _BaseColor: {r: 0.7056604, g: 0.6376493, b: 0.28625843, a: 1}
+    - _Color: {r: 0.7056604, g: 0.63764924, b: 0.2862584, a: 1}
+    - _EmissionColor: {r: 2.8830185, g: 2.5482464, b: 0.9301814, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
