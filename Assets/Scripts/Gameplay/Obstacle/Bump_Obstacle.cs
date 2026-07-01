@@ -6,6 +6,7 @@ public class Bump_Obstacle : MonoBehaviour
 {
     [SerializeField] private float bumpForce_ = 20f;
     [SerializeField] private ParticleSystem bumpEffect;
+    [SerializeField] private AudioClip BumpSound;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -24,6 +25,8 @@ public class Bump_Obstacle : MonoBehaviour
                 instantiatedEffect.Play();
                 Destroy(instantiatedEffect.gameObject, instantiatedEffect.main.duration);
             }
+
+            SoundManager.Instance.Play3DSFX(BumpSound, transform.position);
         }
     }
 }
