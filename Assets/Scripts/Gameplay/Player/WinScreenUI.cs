@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WinScreenUI : MonoBehaviour
 {
-    [SerializeField] private GameObject panel;
+    [SerializeField] private CanvasGroup panel;
     [SerializeField] private TextMeshProUGUI resultText;
     [SerializeField] private TextMeshProUGUI subtitleText;
     [SerializeField] private TextMeshProUGUI countdownText;
@@ -21,13 +21,13 @@ public class WinScreenUI : MonoBehaviour
         GameManager.OnReturnCountdownChanged -= HandleCountdownChanged;
     }
 
-    private void Start() => panel.SetActive(false);
+    private void Start() => panel.alpha = 0f;
 
     private void HandleMatchStateChanged(bool isOver, uint winnerNetId, bool isTied)
     {
         if (!isOver) return;
 
-        panel.SetActive(true);
+        panel.alpha = 1f;
 
         if (isTied)
         {
