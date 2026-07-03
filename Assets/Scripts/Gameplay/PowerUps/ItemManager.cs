@@ -6,8 +6,8 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(NetworkIdentity))]
 public class ItemManager : NetworkBehaviour
 {
-    [SerializeField] private List<GameObject> availableItems = new List<GameObject>();
-    [SerializeField] private List<GameObject> currentItems = new List<GameObject>();
+    [SerializeField] private List<GameObject> availableItems = new();
+    [SerializeField] private List<GameObject> currentItems = new();
 
     private float itemUseCooldown = 6f;
     private float lastItemUseTime = -999f;
@@ -21,7 +21,11 @@ public class ItemManager : NetworkBehaviour
 
     public void AddRandomItem()
     {
-        if (availableItems.Count == 0) { Debug.LogWarning("No available items to add!"); return; }
+        if (availableItems.Count == 0)
+        {
+            Debug.LogWarning("No available items to add!");
+            return;
+        }
         AddItem(availableItems[Random.Range(0, availableItems.Count)]);
     }
 
@@ -50,7 +54,6 @@ public class ItemManager : NetworkBehaviour
         PowerUpUI.SetPowerup("");
         Debug.Log("Current items count: " + currentItems.Count);
         PowerUpUI.ClearPowerup();
-
     }
 
     [Command]

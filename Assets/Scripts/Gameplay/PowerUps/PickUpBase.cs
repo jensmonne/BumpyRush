@@ -5,15 +5,13 @@ using UnityEngine;
 [RequireComponent(typeof(Collider))]
 public abstract class PickUpBase : NetworkBehaviour
 {
-    [SerializeField] private string playerTag = "Player";
-
-    [SyncVar] private bool isCollected;
+    [SyncVar]
+    private bool isCollected;
 
     [ServerCallback]
     private void OnTriggerEnter(Collider other)
     {
-        if (isCollected) return;
-        if (!other.CompareTag(playerTag)) return;
+        if (isCollected || !other.CompareTag("Player")) return;
 
         NetworkIdentity playerIdentity = other.GetComponent<NetworkIdentity>();
         if (playerIdentity == null)
@@ -32,11 +30,8 @@ public abstract class PickUpBase : NetworkBehaviour
         if (isCollected) return;
 
         isCollected = true;
-        GameManager manager = GameManager.Instance;
-        if (manager != null)
-        {
-            manager.RegisterPickup(playerIdentity);
-        }
+        
+        GameManager.Instance.RegisterPickup(playerIdentity);
 
         OnPickUpServer(playerIdentity);
         RpcOnPickUpClient(playerIdentity.netId);
@@ -66,5 +61,4 @@ public abstract class PickUpBase : NetworkBehaviour
     {
         // Space for client-side effects sounds, particles, idk
     }
-
 }
