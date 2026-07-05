@@ -283,7 +283,7 @@ GameObject:
   - component: {fileID: 7976952179226035618}
   - component: {fileID: 8532867058704273761}
   m_Layer: 0
-  m_Name: HammerPrefab
+  m_Name: Hammer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -321,7 +321,7 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0
   preSwingDuration: 0.15
-  swingDuration: 0.08
+  swingDuration: 0.1
   destroyDelay: 0.3
 --- !u!114 &8532867058704273761
 MonoBehaviour:

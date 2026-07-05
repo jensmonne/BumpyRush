@@ -10,7 +10,7 @@ public class OilSpill : MonoBehaviour
             Rigidbody rb = collision.gameObject.GetComponentInParent<Rigidbody>();
             Vector3 com = rb.worldCenterOfMass;
             Vector3 explosionPos = new Vector3(com.x + 0.1f, transform.position.y, com.z);
-            rb.AddExplosionForce(5000, explosionPos, 5f, 20f, ForceMode.Impulse);
+            rb.AddExplosionForce(2000, explosionPos, 5f, 20f, ForceMode.Impulse);
             Destroy(gameObject);
         }
     }

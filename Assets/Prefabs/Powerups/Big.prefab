@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1978135552300343512}
   - component: {fileID: 3179786187634146118}
   m_Layer: 0
-  m_Name: BigPowerUp
+  m_Name: Big
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -49,7 +49,7 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0
   bigDuration: 5
-  bigScaleMultiplier: 4
+  bigScaleMultiplier: 3
   cam: {fileID: 0}
 --- !u!114 &3179786187634146118
 MonoBehaviour:

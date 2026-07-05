@@ -31,7 +31,7 @@ public class PlayerFlattenHandler : MonoBehaviour
         transform.localScale = flattenedScale;
 
         Debug.Log("Waiting...");
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(5f);
 
         Debug.Log($"Restoring {gameObject.name} scale...");
         elapsed = 0f;

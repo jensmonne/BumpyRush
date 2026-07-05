@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6267275329866670687}
   - component: {fileID: 2899694894571369503}
   m_Layer: 0
-  m_Name: OilSpillPrefab
+  m_Name: OilSpill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50,7 +50,7 @@ MonoBehaviour:
   syncInterval: 0
   oilSpillPrefab: {fileID: 3878516378742774769, guid: 1ebdc66559a88c14ea031730ab8745d7, type: 3}
   distanceBehind: 3
-  heightOffset: -0.3
+  heightOffset: 0
 --- !u!114 &2899694894571369503
 MonoBehaviour:
   m_ObjectHideFlags: 0

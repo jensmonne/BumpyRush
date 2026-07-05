@@ -1,16 +1,31 @@
+using Mirror;
 using UnityEngine;
 
 public class ItemSpawner : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private GameObject itemToSpawn;
+    [SerializeField] private float respawnDelay = 10f;
+    private GameObject spawnedItem;
+    private float timer;
+
+    private void Start()
     {
-        
+        if (NetworkServer.active)
+            Spawn();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if (!NetworkServer.active || spawnedItem != null) return;
+        timer -= Time.deltaTime;
+        if (timer <= 0f)
+            Spawn();
+    }
+
+    private void Spawn()
+    {
+        spawnedItem = Instantiate(itemToSpawn, transform.position, transform.rotation);
+        NetworkServer.Spawn(spawnedItem);
+        timer = respawnDelay;
     }
 }
