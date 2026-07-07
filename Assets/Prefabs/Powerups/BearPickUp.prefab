@@ -5218,6 +5218,7 @@ GameObject:
   - component: {fileID: -5365938452554278614}
   - component: {fileID: -8100843159044727256}
   - component: {fileID: 6701775462896144826}
+  - component: {fileID: 5073286020939663860}
   m_Layer: 0
   m_Name: BearPickUp
   m_TagString: Untagged
@@ -5313,7 +5314,6 @@ MonoBehaviour:
   syncDirection: 0
   syncMode: 0
   syncInterval: 0
-  playerTag: Player
 --- !u!136 &6701775462896144826
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -5337,6 +5337,22 @@ CapsuleCollider:
   m_Height: 12.04
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5073286020939663860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2507459626876894017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cf8085dcdc1f9f6eb7ca98a7d49454e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlushieSFX
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
+  PickupSound: {fileID: 8300000, guid: 95fdaa0086a3ea25881125dd06e94aa0, type: 3}
 --- !u!1 &3279893040316865107
 GameObject:
   m_ObjectHideFlags: 0

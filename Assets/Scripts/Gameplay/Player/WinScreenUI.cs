@@ -44,7 +44,7 @@ public class WinScreenUI : MonoBehaviour
             : $"Player {winnerNetId}";
 
         resultText.text = localWon ? "YOU WIN!" : "YOU LOSE!";
-        subtitleText.text = localWon ? "Great driving!" : $"{winnerName} wins!";
+        subtitleText.text = localWon ? "Great driving!" : $"{winnerName}";
     }
 
     private void HandleCountdownChanged(int seconds)
