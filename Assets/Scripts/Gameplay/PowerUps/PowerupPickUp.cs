@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using Mirror;
 using UnityEngine;
@@ -5,6 +6,9 @@ using UnityEngine;
 public class PowerupPickUp : NetworkBehaviour
 {
     [SerializeField] private List<GameObject> itemsPrefabs = new List<GameObject>();
+    [SerializeField] private Animator animator;
+    [SerializeField] private string pickupTrigger = "Pickup";
+    [SerializeField] private float destroyDelay = 4f;
 
     private bool collected;
 
@@ -33,7 +37,22 @@ public class PowerupPickUp : NetworkBehaviour
         int index = GetWeightedRandom(diff);
 
         itemManager.AddItem(itemsPrefabs[index]);
+
+        RpcPlayPickupAnimation();
+        StartCoroutine(DestroyAfterDelay());
+    }
+
+    private IEnumerator DestroyAfterDelay()
+    {
+        yield return new WaitForSeconds(destroyDelay);
         NetworkServer.Destroy(gameObject);
+    }
+
+    [ClientRpc]
+    private void RpcPlayPickupAnimation()
+    {
+        if (animator != null)
+            animator.SetTrigger(pickupTrigger);
     }
 
     private int GetWeightedRandom(int diff)

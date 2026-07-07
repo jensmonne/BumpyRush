@@ -33,14 +33,22 @@ public class ItemManager : NetworkBehaviour
     {
         currentItems.Add(item);
         Debug.Log("Item added: " + item.name);
-        TargetItemAdded(item.name);
+        UpdatePowerUpUI();
+    }
+
+    private void UpdatePowerUpUI()
+    {
+        string itemName = currentItems.Count > 0 ? currentItems[0].name : null;
+        TargetSetPowerupUI(itemName);
     }
 
     [TargetRpc]
-    private void TargetItemAdded(string itemName)
+    private void TargetSetPowerupUI(string itemName)
     {
-        Debug.Log("TargetItemAdded received: " + itemName);
-        PowerUpUI.SetPowerup(itemName);
+        if (string.IsNullOrEmpty(itemName))
+            PowerUpUI.ClearPowerup();
+        else
+            PowerUpUI.SetPowerup(itemName);
     }
 
     public void UseItem(InputAction.CallbackContext context)
@@ -51,9 +59,7 @@ public class ItemManager : NetworkBehaviour
         if (currentItems.Count == 0) { Debug.Log("No items to use!"); return; }
         CmdUseItem(0);
         lastItemUseTime = Time.time;
-        PowerUpUI.SetPowerup("");
         Debug.Log("Current items count: " + currentItems.Count);
-        PowerUpUI.ClearPowerup();
     }
 
     [Command]
@@ -69,6 +75,7 @@ public class ItemManager : NetworkBehaviour
         if (netIdentity != null) NetworkServer.Spawn(spawnedItem);
         currentItems.RemoveAt(index);
         RpcItemUsed(item.name);
+        UpdatePowerUpUI();
     }
 
     [ClientRpc]
