@@ -364,6 +364,10 @@ PrefabInstance:
       propertyPath: driftParticles
       value: 
       objectReference: {fileID: 5267405953859688434, guid: 9f6e424b3aacd43d8b249b5c27af017d, type: 3}
+    - target: {fileID: 4995633113876898984, guid: 8b0f3d09fc0c7f1c388a15cbbb03e856, type: 3}
+      propertyPath: driftSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 1a9b6027294ccbad297f7cb12db1ecd7, type: 3}
     - target: {fileID: 5253260172628986182, guid: 8b0f3d09fc0c7f1c388a15cbbb03e856, type: 3}
       propertyPath: m_Name
       value: BumpyTheCarMPV3
@@ -3350,6 +3354,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 341581285833054470, guid: 878b289c6e05cafb98e14c0d3f0722e9, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4795856469732111412, guid: 878b289c6e05cafb98e14c0d3f0722e9, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5007840694803786459, guid: 878b289c6e05cafb98e14c0d3f0722e9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.23779

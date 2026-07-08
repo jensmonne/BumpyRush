@@ -598,6 +598,7 @@ GameObject:
   - component: {fileID: 8661618039940638744}
   - component: {fileID: 41460902095741939}
   - component: {fileID: -4727601454046323904}
+  - component: {fileID: 6847817078657148504}
   m_Layer: 0
   m_Name: BumpyTheCarMPV3
   m_TagString: Player
@@ -743,7 +744,19 @@ MonoBehaviour:
     m_ActionId: e29e4f86-4f8c-4e04-8079-a1e95716826a
     m_ActionName: 'Player/UseItem[/Keyboard/e]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2532233641620928404}
+        m_TargetAssemblyTypeName: Movement, Assembly-CSharp
+        m_MethodName: OnDrift
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 0f9ea85d-00ea-47dd-9714-3da721bb4644
     m_ActionName: 'Player/Drift[/Keyboard/e]'
   m_NeverAutoSwitchControlSchemes: 0
@@ -769,10 +782,11 @@ MonoBehaviour:
   throttleResponse: 5
   turnSpeed: 250
   driftFactor: 0.95
-  extraDriftFactor: 0.995
+  extraDriftFactor: 0.998
   velocityRotateSpeed: 3
   extraDriftVelocityRotateSpeed: 0.5
   bounceDriftFactor: 0.996
+  minSpeedForDriftSFX: 2
   grounded: {fileID: 3224136865344549061}
   stopMovement_Bounce: {fileID: 6997471598470826754}
   JumpEffectPoint: {fileID: 4439486215587831642}
@@ -880,6 +894,10 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0
   jumpSound: {fileID: 8300000, guid: 7da5040d9b5d68595a6213747a631948, type: 3}
+  driftSound: {fileID: 8300000, guid: 1a9b6027294ccbad297f7cb12db1ecd7, type: 3}
+  loopStartTime: 0.5
+  loopEndTime: 0.7
+  fadeOutDuration: 0.15
 --- !u!114 &949687005481906122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1015,6 +1033,103 @@ MonoBehaviour:
   syncInterval: 0
   playerPrefsKey: PlayerName
   steamName: 
+--- !u!82 &6847817078657148504
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5253260172628986182}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &5603599067671866264
 GameObject:
   m_ObjectHideFlags: 0

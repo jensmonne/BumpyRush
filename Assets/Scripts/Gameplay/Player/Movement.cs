@@ -23,6 +23,7 @@ public class Movement : MonoBehaviour
     [SerializeField] private float extraDriftVelocityRotateSpeed = 0.5f;
 
     [SerializeField] private float bounceDriftFactor = 0.996f;
+    [SerializeField] private float minSpeedForDriftSFX = 2f;
 
     [Header("Ground Check")]
     [SerializeField] private Grounded grounded;
@@ -41,6 +42,7 @@ public class Movement : MonoBehaviour
     private float steer;
     private float smoothedThrottle;
     private bool isExtraDrifting;
+    private bool isDriftSFXPlaying = false;
 
     private void Awake()
     {
@@ -180,21 +182,50 @@ public class Movement : MonoBehaviour
     // DRIFTEN (Zwaartekracht/Grip-simulatie)
     private void ApplyDrift()
     {
-        // Haalt de lokale snelheid op
         Vector3 localVelocity = transform.InverseTransformDirection(rb3D.linearVelocity);
+
+        float forwardSpeed = Vector3.Dot(rb3D.linearVelocity, transform.forward);
+
+        bool isDrivingReverse = forwardSpeed > 0.1f;
 
         float currentDriftFactor = driftFactor;
         
-        if (isExtraDrifting)
+        // Pas de extra driftfactor ALLEEN toe als de knop is ingedrukt EN we NIET achteruitrijden
+        if (isExtraDrifting && !isDrivingReverse)
         {
             currentDriftFactor = extraDriftFactor;
-            playerVFX.PlayEffect(PlayerEffects.EffectType.Drift, JumpEffectPoint);
         }
         else if (stopMovement_Bounce != null && stopMovement_Bounce.hasCollided)
         {
             currentDriftFactor = bounceDriftFactor;
         }
         
+        // We controleren de harde voorwaarden voor de audio/VFX triggers:
+        bool IsSteering = Mathf.Abs(steer) > 0.01f;
+        bool IsMoving = rb3D.linearVelocity.magnitude > minSpeedForDriftSFX;
+
+        // Het geluid mag ALLEEN starten als: Shift ingedrukt, speler stuurt, auto beweegt én we NIET achteruitrijden
+        if (isExtraDrifting && IsSteering && IsMoving && !isDrivingReverse)
+        {
+            if (!isDriftSFXPlaying)
+            {
+                isDriftSFXPlaying = true;
+                playerSFX.StartDrift();
+                // playerVFX.PlayEffect(PlayerEffects.EffectType.Drift, JumpEffectPoint);
+                Debug.Log("Drift SFX Started");
+            }
+        }
+        else
+        {
+            // Als er aan één van de voorwaarden niet wordt voldaan (inclusief achteruitrijden) -> Stop het geluid direct
+            if (isDriftSFXPlaying)
+            {
+                isDriftSFXPlaying = false;
+                playerSFX.StopDrift();
+                Debug.Log("Drift SFX Stopped");
+            }
+        }
+
         // Hoe lager de factor, hoe sneller de auto stopt met slippen en grip krijgt.
         localVelocity.x *= currentDriftFactor;
 
