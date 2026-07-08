@@ -37,14 +37,14 @@ namespace Mirror.FizzySteam
       Debug.Assert(Channels != null && Channels.Length > 0, "No channel configured for FizzySteamworks.");
 
       if (!InitFacepunch) return;
-      
+
       var initialised = InitialiseSteamworks(SteamAppID);
       if (!initialised) return;
-      
+
       Debug.Log("SteamWorks initialised");
       FetchSteamID();
     }
-    
+
     public override void ClientEarlyUpdate()
     {
       if (enabled)
@@ -86,7 +86,7 @@ namespace Mirror.FizzySteam
         OnClientDisconnected.Invoke();
         return;
       }
-      
+
       if (address == SteamUserID.ToString())
       {
         Debug.Log("You can't connect to yourself.");
@@ -144,7 +144,6 @@ namespace Mirror.FizzySteam
       }
     }
     public bool ClientActive() => client != null;
-
 
     public override bool ServerActive() => server != null;
     public override void ServerStart()
@@ -270,7 +269,7 @@ namespace Mirror.FizzySteam
     }
 
     private void FetchSteamID()
-    {    
+    {
       if (SteamClient.IsValid)
       {
         if (UseNextGenSteamNetworking)
@@ -281,14 +280,14 @@ namespace Mirror.FizzySteam
         SteamUserID = SteamClient.SteamId;
       }
     }
-    
+
     private bool InitialiseSteamworks(uint appid)
     {
       try
       {
-        SteamClient.Init( appid, true );
+        SteamClient.Init(appid, true);
       }
-      catch ( Exception e )
+      catch (Exception e)
       {
         Debug.LogError($"Could be one of the following: Steam is closed, Can't find steam_api dlls or Don't have permission to open appid. Exception: {e.Message}");
         return false;
