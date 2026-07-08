@@ -6920,10 +6920,6 @@ RectTransform:
   m_Children:
   - {fileID: 1264849966}
   - {fileID: 1384491214}
-  - {fileID: 1317126564}
-  - {fileID: 986257266}
-  - {fileID: 1971605643}
-  - {fileID: 1001932082}
   m_Father: {fileID: 1127121250}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -7453,11 +7449,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 926552373}
+  m_Father: {fileID: 1384491214}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 197}
+  m_AnchoredPosition: {x: 0, y: 112}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &986257267
@@ -7741,11 +7737,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1012069688}
-  m_Father: {fileID: 926552373}
+  m_Father: {fileID: 1384491214}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -596.4, y: -252}
+  m_AnchoredPosition: {x: 132.59998, y: -838.5}
   m_SizeDelta: {x: 341, y: 224}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1001932083
@@ -11002,11 +10998,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 926552373}
+  m_Father: {fileID: 1384491214}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 321}
+  m_AnchoredPosition: {x: 0, y: 236}
   m_SizeDelta: {x: 700, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1317126565
@@ -11479,9 +11475,8 @@ GameObject:
   - component: {fileID: 1384491214}
   - component: {fileID: 1384491217}
   - component: {fileID: 1384491216}
-  - component: {fileID: 1384491215}
   m_Layer: 5
-  m_Name: SettingsHolder (1)
+  m_Name: CreditsHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11498,7 +11493,11 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 1317126564}
+  - {fileID: 986257266}
+  - {fileID: 1971605643}
+  - {fileID: 1001932082}
   m_Father: {fileID: 926552373}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -11506,18 +11505,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 85}
   m_SizeDelta: {x: 1458, y: 1003}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1384491215
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1384491213}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3820dcbd3e203751d9823098f4103373, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SettingsManager
 --- !u!114 &1384491216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13690,7 +13677,7 @@ MonoBehaviour:
   offlineSceneLoadDelay: 3
   transport: {fileID: 1700020172}
   networkAddress: localhost
-  maxConnections: 100
+  maxConnections: 8
   disconnectInactiveConnections: 0
   disconnectInactiveTimeout: 60
   authenticator: {fileID: 0}
@@ -13706,11 +13693,11 @@ MonoBehaviour:
   - {fileID: 7692330061401101784, guid: c97c9f9509e5aed43a7b3b0ebbd0544d, type: 3}
   - {fileID: 8447199496572862295, guid: a0baa570fe2183347a809f9a83ee3a0f, type: 3}
   - {fileID: 347042905559666915, guid: e11950ba7089c978898628b391a2752d, type: 3}
-  - {fileID: 6623513512871419685, guid: 47deaffa578a9a818b9a82782d37b01b, type: 3}
   - {fileID: 3878516378742774769, guid: 1ebdc66559a88c14ea031730ab8745d7, type: 3}
   - {fileID: 3377156372138394928, guid: d78837375944e7e478248b551d445316, type: 3}
   - {fileID: 2378443831222444687, guid: b07197389bc8a6d4e888e51408af2787, type: 3}
   - {fileID: 9155224417946463482, guid: 5fc7fb3a95b6d7e4b878e7fd647678f9, type: 3}
+  - {fileID: 6583600440983508120, guid: 9a2bc71ab4a57d849b14ca4f8f3ab136, type: 3}
   exceptionsDisconnect: 1
   snapshotSettings:
     bufferTimeMultiplier: 2
@@ -15477,11 +15464,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 926552373}
+  m_Father: {fileID: 1384491214}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 592, y: 197}
+  m_AnchoredPosition: {x: 592, y: 112}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1971605644
@@ -16975,7 +16962,7 @@ GameObject:
   - component: {fileID: 2117273678}
   - component: {fileID: 2117273677}
   m_Layer: 5
-  m_Name: SettingsHolder
+  m_Name: ChoiceHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

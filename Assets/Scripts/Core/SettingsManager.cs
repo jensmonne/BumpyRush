@@ -34,24 +34,29 @@ public class SettingsManager : MonoBehaviour
     {
         CurrentSettings.FPS = fps;
         Application.targetFrameRate = fps;
-        SaveSystem.SaveSettings(CurrentSettings);
     }
 
     public void UpdateVSync(bool isEnabled)
     {
         CurrentSettings.VSync = isEnabled;
         QualitySettings.vSyncCount = isEnabled ? 1 : 0;
-        SaveSystem.SaveSettings(CurrentSettings);
     }
 
     public void UpdateMainVolume(float volume)
     {
         volume = Mathf.Clamp01(volume);
-
         CurrentSettings.MainVolume = volume;
-        
         AudioListener.volume = volume; 
+    }
 
+    public void SaveSettingsToDisk()
+    {
         SaveSystem.SaveSettings(CurrentSettings);
+    }
+
+    private void OnDisable()
+    {
+        Debug.Log("[SettingsManager] OnDisable called. Saving settings to disk.");
+        SaveSettingsToDisk();
     }
 }
