@@ -1,5 +1,5 @@
-using UnityEngine;
 using Mirror;
+using UnityEngine;
 
 public class PlushieSFX : NetworkBehaviour
 {
@@ -8,12 +8,7 @@ public class PlushieSFX : NetworkBehaviour
 
     public void PlayPickupSound()
     {
-        CmdPlayPickupSound();
-    }
-
-    [Command]
-    private void CmdPlayPickupSound()
-    {
+        Debug.LogWarning($"WAAAAA");
         RpcPlayPickupSound();
     }
 
@@ -22,6 +17,7 @@ public class PlushieSFX : NetworkBehaviour
     {
         if (PickupSound != null)
         {
+            Debug.LogWarning($"Playing pickup sound for {gameObject.name} at position {transform.position}");
             SoundManager.Instance.Play3DSFX(PickupSound, transform.position);
         }
         else

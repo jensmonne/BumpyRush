@@ -30,13 +30,16 @@ public abstract class PickUpBase : NetworkBehaviour
         if (isCollected) return;
 
         isCollected = true;
-        
+
         GameManager.Instance.RegisterPickup(playerIdentity);
 
         OnPickUpServer(playerIdentity);
         RpcOnPickUpClient(playerIdentity.netId);
 
-        NetworkServer.Destroy(gameObject);
+        foreach (var renderer in GetComponentsInChildren<Renderer>())
+        {
+            renderer.enabled = false;
+        }
     }
 
     [Server]
