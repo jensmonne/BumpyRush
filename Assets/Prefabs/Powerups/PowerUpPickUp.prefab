@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4793553026235442812}
   - component: {fileID: 7362548722139992898}
   - component: {fileID: 1920169501663488530}
+  - component: {fileID: 8399327811244897684}
   m_Layer: 0
   m_Name: PowerUpPickUp
   m_TagString: Untagged
@@ -156,6 +157,22 @@ MonoBehaviour:
   animator: {fileID: 5846168841728000183}
   pickupTrigger: Pickup
   destroyDelay: 1.2
+--- !u!114 &8399327811244897684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2378443831222444687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cf8085dcdc1f9f6eb7ca98a7d49454e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlushieSFX
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0
+  PickupSound: {fileID: 8300000, guid: 265bcc2e79b0a0207aa602c877d0a478, type: 3}
 --- !u!1001 &5265557498735053271
 PrefabInstance:
   m_ObjectHideFlags: 0

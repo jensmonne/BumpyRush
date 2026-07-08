@@ -53,6 +53,9 @@ public class PowerupPickUp : NetworkBehaviour
     {
         if (animator != null)
             animator.SetTrigger(pickupTrigger);
+
+        this.gameObject.GetComponent<PlushieSFX>()?.PlayPickupSound();
+
     }
 
     private int GetWeightedRandom(int diff)
