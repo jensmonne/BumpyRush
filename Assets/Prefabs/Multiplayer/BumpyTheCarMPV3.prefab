@@ -895,9 +895,16 @@ MonoBehaviour:
   syncInterval: 0
   jumpSound: {fileID: 8300000, guid: 7da5040d9b5d68595a6213747a631948, type: 3}
   driftSound: {fileID: 8300000, guid: 1a9b6027294ccbad297f7cb12db1ecd7, type: 3}
-  loopStartTime: 0.5
-  loopEndTime: 0.7
-  fadeOutDuration: 0.15
+  driveSound: {fileID: 8300000, guid: c6b73271d13d0b0deae62110fb0c1c10, type: 3}
+  driftLoopStartTime: 0.2
+  driftLoopEndTime: 0.8
+  driftFadeOutDuration: 0.05
+  driveLoopStartTime: 0.1
+  driveLoopEndTime: 1.6
+  minEngineVolume: 0.4
+  maxEngineVolume: 1
+  minEnginePitch: 0.75
+  maxEnginePitch: 1.5
 --- !u!114 &949687005481906122
 MonoBehaviour:
   m_ObjectHideFlags: 0

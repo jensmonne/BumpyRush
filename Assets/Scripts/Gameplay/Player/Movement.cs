@@ -89,6 +89,15 @@ public class Movement : MonoBehaviour
         HandleMovement();
         HandleSteering();
         ApplyDrift();
+
+        // Bereken hoe snel de auto gaat t.o.v. de maximale snelheid (geeft een waarde tussen 0.0 en 1.0)
+        float speedFactor = rb3D.linearVelocity.magnitude / maxSpeed;
+        
+        // Stuur de snelheidsfactor door naar het sfx script om volume/pitch aan te passen
+        if (playerSFX != null)
+        {
+            playerSFX.UpdateEngineSound(Mathf.Clamp01(speedFactor));
+        }
     }
 
     // MOVEMENT (Vooruit/achteruit)
