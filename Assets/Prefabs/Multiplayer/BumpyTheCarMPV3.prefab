@@ -877,7 +877,7 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0
   jumpParticles: {fileID: 7520421686675044695, guid: 952c38976813399de8293ca090294673, type: 3}
-  driftParticles: {fileID: 0}
+  driftParticles: {fileID: 5267405953859688434, guid: 9f6e424b3aacd43d8b249b5c27af017d, type: 3}
 --- !u!114 &4995633113876898984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -896,13 +896,13 @@ MonoBehaviour:
   jumpSound: {fileID: 8300000, guid: 7da5040d9b5d68595a6213747a631948, type: 3}
   driftSound: {fileID: 8300000, guid: 1a9b6027294ccbad297f7cb12db1ecd7, type: 3}
   driveSound: {fileID: 8300000, guid: c6b73271d13d0b0deae62110fb0c1c10, type: 3}
-  driftLoopStartTime: 0.2
-  driftLoopEndTime: 0.8
+  driftLoopStartTime: 0.5
+  driftLoopEndTime: 0.6
   driftFadeOutDuration: 0.05
   driveLoopStartTime: 0.1
   driveLoopEndTime: 1.6
   minEngineVolume: 0.4
-  maxEngineVolume: 1
+  maxEngineVolume: 0.78
   minEnginePitch: 0.75
   maxEnginePitch: 1.5
 --- !u!114 &949687005481906122

@@ -220,8 +220,7 @@ public class Movement : MonoBehaviour
             {
                 isDriftSFXPlaying = true;
                 playerSFX.StartDrift();
-                // playerVFX.PlayEffect(PlayerEffects.EffectType.Drift, JumpEffectPoint);
-                Debug.Log("Drift SFX Started");
+                playerVFX.PlayEffect(PlayerEffects.EffectType.Drift, transform);
             }
         }
         else
@@ -231,7 +230,6 @@ public class Movement : MonoBehaviour
             {
                 isDriftSFXPlaying = false;
                 playerSFX.StopDrift();
-                Debug.Log("Drift SFX Stopped");
             }
         }
 
